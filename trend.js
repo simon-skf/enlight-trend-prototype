@@ -40,7 +40,7 @@ async function init() {
     overallTrend.push(...trendPart);
   }
   overallTrend.sort((a, b) => a[0] - b[0]);
-  
+
   overallTrendRaw = overallTrend;
 
   let bandOverallsResponse = await fetch(
@@ -55,7 +55,7 @@ async function init() {
         x: new Date(point.createdAt).getTime(),
         y: point.overallBand / 10,
         marker: {
-          enabled: false,
+          //   enabled: true,
         },
       };
     })
@@ -78,7 +78,10 @@ async function init() {
       events: {
         click: (e) => {
           const currentX = e.xAxis[0].value;
-          selectSpectrumCloseTo(currentX);
+          let fromResetZoomButton = e.isTrusted; // Should be changed to something else. 
+          if(fromResetZoomButton){ 
+            selectSpectrumCloseTo(currentX);
+          }
         },
       },
     },
@@ -264,10 +267,21 @@ async function init() {
         data: overallTrend,
       },
       {
-        type: "scatter",
+        type: "line",
         name: "spectrum",
         color: "blue",
+        lineWidth: 0,
         data: spectrumTrend,
+        color: "transparent",
+        states: {
+          hover: {
+            lineWidth: 0,
+          },
+        },
+        marker: {
+          fillColor: "blue",
+          radius: 3,
+        },
       },
       //   {
       //     type: "flags",
@@ -347,8 +361,8 @@ const selectSpectrumCloseTo = (xVal) => {
     ? enabledPoint.update(
         {
           marker: {
-            enabled: false,
-            radius: 2,
+            enabled: undefined,
+            radius: undefined,
           },
         },
         false,
@@ -424,13 +438,11 @@ const createSingleCursorSerie = (
             (point) => point.marker.enabled
           );
 
-          // .select(true,false);
           enabledPoint
             ? enabledPoint.update(
                 {
                   marker: {
-                    //   symbol: "circle",
-                    enabled: false,
+                    enabled: undefined,
                     radius: undefined,
                   },
                 },
@@ -440,11 +452,9 @@ const createSingleCursorSerie = (
             : undefined;
           trendHighcharts.series[1].data
             .find((point) => point.x == xyValues.x)
-            // .select(true,false);
             .update(
               {
                 marker: {
-                  // symbol: "circle",
                   enabled: true,
                   radius: 6,
                 },
@@ -461,15 +471,15 @@ const createSingleCursorSerie = (
           const series = e.target.series;
           const currentX = Object.values(e.newPoints)[0].newValues.x;
           selectSpectrumCloseTo(currentX);
-        //   const xyValues = getClosestPointBy(currentX, data, compareData);
-        //   console.log("Closest point:", xyValues);
-        //   // console.log(series.data[2]);
-        //   setTimeout(() => {
-        //     series.data[0].update({ x: xyValues.x }, true, false);
-        //     series.data[1].update({ x: xyValues.x }, true, false);
-        //     // series.data[2].update({ x: xyValues.x }, true, false);
-        //     // series.data[3].update({ x: xyValues.x }, true, false);
-        //   }, 1);
+          //   const xyValues = getClosestPointBy(currentX, data, compareData);
+          //   console.log("Closest point:", xyValues);
+          //   // console.log(series.data[2]);
+          //   setTimeout(() => {
+          //     series.data[0].update({ x: xyValues.x }, true, false);
+          //     series.data[1].update({ x: xyValues.x }, true, false);
+          //     // series.data[2].update({ x: xyValues.x }, true, false);
+          //     // series.data[3].update({ x: xyValues.x }, true, false);
+          //   }, 1);
 
           // console.log(series.data[2]);
           // series.setData([{}, {}, series.data[2], {}], false);
