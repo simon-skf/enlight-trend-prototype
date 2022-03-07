@@ -26,7 +26,7 @@ async function init() {
     "data_points_2000.json",
     "data_points_3000.json",
     "data_points_4000.json",
-    "data_points_5000.json",
+    // "data_points_5000.json",
   ];
   let overallTrend = [];
   for (var i = 0; i < dataPointsSources.length; i++) {
@@ -73,6 +73,9 @@ async function init() {
   spectrumTrendRaw = spectrumTrend.map((val) => [val.x, val.y]);
 
   trendHighcharts = Highcharts.chart("container", {
+    title: {
+        text: "Trend"
+    },
     chart: {
       zoomType: "x",
       events: {
