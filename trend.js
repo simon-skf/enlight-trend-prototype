@@ -1,16 +1,6 @@
-import apiData from "./apiData.js";
-
-console.log(apiData);
-
-function calculateHanning(values) {
-  let length = values.length;
-  let out = [];
-  values.forEach((value, index) => {
-    let multiplier = 0.5 * (1 - Math.cos((2 * Math.PI * index) / (length - 1)));
-    out[index] = multiplier * values[index];
-  });
-  return out.reduce((sum, val) => sum + val, 0) / length;
-}
+let trendHighcharts = undefined;
+let overallTrendRaw = undefined;
+let spectrumTrendRaw = undefined;
 
 async function init() {
   // let spectrumResponse = await fetch(
@@ -29,7 +19,7 @@ async function init() {
   //   return [new Date(dataPoint.createdAt).getTime(), overallValue];
   // });
 
-  //"https://measurement-api.sandbox.iot.enlight.skf.com/nodes/7423d282-05cc-4d25-8e66-d91594b38d62/node-data/recent?content_type=DATA_POINT&limit=1000&offset=1000&resurrectable=false"
+  //"https://measurement-api.sandbox.iot.enlight.skf.com/nodes/7423d282-05cc-4d25-8e66-d91594b38d62/node-data/recent?content_type=DATA_POINT&limit=1000&offset=0&resurrectable=false"
   let dataPointsSources = [
     "data_points_0.json",
     "data_points_1000.json",
@@ -40,10 +30,7 @@ async function init() {
   ];
   let overallTrend = [];
   for (var i = 0; i < dataPointsSources.length; i++) {
-    let dataPointsResponse = await fetch(
-      //"https://measurement-api.sandbox.iot.enlight.skf.com/nodes/7423d282-05cc-4d25-8e66-d91594b38d62/node-data/recent?content_type=DATA_POINT&limit=1000&offset=1000&resurrectable=false"
-      dataPointsSources[i]
-    );
+    let dataPointsResponse = await fetch(dataPointsSources[i]);
     let dataPoints = await dataPointsResponse.json();
 
     let trendPart = dataPoints.data.map((point) => [
@@ -53,6 +40,8 @@ async function init() {
     overallTrend.push(...trendPart);
   }
   overallTrend.sort((a, b) => a[0] - b[0]);
+  
+  overallTrendRaw = overallTrend;
 
   let bandOverallsResponse = await fetch(
     //"https://measurement-api.sandbox.iot.enlight.skf.com/nodes/7423d282-05cc-4d25-8e66-d91594b38d62/band/overall?startFrequency=0&stopFrequency=1300&windowFunction=hanning&frequencyType=0"
@@ -62,24 +51,42 @@ async function init() {
 
   let spectrumTrend = bandOveralls.trends
     .map((point) => {
-      return [new Date(point.createdAt).getTime(), point.overallBand / 10];
+      return {
+        x: new Date(point.createdAt).getTime(),
+        y: point.overallBand / 10,
+        marker: {
+          enabled: false,
+        },
+      };
     })
     .filter(
       (val) =>
-        val[0] > overallTrend[0][0] &&
-        val[0] < overallTrend[overallTrend.length - 1][0]
+        val.x > overallTrend[0][0] &&
+        val.x < overallTrend[overallTrend.length - 1][0]
     );
 
-  spectrumTrend.sort((a, b) => a[0] - b[0]);
+  spectrumTrend.sort((a, b) => a.x - b.x);
 
-  console.log(spectrumTrend.length);
+  spectrumTrend[spectrumTrend.length - 1].marker.enabled = true;
+  spectrumTrend[spectrumTrend.length - 1].marker.radius = 6;
 
-  Highcharts.chart("container", {
+  spectrumTrendRaw = spectrumTrend.map((val) => [val.x, val.y]);
+
+  trendHighcharts = Highcharts.chart("container", {
     chart: {
       zoomType: "x",
+      events: {
+        click: (e) => {
+          const currentX = e.xAxis[0].value;
+          selectSpectrumCloseTo(currentX);
+        },
+      },
     },
     xAxis: {
       type: "datetime",
+      crosshair: {
+        color: "gray",
+      },
     },
     yAxis: [
       {
@@ -94,10 +101,46 @@ async function init() {
       },
     ],
     legend: {
-      enabled: true,
+      enabled: false,
     },
     tooltip: {
       enabled: true,
+      shadow: false,
+      animation: false,
+      crosshairs: true,
+      borderRadius: 3,
+      backgroundColor: "#fff",
+      borderColor: "#676F7C",
+      borderWidth: 1,
+      headerFormat: "",
+      shape: "rect",
+      useHTML: true,
+      padding: 6,
+      style: {
+        fontSize: "11px",
+      },
+      //   pointFormat: undefined,
+      pointFormatter: function () {
+        // if (this.series.name == spectrum) {
+        // console.log(this);
+        let dateFormatOptions = {
+          day: "2-digit",
+          month: "short",
+          hour: "2-digit",
+          minute: "2-digit",
+          second: "2-digit",
+        };
+        let xyPoint = getClosestPointBy(this.x, overallTrend, []);
+        return `<b>${new Date(this.x).toLocaleString(
+          "sv-SE",
+          dateFormatOptions
+        )}</b><br/>${xyPoint.y.toPrecision(5)} g<br/>`;
+      },
+      positioner: (labelWidth, labelHeight, point) => {
+        // console.log(labelWidth, labelHeight, point);
+        return { x: point.plotX + 36, y: 40 };
+      },
+      shared: false,
     },
     plotOptions: {
       line: {
@@ -109,9 +152,78 @@ async function init() {
           hover: {
             lineWidth: 1,
           },
+          inactive: {
+            opacity: 1,
+          },
+        },
+      },
+      scatter: {
+        states: {
+          inactive: {
+            opacity: 1,
+          },
+        },
+      },
+      series: {
+        point: {
+          events: {
+            click: (e) => {
+              const currentX = e.point.x;
+              selectSpectrumCloseTo(currentX);
+            },
+          },
         },
       },
     },
+    // chart: {
+    //   events: {
+    //     click: (e) => {
+    //       console.log(e);
+    //       const currentX = Object.values(e.newPoints)[0].newValues.x;
+    //       const xyValues = getClosestPointBy(currentX, spectrumTrendRaw, []);
+    //       setTimeout(() => {
+    //         trendHighcharts.series[2].data[0].update(
+    //           { x: xyValues.x },
+    //           true,
+    //           false
+    //         );
+    //         trendHighcharts.series[2].data[1].update(
+    //           { x: xyValues.x },
+    //           true,
+    //           false
+    //         );
+    //       }, 100);
+    //       let enabledPoint = trendHighcharts.series[1].data.find(
+    //         (point) => point.marker.enabled
+    //       );
+
+    //       enabledPoint
+    //         ? enabledPoint.update(
+    //             {
+    //               marker: {
+    //                 enabled: false,
+    //                 radius: 2,
+    //               },
+    //             },
+    //             false,
+    //             true
+    //           )
+    //         : undefined;
+    //       trendHighcharts.series[1].data
+    //         .find((point) => point.x == xyValues.x)
+    //         .update(
+    //           {
+    //             marker: {
+    //               enabled: true,
+    //               radius: 6,
+    //             },
+    //           },
+    //           false,
+    //           true
+    //         );
+    //     },
+    //   },
+    // },
     // plotOptions: {
     //   area: {
     //     fillColor: {
@@ -148,61 +260,114 @@ async function init() {
       {
         type: "line",
         name: "vibration",
+        color: "#676F7C",
         data: overallTrend,
       },
       {
         type: "scatter",
         name: "spectrum",
+        color: "blue",
         data: spectrumTrend,
       },
-      {
-        type: "flags",
-        //yAxis: 1,
-        shape: "squarepin",
-        onSeries: "spectrum",
-        align: "right",
-        point: {
-          events: {
-            //drop: snapFlag
-          },
-        },
-        dragDrop: {
-          draggableX: true,
-          draggableY: false,
-        },
-        data: [
-          {
-            x: spectrumTrend[spectrumTrend.length - 1][0],
-            y: spectrumTrend[spectrumTrend.length - 1][1],
-            title: "Selected spectrum",
-            text: "1: test",
-            snapto: "closest",
-          },
-        ],
-      },
+      //   {
+      //     type: "flags",
+      //     //yAxis: 1,
+      //     shape: "squarepin",
+      //     onSeries: "spectrum",
+      //     align: "right",
+      //     point: {
+      //       events: {
+      //         //drop: snapFlag
+      //       },
+      //     },
+      //     dragDrop: {
+      //       draggableX: true,
+      //       draggableY: false,
+      //     },
+      //     data: [
+      //       {
+      //         x: spectrumTrend[spectrumTrend.length - 1][0],
+      //         y: spectrumTrend[spectrumTrend.length - 1][1],
+      //         title: "Selected spectrum",
+      //         text: "1: test",
+      //         snapto: "closest",
+      //       },
+      //     ],
+      //   },
+      //   {
+      //     type: "scatter",
+      //     name: "Selected spectrum",
+      //     data: [
+      //       {
+      //         x: spectrumTrend[spectrumTrend.length - 2][0],
+      //         y: spectrumTrend[spectrumTrend.length - 2][1],
+      //         marker: {
+      //           symbol: "circle",
+      //           enabled: true,
+      //           radius: 4,
+      //         },
+      //       },
+      //     ],
+      //   },
       createSingleCursorSerie(
-        spectrumTrend,
+        spectrumTrendRaw,
         [],
         {
           id: 1,
           color: "blue",
-          x: spectrumTrend[spectrumTrend.length - 1][0],
-          y: spectrumTrend[spectrumTrend.length - 1][1],
+          x: spectrumTrend[spectrumTrend.length - 1].x,
+          y: spectrumTrend[spectrumTrend.length - 1].y,
         },
         {
-          xMin: spectrumTrend[0][0],
-          xMax: spectrumTrend[spectrumTrend.length - 1][0],
+          xMin: overallTrend[0][0],
+          xMax: overallTrend[overallTrend.length - 1][0],
           yMin: 0,
           yMax: 0.5,
         },
-        { min: 0, max: 0.8 },
-        () => "Hello"
+        { min: 0, max: 0.6 },
+        () => "Selected spectrum"
       ),
     ],
   });
 }
 
 init();
+
+const selectSpectrumCloseTo = (xVal) => {
+  const xyValues = getClosestPointBy(xVal, spectrumTrendRaw, []);
+  setTimeout(() => {
+    trendHighcharts.series[2].data[0].update({ x: xyValues.x }, true, false);
+    trendHighcharts.series[2].data[1].update({ x: xyValues.x }, true, false);
+  }, 1);
+  let enabledPoint = trendHighcharts.series[1].data.find(
+    (point) => point.marker.enabled
+  );
+
+  enabledPoint
+    ? enabledPoint.update(
+        {
+          marker: {
+            enabled: false,
+            radius: 2,
+          },
+        },
+        false,
+        true
+      )
+    : undefined;
+  trendHighcharts.series[1].data
+    .find((point) => point.x == xyValues.x)
+    .update(
+      {
+        marker: {
+          enabled: true,
+          radius: 6,
+        },
+      },
+      false,
+      true
+    );
+};
 
 const createSingleCursorSerie = (
   data, //: ChartXYData,
@@ -224,6 +389,7 @@ const createSingleCursorSerie = (
     color: cursor.color,
     lineWidth: 1,
     cursor: "move",
+
     // yAxis: 1,
     // xAxis: 1,
     dragDrop: {
@@ -252,24 +418,59 @@ const createSingleCursorSerie = (
               y: xyValues.y2,
             };
           }
+          //   series.setData([{}, compare, { y: xyValues.y }, {}], false);
 
+          let enabledPoint = trendHighcharts.series[1].data.find(
+            (point) => point.marker.enabled
+          );
+
+          // .select(true,false);
+          enabledPoint
+            ? enabledPoint.update(
+                {
+                  marker: {
+                    //   symbol: "circle",
+                    enabled: false,
+                    radius: undefined,
+                  },
+                },
+                false,
+                true
+              )
+            : undefined;
+          trendHighcharts.series[1].data
+            .find((point) => point.x == xyValues.x)
+            // .select(true,false);
+            .update(
+              {
+                marker: {
+                  // symbol: "circle",
+                  enabled: true,
+                  radius: 6,
+                },
+              },
+              false,
+              true
+            );
           // series.data[2].update({ x: xyValues.x, y: xyValues.y }, false, true);
-          
+
           // updateContextMarkerOnDrag(CursorType.SingleCursor, e, currentX);
           // updatePositionsDebounced(currentX, xyValues.y, xyValues.y2);
         },
         drop: (e) => {
           const series = e.target.series;
           const currentX = Object.values(e.newPoints)[0].newValues.x;
-          const xyValues = getClosestPointBy(currentX, data, compareData);
-          console.log("Closest point:", xyValues);
-          // console.log(series.data[2]);
-          setTimeout(() => {
-            series.data[0].update({ x: xyValues.x }, true, false);
-            series.data[1].update({ x: xyValues.x }, true, false);
-            series.data[2].update({ x: xyValues.x }, true, false);
-            series.data[3].update({ x: xyValues.x }, true, false);
-          }, 100);
+          selectSpectrumCloseTo(currentX);
+        //   const xyValues = getClosestPointBy(currentX, data, compareData);
+        //   console.log("Closest point:", xyValues);
+        //   // console.log(series.data[2]);
+        //   setTimeout(() => {
+        //     series.data[0].update({ x: xyValues.x }, true, false);
+        //     series.data[1].update({ x: xyValues.x }, true, false);
+        //     // series.data[2].update({ x: xyValues.x }, true, false);
+        //     // series.data[3].update({ x: xyValues.x }, true, false);
+        //   }, 1);
+
           // console.log(series.data[2]);
           // series.setData([{}, {}, series.data[2], {}], false);
           // console.log(series.data[2]);
@@ -307,6 +508,7 @@ const createSingleCursorSerie = (
     tooltip: {
       headerFormat: undefined,
       pointFormat: undefined,
+      enabled: false,
     },
     dataLabels: {
       zIndex: 3,
@@ -317,34 +519,39 @@ const createSingleCursorSerie = (
         y: cursorYPositions.min,
         groupId: "singleCursor",
       },
-      // Compare marker
-      {
-        x: cursor.x,
-        y: cursor.y2 || cursorYPositions.min,
-        groupId: "singleCursor",
-        marker: {
-          symbol: "circle",
-          fillColor: "#fff",
-          lineColor: cursor.color,
-          lineWidth: 1,
-          enabled: !!cursor.y2,
-          radius: 4,
-        },
-      },
-      // Main marker
-      {
-        x: cursor.x,
-        y: cursor.y,
-        groupId: "singleCursor",
-        dragDrop: {
-          draggableX: undefined
-        },
-        marker: {
-          symbol: "circle",
-          enabled: true,
-          radius: 4,
-        },
-      },
+      //   // Compare marker
+      //   {
+      //     x: cursor.x,
+      //     y: cursor.y2 || cursorYPositions.min,
+      //     groupId: "singleCursor",
+      //     marker: {
+      //       symbol: "circle",
+      //       fillColor: "#fff",
+      //       lineColor: cursor.color,
+      //       lineWidth: 1,
+      //       enabled: !!cursor.y2,
+      //       radius: 0,
+      //     },
+      //   },
+      //   // Main marker
+      //   {
+      //     x: cursor.x,
+      //     y: cursor.y,
+      //     groupId: "singleCursor",
+      //     // dragDrop: {
+      //     //     draggableX: false,
+      //     // },
+      //     marker: {
+      //       symbol: "circle",
+      //       enabled: false,
+      //       radius: 0,
+      //     },
+      //     // states: {
+      //     //   hover: {
+      //     //     enabled: false,
+      //     //   },
+      //     // },
+      //   },
       {
         x: cursor.x,
         y: cursorYPositions.max,
