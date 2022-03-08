@@ -2,32 +2,52 @@ let trendHighcharts = undefined;
 let overallTrendRaw = undefined;
 let spectrumTrendRaw = undefined;
 
+let variant = {
+  dataset: 1,
+  spectrumsOnTrend: true,
+};
+const dataSources = {
+  //https://measurement-api.sandbox.iot.enlight.skf.com/nodes/7423d282-05cc-4d25-8e66-d91594b38d62/node-data/recent?content_type=DATA_POINT&limit=1000&offset=0&resurrectable=false
+  0: [
+    `dataset_0/data_points_0.json`,
+    `dataset_0/data_points_1000.json`,
+    `dataset_0/data_points_2000.json`,
+    `dataset_0/data_points_3000.json`,
+    `dataset_0/data_points_4000.json`,
+  ],
+  //https://measurement-api.sandbox.iot.enlight.skf.com/nodes/f1f344bd-3d82-4eea-95bc-3c59d951a685/node-data/recent?offset=0&limit=1000&content_type=DATA_POINT&exclude_coordinates=false&resurrectable=false
+  1: [
+    //   `dataset_1/data_points_0.json`,
+    `dataset_1/data_points_1000.json`,
+    `dataset_1/data_points_2000.json`,
+    `dataset_1/data_points_3000.json`,
+    `dataset_1/data_points_4000.json`,
+  ],
+};
+
+const bandOverallsSource = {
+  //https://measurement-api.sandbox.iot.enlight.skf.com/nodes/7423d282-05cc-4d25-8e66-d91594b38d62/band/overall?startFrequency=0&stopFrequency=1300&windowFunction=hanning&frequencyType=0
+  0: `dataset_0/band_overalls.json`,
+  //https://measurement-api.sandbox.iot.enlight.skf.com/nodes/f1f344bd-3d82-4eea-95bc-3c59d951a685/band/overall?startFrequency=0&stopFrequency=30&windowFunction=hanning&frequencyType=0
+  1: `dataset_1/band_overalls.json`,
+};
+
+const magicSpectrumOverallRatio = {
+  0: 1 / 10,
+  1: 1 / 5,
+};
+
+const dataMaxValues = {
+  0: {
+    y: 0.5,
+  },
+  1: {
+    y: 0.07,
+  },
+};
+
 async function init() {
-  // let spectrumResponse = await fetch(
-  //   //"https://measurement-api.sandbox.iot.enlight.skf.com/nodes/7423d282-05cc-4d25-8e66-d91594b38d62/node-data/recent?from=2019-02-06T00%3A00%3A00.000Z&to=2019-02-20T00%3A00%3A00.000Z&offset=0&limit=100&content_type=SPECTRUM&exclude_coordinates=false"
-  //   "spectrums.json"
-  // );
-  // let spectrums = await spectrumResponse.json();
-  // console.log(spectrums);
-
-  // let spectrumTrend = spectrums.data.map((dataPoint) => {
-  //   let allValues = dataPoint.spectrum.coordinates.map(({ x, y }) => y);
-  //   let overallValue =
-  //     (allValues.reduce((sum, val) => sum + val, 0) /
-  //       dataPoint.spectrum.coordinates.length) *
-  //     4; //calculateHanning(allValues);
-  //   return [new Date(dataPoint.createdAt).getTime(), overallValue];
-  // });
-
-  //"https://measurement-api.sandbox.iot.enlight.skf.com/nodes/7423d282-05cc-4d25-8e66-d91594b38d62/node-data/recent?content_type=DATA_POINT&limit=1000&offset=0&resurrectable=false"
-  let dataPointsSources = [
-    "data_points_0.json",
-    "data_points_1000.json",
-    "data_points_2000.json",
-    "data_points_3000.json",
-    "data_points_4000.json",
-    // "data_points_5000.json",
-  ];
+  let dataPointsSources = dataSources[variant.dataset];
   let overallTrend = [];
   for (var i = 0; i < dataPointsSources.length; i++) {
     let dataPointsResponse = await fetch(dataPointsSources[i]);
@@ -43,21 +63,24 @@ async function init() {
 
   overallTrendRaw = overallTrend;
 
-  let bandOverallsResponse = await fetch(
-    //"https://measurement-api.sandbox.iot.enlight.skf.com/nodes/7423d282-05cc-4d25-8e66-d91594b38d62/band/overall?startFrequency=0&stopFrequency=1300&windowFunction=hanning&frequencyType=0"
-    "band-overalls.json"
-  );
+  let bandOverallsResponse = await fetch(bandOverallsSource[variant.dataset]);
   let bandOveralls = await bandOverallsResponse.json();
 
   let spectrumTrend = bandOveralls.trends
     .map((point) => {
-      return {
-        x: new Date(point.createdAt).getTime(),
-        y: point.overallBand / 10,
-        marker: {
-          //   enabled: true,
-        },
-      };
+      if (variant.spectrumsOnTrend) {
+        return {
+          x: new Date(point.createdAt).getTime(),
+          y: point.overallBand * magicSpectrumOverallRatio[variant.dataset],
+          marker: {},
+        };
+      } else {
+        return {
+          x: new Date(point.createdAt).getTime(),
+          y: 0,
+          marker: {},
+        };
+      }
     })
     .filter(
       (val) =>
@@ -74,15 +97,15 @@ async function init() {
 
   trendHighcharts = Highcharts.chart("container", {
     title: {
-        text: "Trend"
+      text: "Trend",
     },
     chart: {
       zoomType: "x",
       events: {
         click: (e) => {
           const currentX = e.xAxis[0].value;
-          let fromResetZoomButton = e.isTrusted; // Should be changed to something else. 
-          if(fromResetZoomButton){ 
+          let fromResetZoomButton = e.isTrusted; // Should be changed to something else.
+          if (fromResetZoomButton) {
             selectSpectrumCloseTo(currentX);
           }
         },
@@ -101,6 +124,8 @@ async function init() {
         },
         top: "15%",
         height: "85%",
+      min: 0,
+      max: dataMaxValues[variant.dataset].y
       },
       {
         height: "15%",
@@ -117,7 +142,7 @@ async function init() {
       borderRadius: 3,
       backgroundColor: "#fff",
       borderColor: "#676F7C",
-      borderWidth: 1,
+      borderWidth: 0,
       headerFormat: "",
       shape: "rect",
       useHTML: true,
@@ -144,7 +169,7 @@ async function init() {
       },
       positioner: (labelWidth, labelHeight, point) => {
         // console.log(labelWidth, labelHeight, point);
-        return { x: point.plotX + 36, y: 40 };
+        return { x: point.plotX + labelWidth-20, y: 40 };
       },
       shared: false,
     },
@@ -181,98 +206,18 @@ async function init() {
         },
       },
     },
-    // chart: {
-    //   events: {
-    //     click: (e) => {
-    //       console.log(e);
-    //       const currentX = Object.values(e.newPoints)[0].newValues.x;
-    //       const xyValues = getClosestPointBy(currentX, spectrumTrendRaw, []);
-    //       setTimeout(() => {
-    //         trendHighcharts.series[2].data[0].update(
-    //           { x: xyValues.x },
-    //           true,
-    //           false
-    //         );
-    //         trendHighcharts.series[2].data[1].update(
-    //           { x: xyValues.x },
-    //           true,
-    //           false
-    //         );
-    //       }, 100);
-    //       let enabledPoint = trendHighcharts.series[1].data.find(
-    //         (point) => point.marker.enabled
-    //       );
-
-    //       enabledPoint
-    //         ? enabledPoint.update(
-    //             {
-    //               marker: {
-    //                 enabled: false,
-    //                 radius: 2,
-    //               },
-    //             },
-    //             false,
-    //             true
-    //           )
-    //         : undefined;
-    //       trendHighcharts.series[1].data
-    //         .find((point) => point.x == xyValues.x)
-    //         .update(
-    //           {
-    //             marker: {
-    //               enabled: true,
-    //               radius: 6,
-    //             },
-    //           },
-    //           false,
-    //           true
-    //         );
-    //     },
-    //   },
-    // },
-    // plotOptions: {
-    //   area: {
-    //     fillColor: {
-    //       linearGradient: {
-    //         x1: 0,
-    //         y1: 0,
-    //         x2: 0,
-    //         y2: 1,
-    //       },
-    //       stops: [
-    //         [0, Highcharts.getOptions().colors[0]],
-    //         [
-    //           1,
-    //           Highcharts.color(Highcharts.getOptions().colors[0])
-    //             .setOpacity(0)
-    //             .get("rgba"),
-    //         ],
-    //       ],
-    //     },
-    //     marker: {
-    //       radius: 2,
-    //     },
-    //     lineWidth: 1,
-    //     states: {
-    //       hover: {
-    //         lineWidth: 1,
-    //       },
-    //     },
-    //     threshold: null,
-    //   },
-    // },
-
     series: [
       {
         type: "line",
         name: "vibration",
         color: "#676F7C",
         data: overallTrend,
+        enableMouseTracking: !variant.spectrumsOnTrend,
       },
       {
         type: "line",
         name: "spectrum",
-        color: "blue",
+        color: "#0F58D6",
         lineWidth: 0,
         data: spectrumTrend,
         color: "transparent",
@@ -282,56 +227,16 @@ async function init() {
           },
         },
         marker: {
-          fillColor: "blue",
+          fillColor: "#0F58D6",
           radius: 3,
         },
       },
-      //   {
-      //     type: "flags",
-      //     //yAxis: 1,
-      //     shape: "squarepin",
-      //     onSeries: "spectrum",
-      //     align: "right",
-      //     point: {
-      //       events: {
-      //         //drop: snapFlag
-      //       },
-      //     },
-      //     dragDrop: {
-      //       draggableX: true,
-      //       draggableY: false,
-      //     },
-      //     data: [
-      //       {
-      //         x: spectrumTrend[spectrumTrend.length - 1][0],
-      //         y: spectrumTrend[spectrumTrend.length - 1][1],
-      //         title: "Selected spectrum",
-      //         text: "1: test",
-      //         snapto: "closest",
-      //       },
-      //     ],
-      //   },
-      //   {
-      //     type: "scatter",
-      //     name: "Selected spectrum",
-      //     data: [
-      //       {
-      //         x: spectrumTrend[spectrumTrend.length - 2][0],
-      //         y: spectrumTrend[spectrumTrend.length - 2][1],
-      //         marker: {
-      //           symbol: "circle",
-      //           enabled: true,
-      //           radius: 4,
-      //         },
-      //       },
-      //     ],
-      //   },
       createSingleCursorSerie(
         spectrumTrendRaw,
         [],
         {
           id: 1,
-          color: "blue",
+          color: "#0F58D6",
           x: spectrumTrend[spectrumTrend.length - 1].x,
           y: spectrumTrend[spectrumTrend.length - 1].y,
         },
@@ -339,10 +244,10 @@ async function init() {
           xMin: overallTrend[0][0],
           xMax: overallTrend[overallTrend.length - 1][0],
           yMin: 0,
-          yMax: 0.5,
+          yMax: dataMaxValues[variant.dataset].y,
         },
-        { min: 0, max: 0.6 },
-        () => "Selected spectrum"
+        { min: 0, max: dataMaxValues[variant.dataset].y },
+        () => `<svg width="23" height="17" xmlns="http://www.w3.org/2000/svg"><path d="m10.28 16.2 1.944-5.082 1.549 2.177 2.167-5.361 1.435 3.928L20 7.811l-1.375-.758-.842 1.3-1.767-4.836-2.64 6.529-1.587-2.232-1.386 3.626-3.14-9.64L4 10.777l1.519.47 1.66-4.57 3.102 9.523Z" fill="#0F58D6" fill-rule="evenodd"/></svg>`
       ),
     ],
   });
@@ -567,7 +472,7 @@ const createSingleCursorSerie = (
       //   },
       {
         x: cursor.x,
-        y: cursorYPositions.max,
+        y: cursorYPositions.max*0.97,
         groupId: "singleCursor",
         // Invisible drag handle
         marker: {
@@ -583,9 +488,11 @@ const createSingleCursorSerie = (
         color: "rgba(0,0,0,0)",
         dataLabels: {
           allowOverlap: true,
+          useHTML: true,
           backgroundColor: "#fff",
           borderWidth: 1,
           borderRadius: 2,
+          padding: 1,
           borderColor: cursor.color,
           style: {
             pointerEvents: "none",

@@ -1,0 +1,1769 @@
+{
+  "trends": [
+    {
+      "createdAt": "2018-09-21T00:01:03.32Z",
+      "measurementId": "57401812-166f-4802-a578-d53802b0d57a",
+      "overallBand": 0.0034086449548073627
+    },
+    {
+      "createdAt": "2018-09-20T00:03:48.41Z",
+      "measurementId": "174c0525-50bd-4864-8109-40750294c503",
+      "overallBand": 0.003610835552045254
+    },
+    {
+      "createdAt": "2018-09-19T00:01:47.09Z",
+      "measurementId": "b71c751f-1916-403d-839a-b1277c99a0c8",
+      "overallBand": 0.003604354497898264
+    },
+    {
+      "createdAt": "2018-09-18T00:03:47.58Z",
+      "measurementId": "103d29ba-d613-4bda-9649-d3286472d5fc",
+      "overallBand": 0.003830588856305171
+    },
+    {
+      "createdAt": "2018-09-17T00:01:57.01Z",
+      "measurementId": "5619579f-8d0c-4076-a3de-b1d648ba889e",
+      "overallBand": 0.004125667787203358
+    },
+    {
+      "createdAt": "2018-09-16T00:03:57.72Z",
+      "measurementId": "d2c68568-4c01-412d-adb0-b8afe8d9ee77",
+      "overallBand": 0.003958390435518494
+    },
+    {
+      "createdAt": "2018-09-15T00:01:52.47Z",
+      "measurementId": "8f091bb6-69ff-4d8f-a9a8-52f58eefeef7",
+      "overallBand": 0.03675214259686666
+    },
+    {
+      "createdAt": "2018-09-14T00:03:50.02Z",
+      "measurementId": "cbf29625-a734-494f-9103-c812fb1c0530",
+      "overallBand": 0.20125687813361942
+    },
+    {
+      "createdAt": "2018-09-13T00:01:29.71Z",
+      "measurementId": "12e25370-9889-4e62-9252-1d5da699ac16",
+      "overallBand": 0.18780534188008302
+    },
+    {
+      "createdAt": "2018-09-12T00:04:07.03Z",
+      "measurementId": "be1fbc9b-52da-4c78-9554-9a284e3caba5",
+      "overallBand": 0.1817175596878147
+    },
+    {
+      "createdAt": "2018-09-11T00:03:12.42Z",
+      "measurementId": "3878ff67-04bd-42cd-9683-cf0ca3009b65",
+      "overallBand": 0.18773459447512783
+    },
+    {
+      "createdAt": "2018-09-10T00:00:58.05Z",
+      "measurementId": "516eba16-9a21-4ff6-8f99-7dc4a7fc7059",
+      "overallBand": 0.2208865867770561
+    },
+    {
+      "createdAt": "2018-09-09T00:03:37.87Z",
+      "measurementId": "da25179a-c9c7-4281-93c3-a15bba95e484",
+      "overallBand": 0.23797245761281616
+    },
+    {
+      "createdAt": "2018-09-08T00:02:05.44Z",
+      "measurementId": "59133da8-063b-4abd-8b2f-2e8154b87230",
+      "overallBand": 0.19518714318236663
+    },
+    {
+      "createdAt": "2018-09-07T00:00:19.39Z",
+      "measurementId": "93945054-ce02-43b1-b9aa-691d34e0cb0e",
+      "overallBand": 0.20227925827870152
+    },
+    {
+      "createdAt": "2018-09-06T00:02:25.25Z",
+      "measurementId": "dacb65eb-8e6f-4d50-8805-65d87a9e7ec5",
+      "overallBand": 0.21466590396927018
+    },
+    {
+      "createdAt": "2018-09-05T00:00:24.46Z",
+      "measurementId": "3e523b08-e994-4166-a0bf-951032a18dd5",
+      "overallBand": 0.1866949858242016
+    },
+    {
+      "createdAt": "2018-09-04T00:02:15.64Z",
+      "measurementId": "7f9dc1c9-acad-4688-9ffd-6715125efb96",
+      "overallBand": 0.19810166305647461
+    },
+    {
+      "createdAt": "2018-09-03T00:00:19.36Z",
+      "measurementId": "a5e50f4f-7af2-45ad-9f4e-ee44a2fe2d9f",
+      "overallBand": 0.1983249395143711
+    },
+    {
+      "createdAt": "2018-09-02T00:02:42.63Z",
+      "measurementId": "99b0f67e-9e20-4d0b-83dd-de95f50670ec",
+      "overallBand": 0.20774461164076727
+    },
+    {
+      "createdAt": "2018-09-01T00:01:11.77Z",
+      "measurementId": "3331cc2d-17d1-4442-b696-72d35c82f69e",
+      "overallBand": 0.21305294650152623
+    },
+    {
+      "createdAt": "2018-08-31T00:03:02.61Z",
+      "measurementId": "b251ddb9-d06d-4ca2-9cf5-8647ff22e034",
+      "overallBand": 0.19827357992286043
+    },
+    {
+      "createdAt": "2018-08-30T00:01:00.47Z",
+      "measurementId": "e473a408-ce42-4872-8a2d-6438edf59d24",
+      "overallBand": 0.07100793988046906
+    },
+    {
+      "createdAt": "2018-08-29T00:03:30.51Z",
+      "measurementId": "3a4c34bc-5f7b-469d-81a4-19ee0518acf9",
+      "overallBand": 0.06145194039052376
+    },
+    {
+      "createdAt": "2018-08-28T00:01:05.19Z",
+      "measurementId": "cb040a7f-6f6a-41cd-9a14-17b500ce2180",
+      "overallBand": 0.2740045227475559
+    },
+    {
+      "createdAt": "2018-08-27T00:03:19.38Z",
+      "measurementId": "68f01b25-13fc-4e06-b203-440b398a2d42",
+      "overallBand": 0.18678520246850636
+    },
+    {
+      "createdAt": "2018-08-26T00:02:14.66Z",
+      "measurementId": "4df37050-ff2d-4819-aa0a-e8e3198d5cf8",
+      "overallBand": 0.20202287249619905
+    },
+    {
+      "createdAt": "2018-08-25T00:00:13.01Z",
+      "measurementId": "48daff4a-fd19-4ec2-a561-c3b107182b68",
+      "overallBand": 0.21799742851420265
+    },
+    {
+      "createdAt": "2018-08-24T00:03:38.05Z",
+      "measurementId": "a7f066bd-7474-45a2-b395-e58b67ab410b",
+      "overallBand": 0.06016322112061854
+    },
+    {
+      "createdAt": "2018-08-23T00:01:23.37Z",
+      "measurementId": "faa2a85d-4772-400d-bda3-8e0812d56e1c",
+      "overallBand": 0.20866995600137228
+    },
+    {
+      "createdAt": "2018-08-22T00:03:08.31Z",
+      "measurementId": "526b8543-1dd9-423c-95c9-6eb8e1d877b2",
+      "overallBand": 0.22300911227387626
+    },
+    {
+      "createdAt": "2018-08-21T00:01:17.65Z",
+      "measurementId": "10824b01-d8ba-4544-affb-389bbefcfb0f",
+      "overallBand": 0.20390869043855808
+    },
+    {
+      "createdAt": "2018-08-20T00:03:32.57Z",
+      "measurementId": "9ca9cc73-b82c-4076-a368-890fc5955258",
+      "overallBand": 0.06913626434065859
+    },
+    {
+      "createdAt": "2018-08-19T00:01:29.58Z",
+      "measurementId": "a33ef587-1740-4a52-a341-4b83cd4cc941",
+      "overallBand": 0.21071817335251972
+    },
+    {
+      "createdAt": "2018-08-18T00:03:27.22Z",
+      "measurementId": "f866ea16-20b3-4656-bade-8a0aac2f60ab",
+      "overallBand": 0.22618424273716672
+    },
+    {
+      "createdAt": "2018-08-17T00:02:23.87Z",
+      "measurementId": "1db41add-ab96-40b6-9951-c10f42853d2d",
+      "overallBand": 0.07134314833589903
+    },
+    {
+      "createdAt": "2018-08-16T00:00:13.41Z",
+      "measurementId": "f156f483-0050-4945-a69b-954c6b2099fd",
+      "overallBand": 0.056323363721323655
+    },
+    {
+      "createdAt": "2018-08-15T00:00:41.14Z",
+      "measurementId": "99e836f9-6c38-487c-b235-a102b108e4ad",
+      "overallBand": 0.2260295325516984
+    },
+    {
+      "createdAt": "2018-08-14T00:02:39.8Z",
+      "measurementId": "a3629cd6-5f9e-415e-9e3c-11b4badc0e17",
+      "overallBand": 0.21505101717575462
+    },
+    {
+      "createdAt": "2018-08-13T00:00:17.88Z",
+      "measurementId": "185f9560-cd0e-4bd4-b555-bbad2fbd4b85",
+      "overallBand": 0.18805434682323552
+    },
+    {
+      "createdAt": "2018-08-12T00:02:10.48Z",
+      "measurementId": "58e617a9-3522-4e46-947e-9c4c3efa46c8",
+      "overallBand": 0.20907055726056745
+    },
+    {
+      "createdAt": "2018-08-11T00:00:25.42Z",
+      "measurementId": "c5c956dc-7861-4630-badd-581ab81ed6a6",
+      "overallBand": 0.21748521854795447
+    },
+    {
+      "createdAt": "2018-08-10T00:02:59.98Z",
+      "measurementId": "afd059f3-4ae6-4a2d-86c4-5a24203ab247",
+      "overallBand": 0.05986382342419674
+    },
+    {
+      "createdAt": "2018-08-09T00:01:49.55Z",
+      "measurementId": "042cefa5-8365-44e3-ba09-3cf457f2b85b",
+      "overallBand": 0.0038990620869807564
+    },
+    {
+      "createdAt": "2018-08-08T00:03:47.2Z",
+      "measurementId": "d66e6c1a-0dc3-49b2-935b-5888545ba898",
+      "overallBand": 0.003912406947804244
+    },
+    {
+      "createdAt": "2018-08-07T00:01:50.42Z",
+      "measurementId": "7d35f9e2-7bb7-45a0-89ab-c6c6a4a5d720",
+      "overallBand": 0.0038404115790818157
+    },
+    {
+      "createdAt": "2018-08-06T00:03:50.9Z",
+      "measurementId": "9caf6577-4a9a-4397-9d41-75ec71174958",
+      "overallBand": 0.00422401467297296
+    },
+    {
+      "createdAt": "2018-08-05T00:01:19.99Z",
+      "measurementId": "197457db-c818-4182-ba17-c6019bcd2e5f",
+      "overallBand": 0.004046201622625098
+    },
+    {
+      "createdAt": "2018-08-04T00:03:34.56Z",
+      "measurementId": "fe805ba4-361a-4528-a109-0946c6b31442",
+      "overallBand": 0.004498270535179475
+    },
+    {
+      "createdAt": "2018-08-03T00:01:35.19Z",
+      "measurementId": "4bb99526-2cdb-4a23-a71f-cf3ca3ddf79a",
+      "overallBand": 0.004589060690910629
+    },
+    {
+      "createdAt": "2018-08-02T00:03:38.8Z",
+      "measurementId": "881b4b8f-df2a-4938-b369-13a8ba72b091",
+      "overallBand": 0.004526691309957686
+    },
+    {
+      "createdAt": "2018-08-01T00:01:38.4Z",
+      "measurementId": "598deda4-90e6-467e-9907-f45cd4894520",
+      "overallBand": 0.00475253475514461
+    },
+    {
+      "createdAt": "2018-07-31T00:00:23.96Z",
+      "measurementId": "6fc44a2b-1f61-47c2-9d30-a659e735c04c",
+      "overallBand": 0.004851184354681964
+    },
+    {
+      "createdAt": "2018-07-30T00:03:16.9Z",
+      "measurementId": "46135c22-a8c9-403c-8768-f16eee16474e",
+      "overallBand": 0.004500505552407438
+    },
+    {
+      "createdAt": "2018-07-29T00:02:56.01Z",
+      "measurementId": "a2e78b5b-aee8-4377-aa7a-f745e9ee4d2f",
+      "overallBand": 0.004754315481767004
+    },
+    {
+      "createdAt": "2018-07-28T00:02:09.91Z",
+      "measurementId": "81585e53-898e-4adb-a310-a39543684be9",
+      "overallBand": 0.004677282769104628
+    },
+    {
+      "createdAt": "2018-07-27T00:00:12.01Z",
+      "measurementId": "20200fc1-3951-4ed4-b441-38cfc5bceda6",
+      "overallBand": 0.004040213730926392
+    },
+    {
+      "createdAt": "2018-07-26T00:02:39.2Z",
+      "measurementId": "b96c9bc2-396a-4c3c-bb85-718587d6effe",
+      "overallBand": 0.19197225096806259
+    },
+    {
+      "createdAt": "2018-07-25T00:00:48.52Z",
+      "measurementId": "56f83563-a769-435d-ae51-64269a8f9980",
+      "overallBand": 0.19670783043881443
+    },
+    {
+      "createdAt": "2018-07-24T00:03:12.46Z",
+      "measurementId": "19f6c2e5-9413-4b53-aa5b-138b56b0a99a",
+      "overallBand": 0.20997080208618543
+    },
+    {
+      "createdAt": "2018-07-23T00:01:18.14Z",
+      "measurementId": "816ac99f-29d0-4abd-b7cc-5f14113ea5c1",
+      "overallBand": 0.20093824908030047
+    },
+    {
+      "createdAt": "2018-07-22T00:00:35.57Z",
+      "measurementId": "6abf8c7d-4648-4acb-8c35-29c90a8cdb16",
+      "overallBand": 0.1859829946497469
+    },
+    {
+      "createdAt": "2018-07-21T00:03:36.93Z",
+      "measurementId": "f6dff2dc-63f1-432f-9340-56b8317811b6",
+      "overallBand": 0.18496028632650882
+    },
+    {
+      "createdAt": "2018-07-20T00:01:46.05Z",
+      "measurementId": "57e81247-06c0-49fe-8502-e0a864c3d8a0",
+      "overallBand": 0.19191552894319128
+    },
+    {
+      "createdAt": "2018-07-19T00:04:07.19Z",
+      "measurementId": "97c3c695-6dcd-4b79-bb2e-a2b99ef6f847",
+      "overallBand": 0.20020157165584704
+    },
+    {
+      "createdAt": "2018-07-18T00:00:53.65Z",
+      "measurementId": "8905c3d6-f1cb-488f-8152-a5b16df47cc4",
+      "overallBand": 0.18875505803319878
+    },
+    {
+      "createdAt": "2018-07-17T00:03:28.65Z",
+      "measurementId": "70f2a2da-b374-4f6b-a2e6-d28cd3e3a9e5",
+      "overallBand": 0.19295514269944908
+    },
+    {
+      "createdAt": "2018-07-16T00:01:25.06Z",
+      "measurementId": "aff13f39-a64a-4dc6-a9e0-5a8627db08b0",
+      "overallBand": 0.20856120213694945
+    },
+    {
+      "createdAt": "2018-07-15T00:03:57.28Z",
+      "measurementId": "55730521-5616-4ca7-97d3-e98687325336",
+      "overallBand": 0.004236598899784418
+    },
+    {
+      "createdAt": "2018-07-14T00:00:48.93Z",
+      "measurementId": "9c40d100-1120-48e4-acce-47ea92ce80f6",
+      "overallBand": 0.20481693061099404
+    },
+    {
+      "createdAt": "2018-07-13T00:02:54.69Z",
+      "measurementId": "e843e400-176b-4849-b37d-40afefe122a0",
+      "overallBand": 0.19512725546541596
+    },
+    {
+      "createdAt": "2018-07-12T00:00:45.65Z",
+      "measurementId": "d1cf7d21-7ec8-4ffe-a397-63753d6a663d",
+      "overallBand": 0.19086519301615185
+    },
+    {
+      "createdAt": "2018-07-11T00:03:02.56Z",
+      "measurementId": "a38a683f-ee76-4e5c-8afb-d7fc293e001a",
+      "overallBand": 0.19558531991125647
+    },
+    {
+      "createdAt": "2018-07-10T00:01:06.88Z",
+      "measurementId": "add40656-91ef-4d0e-ae1b-00e6014a7227",
+      "overallBand": 0.004199543324396677
+    },
+    {
+      "createdAt": "2018-07-09T00:04:00.03Z",
+      "measurementId": "8dc86a2d-be43-4fff-b808-2ff8c2148aad",
+      "overallBand": 0.2507154837139249
+    },
+    {
+      "createdAt": "2018-07-08T00:02:01.98Z",
+      "measurementId": "eadb6602-5a8d-49b2-bd19-3d39686d6df3",
+      "overallBand": 0.0043481851489039595
+    },
+    {
+      "createdAt": "2018-07-07T00:03:51.07Z",
+      "measurementId": "f73e2b91-27ea-465b-9dc3-90f501bab15d",
+      "overallBand": 0.18921783495252226
+    },
+    {
+      "createdAt": "2018-07-06T00:01:57.73Z",
+      "measurementId": "aa8ae464-c84c-48a9-8c27-eb08e91c14d2",
+      "overallBand": 0.21609557655029785
+    },
+    {
+      "createdAt": "2018-07-05T00:00:06.33Z",
+      "measurementId": "19d1ecda-97af-4747-b447-493abafb1090",
+      "overallBand": 0.21424935678209128
+    },
+    {
+      "createdAt": "2018-07-04T00:02:12.46Z",
+      "measurementId": "6f12719c-68b7-496e-96b6-89e8e85b92ab",
+      "overallBand": 0.1924542563641701
+    },
+    {
+      "createdAt": "2018-07-03T00:00:26.45Z",
+      "measurementId": "5f42498a-8139-4281-be03-bfa36c0cfb70",
+      "overallBand": 0.1946324854083398
+    },
+    {
+      "createdAt": "2018-07-02T00:02:08.42Z",
+      "measurementId": "55b2a7f8-fe7a-4aea-80e0-8ad578a228fb",
+      "overallBand": 0.1892874672461358
+    },
+    {
+      "createdAt": "2018-07-01T00:00:17.55Z",
+      "measurementId": "82f90cbc-2025-4bf0-933b-494a180df921",
+      "overallBand": 0.21348640564713176
+    },
+    {
+      "createdAt": "2018-06-30T00:02:31.03Z",
+      "measurementId": "950a2469-e39a-413f-becb-c3067137ab1d",
+      "overallBand": 0.22343028302277632
+    },
+    {
+      "createdAt": "2018-06-29T00:01:03.96Z",
+      "measurementId": "1d921429-8f21-48a2-8637-58f3fe49a3fd",
+      "overallBand": 0.21416736279212004
+    },
+    {
+      "createdAt": "2018-06-28T00:03:40.84Z",
+      "measurementId": "296c614f-d452-450b-944d-253ebda33a54",
+      "overallBand": 0.20011388980808964
+    },
+    {
+      "createdAt": "2018-06-27T00:02:29.7Z",
+      "measurementId": "858774fe-9c07-436c-b4b6-f90e54500a8a",
+      "overallBand": 0.20571085314150386
+    },
+    {
+      "createdAt": "2018-06-26T00:01:43.76Z",
+      "measurementId": "39e3a102-26c1-46ef-b263-1b0cd8a5fb96",
+      "overallBand": 0.2197137033093108
+    },
+    {
+      "createdAt": "2018-06-25T00:03:37.27Z",
+      "measurementId": "1d97332c-10ee-4f74-b165-a20e4fd7ee5f",
+      "overallBand": 0.2711299285739854
+    },
+    {
+      "createdAt": "2018-06-24T00:01:24.65Z",
+      "measurementId": "d4ad54e2-c9d5-499d-9d49-f0dd8c252ce9",
+      "overallBand": 0.26857807744130613
+    },
+    {
+      "createdAt": "2018-06-23T00:03:09.94Z",
+      "measurementId": "f7adec6c-e897-4258-99d5-748224b53be1",
+      "overallBand": 0.21232287618800513
+    },
+    {
+      "createdAt": "2018-06-22T00:00:58.08Z",
+      "measurementId": "7f765518-e959-4f96-a16a-01b063340155",
+      "overallBand": 0.20577542889194078
+    },
+    {
+      "createdAt": "2018-06-21T00:01:52.74Z",
+      "measurementId": "5cec64c9-475f-417d-8731-4d25c20284b1",
+      "overallBand": 0.5310289281054409
+    },
+    {
+      "createdAt": "2018-06-20T18:18:25.45Z",
+      "measurementId": "91dd0c58-f040-43f8-bc6c-53a7c8f94bbd",
+      "overallBand": 0.5418770350494235
+    },
+    {
+      "createdAt": "2018-06-20T12:35:32.55Z",
+      "measurementId": "2eb93723-dfcf-42e9-80e8-bb8ecfd5b8ca",
+      "overallBand": 0.8780564637858611
+    },
+    {
+      "createdAt": "2018-06-20T00:03:38.43Z",
+      "measurementId": "16f80a0d-cd78-4822-83c2-b36d0766848c",
+      "overallBand": 0.014613118027029666
+    },
+    {
+      "createdAt": "2018-06-19T11:27:54.92Z",
+      "measurementId": "e21223b6-8f62-4319-84b4-8fbc43b5546d",
+      "overallBand": 0.9203635381280002
+    },
+    {
+      "createdAt": "2018-06-19T00:03:57.77Z",
+      "measurementId": "d5bdc0c7-62ad-48a7-ab26-71a8ade85c59",
+      "overallBand": 0.0038650498190570992
+    },
+    {
+      "createdAt": "2018-06-18T00:02:45.9Z",
+      "measurementId": "a6110a49-a153-47eb-826b-db9b203ce78b",
+      "overallBand": 0.21009946980903377
+    },
+    {
+      "createdAt": "2018-06-17T00:02:38.7Z",
+      "measurementId": "0ce1c1d8-f26b-449d-ac39-47114bada352",
+      "overallBand": 0.22148504431019408
+    },
+    {
+      "createdAt": "2018-06-16T00:00:52.61Z",
+      "measurementId": "6a545c57-2ff4-4506-ade6-6972c8360212",
+      "overallBand": 0.20890418297044894
+    },
+    {
+      "createdAt": "2018-06-15T00:03:17.05Z",
+      "measurementId": "8b0be650-18fe-4fdc-99e8-61af65571b52",
+      "overallBand": 0.21870426545660843
+    },
+    {
+      "createdAt": "2018-06-14T00:02:45.27Z",
+      "measurementId": "2469e8a0-3d6c-4848-bd2c-46d2a5a1e277",
+      "overallBand": 0.2197909215471045
+    },
+    {
+      "createdAt": "2018-06-13T00:03:45.09Z",
+      "measurementId": "7f5e8dd3-b367-475c-be63-f29d7bcebcbe",
+      "overallBand": 0.21353733077022055
+    },
+    {
+      "createdAt": "2018-06-12T00:01:31.18Z",
+      "measurementId": "de454bf0-9e0f-458a-b215-a5e08b3ea96d",
+      "overallBand": 0.23141808198553465
+    },
+    {
+      "createdAt": "2018-06-11T00:02:21.45Z",
+      "measurementId": "3f4a12f3-e831-4c0b-857e-f770fa116bc8",
+      "overallBand": 0.21598176990658774
+    },
+    {
+      "createdAt": "2018-06-10T00:00:36.61Z",
+      "measurementId": "d9e11bce-b8b0-41cb-922c-06f8f8fb5c33",
+      "overallBand": 0.199247090679436
+    },
+    {
+      "createdAt": "2018-06-09T00:01:10.04Z",
+      "measurementId": "3580f371-f58d-48f0-82c2-ab87512dfba5",
+      "overallBand": 0.20576932724376112
+    },
+    {
+      "createdAt": "2018-06-08T00:02:50.18Z",
+      "measurementId": "9a6fe73d-2e29-4db9-a329-c8afc74f9d24",
+      "overallBand": 0.22294598065850413
+    },
+    {
+      "createdAt": "2018-06-07T00:03:22.01Z",
+      "measurementId": "19738014-0f2c-4eb0-9af6-96624527e787",
+      "overallBand": 0.21128446154121078
+    },
+    {
+      "createdAt": "2018-06-06T00:00:16.55Z",
+      "measurementId": "354a1b92-7822-4969-9086-05108e1045c2",
+      "overallBand": 0.23025251602560318
+    },
+    {
+      "createdAt": "2018-06-05T00:01:29.58Z",
+      "measurementId": "2b7fbe78-972b-4542-9293-1348764e8113",
+      "overallBand": 0.2088781192784963
+    },
+    {
+      "createdAt": "2018-06-04T00:03:28.73Z",
+      "measurementId": "d589aca4-4e1b-4252-9eaa-9d78757ab638",
+      "overallBand": 0.21443865089189013
+    },
+    {
+      "createdAt": "2018-06-03T00:01:02.83Z",
+      "measurementId": "7157b70a-b552-4c92-89da-282aea0ffc53",
+      "overallBand": 0.21796960341266142
+    },
+    {
+      "createdAt": "2018-06-02T00:01:54.54Z",
+      "measurementId": "bb799f50-4931-4076-8497-b473dfcaf79a",
+      "overallBand": 0.22460869318282634
+    },
+    {
+      "createdAt": "2018-06-01T00:02:39.97Z",
+      "measurementId": "981d0d5f-9734-422a-8e49-10934589c3ff",
+      "overallBand": 0.003935263662691141
+    },
+    {
+      "createdAt": "2018-05-31T00:03:07.2Z",
+      "measurementId": "e2206509-5ce5-4d46-86ed-1f2fec05cf5c",
+      "overallBand": 0.17557463445399726
+    },
+    {
+      "createdAt": "2018-05-30T00:03:15.35Z",
+      "measurementId": "45fd0a4e-1fc7-4e93-8ced-5635f30738f3",
+      "overallBand": 0.20204226643205803
+    },
+    {
+      "createdAt": "2018-05-29T00:03:40.07Z",
+      "measurementId": "dbdfb928-c082-4ef6-8e04-e0c5029c88b4",
+      "overallBand": 0.2055618087666886
+    },
+    {
+      "createdAt": "2018-05-28T00:00:26.96Z",
+      "measurementId": "243bf483-72a0-469c-838a-3cf37c14b1e4",
+      "overallBand": 0.21914360567097657
+    },
+    {
+      "createdAt": "2018-05-27T00:01:36.77Z",
+      "measurementId": "3c75a087-944e-49c9-adb2-fa14b0d5d45a",
+      "overallBand": 0.2091355885195654
+    },
+    {
+      "createdAt": "2018-05-26T00:02:35.13Z",
+      "measurementId": "91f1c848-fdcf-4280-a611-51e91cc30243",
+      "overallBand": 0.2005687356536661
+    },
+    {
+      "createdAt": "2018-05-25T00:03:18.25Z",
+      "measurementId": "8957aa0d-6900-4f95-a833-ce130e1aaa20",
+      "overallBand": 0.21753820908952187
+    },
+    {
+      "createdAt": "2018-05-24T00:00:07.77Z",
+      "measurementId": "1e1532e1-f9c9-4210-a0cc-b2a93c6aa80b",
+      "overallBand": 0.21535268320863232
+    },
+    {
+      "createdAt": "2018-05-23T00:00:49.37Z",
+      "measurementId": "3fff5b2d-b8ac-413b-a4f4-d40019c46ae1",
+      "overallBand": 0.1960781585959973
+    },
+    {
+      "createdAt": "2018-05-22T00:02:12.66Z",
+      "measurementId": "2c4be263-11da-4959-b194-9e4573211714",
+      "overallBand": 0.22823570757601983
+    },
+    {
+      "createdAt": "2018-05-21T00:00:04.12Z",
+      "measurementId": "76fb6482-4d0b-4922-876b-37a5e4418b16",
+      "overallBand": 0.23074013842689828
+    },
+    {
+      "createdAt": "2018-05-20T00:00:39.01Z",
+      "measurementId": "43135e4c-c695-41ea-b09c-1e7d70853af6",
+      "overallBand": 0.2027885240662721
+    },
+    {
+      "createdAt": "2018-05-19T00:01:58.42Z",
+      "measurementId": "3a4ca1f7-dd8e-4718-a232-79e6eea6e018",
+      "overallBand": 0.2117918667549391
+    },
+    {
+      "createdAt": "2018-05-18T00:03:21.9Z",
+      "measurementId": "46e08ae3-deca-440f-ba20-bb362a59c35a",
+      "overallBand": 0.22016506896661278
+    },
+    {
+      "createdAt": "2018-05-17T00:00:02.55Z",
+      "measurementId": "689c2f71-b8bd-4e61-b11d-14e5a50095b1",
+      "overallBand": 0.004629532083126586
+    },
+    {
+      "createdAt": "2018-05-16T00:00:49.91Z",
+      "measurementId": "ba8b8944-5390-4c30-80eb-5e64597cf74e",
+      "overallBand": 0.0038733540562827457
+    },
+    {
+      "createdAt": "2018-05-15T00:01:41.45Z",
+      "measurementId": "a468c23a-e0ac-4755-a91b-08a9027da013",
+      "overallBand": 0.1684715321581827
+    },
+    {
+      "createdAt": "2018-05-14T00:01:57.85Z",
+      "measurementId": "50f6c4d8-510d-4da1-a526-1674b027a5ad",
+      "overallBand": 0.19911769084972084
+    },
+    {
+      "createdAt": "2018-05-13T00:02:23.14Z",
+      "measurementId": "18d74ef3-e50b-4f84-aea1-37f48b32b7d8",
+      "overallBand": 0.19752319194252477
+    },
+    {
+      "createdAt": "2018-05-12T00:02:49.33Z",
+      "measurementId": "30419749-41ee-4dfc-ad18-9589e34d85e9",
+      "overallBand": 0.18704293085566825
+    },
+    {
+      "createdAt": "2018-05-11T00:02:02.23Z",
+      "measurementId": "277b530f-9616-4695-9f33-95cdf28d37d9",
+      "overallBand": 0.16918046315103857
+    },
+    {
+      "createdAt": "2018-05-10T00:02:05.02Z",
+      "measurementId": "666228b9-b1ce-4bf2-b4d0-3bd3b0b9cf90",
+      "overallBand": 0.1706845365246632
+    },
+    {
+      "createdAt": "2018-05-09T00:02:36.09Z",
+      "measurementId": "565fe507-0698-46dc-8d6d-d1bf13eb2b47",
+      "overallBand": 0.20292672643202225
+    },
+    {
+      "createdAt": "2018-05-08T00:03:47.77Z",
+      "measurementId": "a213b8df-5881-4b57-9588-0d3bf16bcfed",
+      "overallBand": 0.2139915070180506
+    },
+    {
+      "createdAt": "2018-05-07T00:00:31.8Z",
+      "measurementId": "d9ae5a03-1e96-4638-8d05-e13acaaa7513",
+      "overallBand": 0.19254053221621462
+    },
+    {
+      "createdAt": "2018-05-06T00:01:10.78Z",
+      "measurementId": "268b46ed-d8d1-4158-b109-ed88765c5ad1",
+      "overallBand": 0.1757557658272152
+    },
+    {
+      "createdAt": "2018-05-05T00:02:17.26Z",
+      "measurementId": "6b475734-1b90-493e-9958-b07c7935407e",
+      "overallBand": 0.21234887302642896
+    },
+    {
+      "createdAt": "2018-05-04T00:02:31.08Z",
+      "measurementId": "5446ac1f-4b75-4481-b0f8-3329f36eea5b",
+      "overallBand": 0.19917787701048412
+    },
+    {
+      "createdAt": "2018-05-03T00:03:21.16Z",
+      "measurementId": "0e318b22-b46a-4eeb-97f9-d0b5ce653185",
+      "overallBand": 0.1968308108384951
+    },
+    {
+      "createdAt": "2018-05-02T00:03:18.18Z",
+      "measurementId": "164d4c58-3dbd-44f9-a1f6-dd6848bb619f",
+      "overallBand": 0.19767475464136533
+    },
+    {
+      "createdAt": "2018-05-01T00:03:36.66Z",
+      "measurementId": "7c386754-a752-48b7-b173-9b9486b7f260",
+      "overallBand": 0.1999195827309316
+    },
+    {
+      "createdAt": "2018-04-30T00:00:15.58Z",
+      "measurementId": "528f3743-773a-497c-978c-36cf65f05d19",
+      "overallBand": 0.21418963363426546
+    },
+    {
+      "createdAt": "2018-04-29T00:02:39.78Z",
+      "measurementId": "be7e6476-fee9-4e2c-9661-27a19d32237a",
+      "overallBand": 0.20923452788171587
+    },
+    {
+      "createdAt": "2018-04-28T00:03:29.9Z",
+      "measurementId": "fa2bb737-474a-4caa-af24-d4446d9acc72",
+      "overallBand": 0.1747741799798317
+    },
+    {
+      "createdAt": "2018-04-27T00:03:15.54Z",
+      "measurementId": "ac28007b-aba9-4c3e-bb47-9b36310a3ca9",
+      "overallBand": 0.2040322178363773
+    },
+    {
+      "createdAt": "2018-04-26T00:03:35.78Z",
+      "measurementId": "9052ebcb-7e77-4fcf-a8a7-90737c2fc4f3",
+      "overallBand": 0.21100085727260967
+    },
+    {
+      "createdAt": "2018-04-25T00:01:12.61Z",
+      "measurementId": "414a573e-1c39-4624-a8f5-4784e233fa03",
+      "overallBand": 0.21661608480339345
+    },
+    {
+      "createdAt": "2018-04-24T00:01:38Z",
+      "measurementId": "6729bcc1-fc61-4d76-9610-c4d1996585c9",
+      "overallBand": 0.2145690488046154
+    },
+    {
+      "createdAt": "2018-04-23T00:02:51.14Z",
+      "measurementId": "48c5b4cc-7b15-4985-b8c1-d960375a8ee8",
+      "overallBand": 0.22269924163743376
+    },
+    {
+      "createdAt": "2018-04-22T00:04:04.69Z",
+      "measurementId": "e7a34840-c183-46f0-af96-66c6083ac0b4",
+      "overallBand": 0.2081570207689857
+    },
+    {
+      "createdAt": "2018-04-21T00:01:41.42Z",
+      "measurementId": "b66bdede-a34d-4d77-a970-7716cbbb98f0",
+      "overallBand": 0.23312079355670617
+    },
+    {
+      "createdAt": "2018-04-20T00:02:44.63Z",
+      "measurementId": "a2898161-2a4d-492d-b3ee-5adf8869feb5",
+      "overallBand": 0.2150232382153794
+    },
+    {
+      "createdAt": "2018-04-19T00:03:39.53Z",
+      "measurementId": "02ba9343-0414-4d0a-ba8b-2ac5fd1558e2",
+      "overallBand": 0.21651504937467037
+    },
+    {
+      "createdAt": "2018-04-18T00:00:16.56Z",
+      "measurementId": "4c0c512c-397e-4069-b446-a0c13750db4f",
+      "overallBand": 0.21728327559092245
+    },
+    {
+      "createdAt": "2018-04-17T00:01:53.79Z",
+      "measurementId": "db40907c-1fd1-4fd8-8c2b-5ea64e93a198",
+      "overallBand": 0.21527980490356877
+    },
+    {
+      "createdAt": "2018-04-16T00:03:52.91Z",
+      "measurementId": "34635fe3-c20b-436c-8af2-c55639a8be53",
+      "overallBand": 0.2011075059964865
+    },
+    {
+      "createdAt": "2018-04-15T00:01:14.66Z",
+      "measurementId": "2c4907ce-0d68-4326-b6f4-a54d13b193bc",
+      "overallBand": 0.2280208006604457
+    },
+    {
+      "createdAt": "2018-04-14T00:02:05.13Z",
+      "measurementId": "5f91138d-d081-4a49-90b1-10d806f9e795",
+      "overallBand": 0.21457801107414734
+    },
+    {
+      "createdAt": "2018-04-13T00:02:23.19Z",
+      "measurementId": "447cd6f3-1d8d-408e-afa5-97e53eb3111f",
+      "overallBand": 0.2117262337097734
+    },
+    {
+      "createdAt": "2018-04-12T00:03:29.3Z",
+      "measurementId": "eb87916f-ec3e-42db-bdca-71dbb296d898",
+      "overallBand": 0.1947440473444656
+    },
+    {
+      "createdAt": "2018-04-11T00:00:12.26Z",
+      "measurementId": "5caeb173-bd40-4be1-92b4-6774748dbc65",
+      "overallBand": 0.21204351577860397
+    },
+    {
+      "createdAt": "2018-04-10T00:01:57.08Z",
+      "measurementId": "3b052529-dbbf-445a-bd77-be35610d2bc6",
+      "overallBand": 0.20860188492089082
+    },
+    {
+      "createdAt": "2018-04-09T00:00:13.45Z",
+      "measurementId": "3e900aad-6e75-4afd-aa57-9a8b26b5ba54",
+      "overallBand": 0.2075679363381871
+    },
+    {
+      "createdAt": "2018-04-08T00:02:27.87Z",
+      "measurementId": "bce8a221-6d27-4155-800c-e4c9e3dcc009",
+      "overallBand": 0.21221403804669584
+    },
+    {
+      "createdAt": "2018-04-07T00:03:59.33Z",
+      "measurementId": "65482db9-42d5-4819-bfa2-a44b0ac4fa75",
+      "overallBand": 0.20844174996521705
+    },
+    {
+      "createdAt": "2018-04-06T00:02:08.37Z",
+      "measurementId": "6a403328-ede4-4332-bf47-df21cbe7cd94",
+      "overallBand": 0.0038712677119823236
+    },
+    {
+      "createdAt": "2018-04-05T00:03:02.4Z",
+      "measurementId": "b30cab4d-f998-4b96-a5c1-e8e71db47f99",
+      "overallBand": 0.18509267416809466
+    },
+    {
+      "createdAt": "2018-04-04T00:03:33.8Z",
+      "measurementId": "6c9c4bb2-9108-4559-b5d2-25eee0961348",
+      "overallBand": 0.18740414113747322
+    },
+    {
+      "createdAt": "2018-04-03T00:00:16.14Z",
+      "measurementId": "08aad857-0c4d-43d5-8519-bd2c05d61e6e",
+      "overallBand": 0.21285254447132537
+    },
+    {
+      "createdAt": "2018-04-02T00:01:05.38Z",
+      "measurementId": "58b40ca9-dde8-4028-af91-3825c8bc041b",
+      "overallBand": 0.20301772520096464
+    },
+    {
+      "createdAt": "2018-04-01T00:02:26.36Z",
+      "measurementId": "553edba9-e4b8-4d85-a7d4-7bace873bc10",
+      "overallBand": 0.1904582250820898
+    },
+    {
+      "createdAt": "2018-03-31T00:03:17.28Z",
+      "measurementId": "a5763358-008c-4eb4-b353-fc7afc302abe",
+      "overallBand": 0.20082144836123816
+    },
+    {
+      "createdAt": "2018-03-30T00:01:14.63Z",
+      "measurementId": "5a9dfc4d-219e-4960-946c-cd66ec261572",
+      "overallBand": 0.20163129298438826
+    },
+    {
+      "createdAt": "2018-03-29T00:02:11.69Z",
+      "measurementId": "b9c78c6c-2fc2-4587-bbcb-c4d1923fde4a",
+      "overallBand": 0.20476049825353035
+    },
+    {
+      "createdAt": "2018-03-28T00:03:44.77Z",
+      "measurementId": "aac0c7bf-4e37-45cc-b9f5-4958db2d9102",
+      "overallBand": 0.2212416056964691
+    },
+    {
+      "createdAt": "2018-03-27T00:00:30.92Z",
+      "measurementId": "467ae602-3cc0-4475-bcc0-eaa9c77924cc",
+      "overallBand": 0.22110307827287448
+    },
+    {
+      "createdAt": "2018-03-26T00:01:00.22Z",
+      "measurementId": "e241b540-19b5-4f58-bc52-ce0b81d2b8ab",
+      "overallBand": 0.18730275063875856
+    },
+    {
+      "createdAt": "2018-03-25T00:01:25.69Z",
+      "measurementId": "9d28488f-1ec0-4333-96eb-74ab2b57f881",
+      "overallBand": 0.19897168073065108
+    },
+    {
+      "createdAt": "2018-03-24T00:01:37.17Z",
+      "measurementId": "04e03a47-7b72-48b4-b3fd-230ab96a9912",
+      "overallBand": 0.22308327582773332
+    },
+    {
+      "createdAt": "2018-03-23T00:02:00.58Z",
+      "measurementId": "543147b4-565f-4a8a-a50d-fcf3be11f63c",
+      "overallBand": 0.22773396898246215
+    },
+    {
+      "createdAt": "2018-03-22T00:03:16.93Z",
+      "measurementId": "cd14f793-2b3a-4cf3-8867-fbff37a85b42",
+      "overallBand": 0.004046236464550795
+    },
+    {
+      "createdAt": "2018-03-21T00:02:17.41Z",
+      "measurementId": "a39106d6-899b-49b1-a473-f755ab20a5c3",
+      "overallBand": 0.003717264333864211
+    },
+    {
+      "createdAt": "2018-03-20T00:01:22.81Z",
+      "measurementId": "5555bf9d-4ab2-4fee-ae94-04bc8a6b9445",
+      "overallBand": 0.20783168833919613
+    },
+    {
+      "createdAt": "2018-03-19T00:00:30.49Z",
+      "measurementId": "132afe53-d0e9-4254-ab61-7812f9ec95f9",
+      "overallBand": 0.19057676376366922
+    },
+    {
+      "createdAt": "2018-03-18T00:03:12.08Z",
+      "measurementId": "a12afeb3-ff73-4f79-a071-c35300ea8884",
+      "overallBand": 0.1959326917894586
+    },
+    {
+      "createdAt": "2018-03-17T00:01:39.42Z",
+      "measurementId": "b82b98cc-86d2-4236-9ae9-34ac9203b20a",
+      "overallBand": 0.20682675555976066
+    },
+    {
+      "createdAt": "2018-03-16T00:01:12.15Z",
+      "measurementId": "61c04008-8aa3-4d12-8a0a-2b49fbd3e199",
+      "overallBand": 0.22094396706246197
+    },
+    {
+      "createdAt": "2018-03-15T00:00:23.84Z",
+      "measurementId": "257a173e-52d3-48e8-8131-d941e0483a2a",
+      "overallBand": 0.219383515697596
+    },
+    {
+      "createdAt": "2018-03-14T00:03:17.67Z",
+      "measurementId": "cc51f545-b5f1-48fe-9583-ff3803b2879c",
+      "overallBand": 0.0038601847129091558
+    },
+    {
+      "createdAt": "2018-03-13T00:02:00.92Z",
+      "measurementId": "7611f67d-71fc-4829-96d0-2de453df3af7",
+      "overallBand": 0.21737097450677523
+    },
+    {
+      "createdAt": "2018-03-12T00:00:46.67Z",
+      "measurementId": "1ee45964-255c-4d9f-86a6-5fb01e248168",
+      "overallBand": 0.2052157896765075
+    },
+    {
+      "createdAt": "2018-03-11T00:03:29.58Z",
+      "measurementId": "d8eeeea8-6897-4501-be69-34cd472e6255",
+      "overallBand": 0.1877551007738112
+    },
+    {
+      "createdAt": "2018-03-10T00:01:05.45Z",
+      "measurementId": "601882c8-a577-4044-ac88-7ee18cc9e079",
+      "overallBand": 0.2149742906139991
+    },
+    {
+      "createdAt": "2018-03-09T00:02:35.78Z",
+      "measurementId": "2da50986-a008-42e0-9c3b-97821af62ddb",
+      "overallBand": 0.21855011384572656
+    },
+    {
+      "createdAt": "2018-03-08T00:01:13.94Z",
+      "measurementId": "18930827-9ac4-4bc3-9e97-85171285b2f8",
+      "overallBand": 0.21119874664461977
+    },
+    {
+      "createdAt": "2018-03-07T00:02:07Z",
+      "measurementId": "1c1530f1-72d5-4765-aadc-7fd81f916334",
+      "overallBand": 0.20790478371472887
+    },
+    {
+      "createdAt": "2018-03-06T00:00:31.5Z",
+      "measurementId": "1cff6a7e-227a-4d70-9e64-f4169a652a0a",
+      "overallBand": 0.2009280163035414
+    },
+    {
+      "createdAt": "2018-03-05T00:00:04.36Z",
+      "measurementId": "0951f8a2-a30d-42a1-95e6-e1c168c7f388",
+      "overallBand": 0.18830405158047464
+    },
+    {
+      "createdAt": "2018-03-04T00:03:04.57Z",
+      "measurementId": "85737137-9e61-45dc-bb06-a2065b3210a4",
+      "overallBand": 0.2109205283343898
+    },
+    {
+      "createdAt": "2018-03-03T00:02:26.18Z",
+      "measurementId": "0ff24138-f03b-4f9f-88c4-9272a8d627d7",
+      "overallBand": 0.21119379408486516
+    },
+    {
+      "createdAt": "2018-03-02T00:01:50.51Z",
+      "measurementId": "cad2dc09-de20-4541-909e-a31b71a5f6e5",
+      "overallBand": 0.19525686061495748
+    },
+    {
+      "createdAt": "2018-03-01T00:00:35.89Z",
+      "measurementId": "f709be82-4a0c-47db-bbf1-dc23047639d2",
+      "overallBand": 0.2114831498241077
+    },
+    {
+      "createdAt": "2018-02-28T00:03:36.34Z",
+      "measurementId": "ebcec210-3d96-4824-b3c1-0d08320b65b4",
+      "overallBand": 0.20670257034479897
+    },
+    {
+      "createdAt": "2018-02-27T00:01:47.41Z",
+      "measurementId": "d6334837-366e-444c-8aac-83b0bc46730f",
+      "overallBand": 0.19252692243496403
+    },
+    {
+      "createdAt": "2018-02-26T00:03:43.94Z",
+      "measurementId": "010e212e-0523-44c9-ad71-70d15c6c1520",
+      "overallBand": 0.20826253758155966
+    },
+    {
+      "createdAt": "2018-02-25T00:03:26.1Z",
+      "measurementId": "7517bf25-33e1-41eb-a74f-07661462373b",
+      "overallBand": 0.21095334156019127
+    },
+    {
+      "createdAt": "2018-02-24T00:02:39.23Z",
+      "measurementId": "6af35c37-5de2-42b4-9319-66e02552ef42",
+      "overallBand": 0.22352008697877673
+    },
+    {
+      "createdAt": "2018-02-23T00:01:27.83Z",
+      "measurementId": "717bc5ed-ac89-4d3b-aeda-0cdfbdefcf1b",
+      "overallBand": 0.21973012858598
+    },
+    {
+      "createdAt": "2018-02-22T00:01:57.66Z",
+      "measurementId": "1b0aded8-cc3e-4ed9-a661-615970fe3ce7",
+      "overallBand": 0.21469887850325522
+    },
+    {
+      "createdAt": "2018-02-21T00:00:45.28Z",
+      "measurementId": "c54467ea-f130-4dd5-9624-c56e20416b78",
+      "overallBand": 0.21649583267416322
+    },
+    {
+      "createdAt": "2018-02-20T00:01:19.63Z",
+      "measurementId": "510402bf-00e1-42fd-9e69-dacde6691c6a",
+      "overallBand": 0.004287589279935306
+    },
+    {
+      "createdAt": "2018-02-19T00:01:16.18Z",
+      "measurementId": "f01edab2-4152-4a89-a3cf-4563b334f41b",
+      "overallBand": 0.20033524712287298
+    },
+    {
+      "createdAt": "2018-02-18T00:00:47.32Z",
+      "measurementId": "ce815df3-528a-4631-9990-aa67cd05906b",
+      "overallBand": 0.09003264157644922
+    },
+    {
+      "createdAt": "2018-02-17T00:00:12.17Z",
+      "measurementId": "1210076b-c8ee-4c6b-aa01-ac582637e687",
+      "overallBand": 0.20462317395569252
+    },
+    {
+      "createdAt": "2018-02-16T00:01:59.09Z",
+      "measurementId": "29050094-2179-4743-ba95-6e000223f180",
+      "overallBand": 0.2153557092890847
+    },
+    {
+      "createdAt": "2018-02-15T00:01:06.43Z",
+      "measurementId": "3a3336aa-bebe-49d3-bbdc-c9527e829371",
+      "overallBand": 0.18648060199703875
+    },
+    {
+      "createdAt": "2018-02-14T00:04:07.38Z",
+      "measurementId": "95d6d17a-ea17-478a-96a5-d11aaedcd5be",
+      "overallBand": 0.004128281576143605
+    },
+    {
+      "createdAt": "2018-02-13T00:02:44.77Z",
+      "measurementId": "f6944194-2281-4357-836d-c5f7613c500d",
+      "overallBand": 0.19208062816228827
+    },
+    {
+      "createdAt": "2018-02-12T00:00:59.21Z",
+      "measurementId": "7be91e53-2257-4d16-b6d6-4e292140f009",
+      "overallBand": 0.19699421320570976
+    },
+    {
+      "createdAt": "2018-02-11T00:02:22.03Z",
+      "measurementId": "b338f3e8-0095-4645-ad3b-ac11108face0",
+      "overallBand": 0.18725069750546985
+    },
+    {
+      "createdAt": "2018-02-10T00:03:21.1Z",
+      "measurementId": "e503038f-0902-411c-869a-7bb13048fb45",
+      "overallBand": 0.1820374264126163
+    },
+    {
+      "createdAt": "2018-02-09T00:01:08.99Z",
+      "measurementId": "cbf6d4ae-dec8-4adc-b8ae-e68fd146d815",
+      "overallBand": 0.19072117558757498
+    },
+    {
+      "createdAt": "2018-02-08T00:03:26.31Z",
+      "measurementId": "b7de90f6-61f9-42e4-9254-7f5465c3757a",
+      "overallBand": 0.19210940472488605
+    },
+    {
+      "createdAt": "2018-02-07T00:01:26.28Z",
+      "measurementId": "9a867522-1435-4365-9093-3f1a1be68b7f",
+      "overallBand": 0.20537744592802165
+    },
+    {
+      "createdAt": "2018-02-06T00:01:48.64Z",
+      "measurementId": "0baf564e-013e-487a-8a1d-70c4b2ff84f3",
+      "overallBand": 0.23117296333706536
+    },
+    {
+      "createdAt": "2018-02-05T00:00:23.66Z",
+      "measurementId": "ff729892-f5cf-4b01-b36e-de6bad93b3be",
+      "overallBand": 0.2256138157501111
+    },
+    {
+      "createdAt": "2018-02-04T00:00:36.6Z",
+      "measurementId": "bcda4076-1574-4396-80e0-bbf1e5fc7f03",
+      "overallBand": 0.2241368569303274
+    },
+    {
+      "createdAt": "2018-02-03T00:03:50.37Z",
+      "measurementId": "4b4b41fb-01b6-47c7-9cc1-4aac46254617",
+      "overallBand": 0.2137934043688159
+    },
+    {
+      "createdAt": "2018-02-02T00:02:35.43Z",
+      "measurementId": "4b013503-40d3-4a12-9193-ea6d1592eb2d",
+      "overallBand": 0.21400087916092558
+    },
+    {
+      "createdAt": "2018-02-01T00:02:13.93Z",
+      "measurementId": "56093ab0-984a-4f29-a37f-a7313716ba50",
+      "overallBand": 0.22246725971282744
+    },
+    {
+      "createdAt": "2018-01-31T00:02:37.14Z",
+      "measurementId": "06c60e41-be23-4416-8256-b8c1836e7e13",
+      "overallBand": 0.20074744231063282
+    },
+    {
+      "createdAt": "2018-01-30T00:01:34.58Z",
+      "measurementId": "cbeb3819-93d1-4219-b9e3-488b465d8397",
+      "overallBand": 0.2199391404730832
+    },
+    {
+      "createdAt": "2018-01-29T00:01:21.6Z",
+      "measurementId": "c9d6b2f0-c24c-4d8b-b67d-b9faa0be656f",
+      "overallBand": 0.25618189577287986
+    },
+    {
+      "createdAt": "2018-01-28T00:01:12.23Z",
+      "measurementId": "1de68999-a595-4525-aac5-acf8852da00e",
+      "overallBand": 0.20452767853932738
+    },
+    {
+      "createdAt": "2018-01-27T00:03:46.58Z",
+      "measurementId": "b03ab471-fcaf-4076-807e-dde699c75679",
+      "overallBand": 0.21562800715210512
+    },
+    {
+      "createdAt": "2018-01-26T00:01:13.29Z",
+      "measurementId": "bd7e455e-00d9-4ba2-bacb-ed95993a4f26",
+      "overallBand": 0.004252998773323823
+    },
+    {
+      "createdAt": "2018-01-25T00:03:48.91Z",
+      "measurementId": "7a0e0587-8604-48c1-bc18-e6e39834be1f",
+      "overallBand": 0.22513759339996733
+    },
+    {
+      "createdAt": "2018-01-24T00:01:13.83Z",
+      "measurementId": "9d272176-c2de-4803-95b6-9dc19961b23b",
+      "overallBand": 0.2139095522136945
+    },
+    {
+      "createdAt": "2018-01-23T00:02:33.13Z",
+      "measurementId": "655d984d-aeb4-4059-bb58-72ae7ed69ce3",
+      "overallBand": 0.21854838435549148
+    },
+    {
+      "createdAt": "2018-01-22T00:02:42.9Z",
+      "measurementId": "47c01c40-3d84-4a6c-a0d7-a4b2c10aa4af",
+      "overallBand": 0.1995594445783851
+    },
+    {
+      "createdAt": "2018-01-21T00:00:58.33Z",
+      "measurementId": "c5aef8cd-e645-4d7b-bbec-1dfb9fc60e45",
+      "overallBand": 0.21598084359332453
+    },
+    {
+      "createdAt": "2018-01-20T00:02:01.81Z",
+      "measurementId": "7a721640-25c6-4774-8f33-54b7524b5a75",
+      "overallBand": 0.19933209367650676
+    },
+    {
+      "createdAt": "2018-01-19T00:00:06.66Z",
+      "measurementId": "f28a54b0-73b5-4629-a273-f50cc305d5c5",
+      "overallBand": 0.20930578449445975
+    },
+    {
+      "createdAt": "2018-01-18T00:02:41.11Z",
+      "measurementId": "93cc6074-b039-456b-ae9f-b7319cf6f18e",
+      "overallBand": 0.20652750111854135
+    },
+    {
+      "createdAt": "2018-01-17T00:01:15.42Z",
+      "measurementId": "aa1e7293-139b-48d1-819b-6d28bf91297a",
+      "overallBand": 0.1928279897287488
+    },
+    {
+      "createdAt": "2018-01-16T00:03:07.93Z",
+      "measurementId": "2ac03bff-fa32-40f9-8f4c-227818d15d0c",
+      "overallBand": 0.20705518657284652
+    },
+    {
+      "createdAt": "2018-01-15T00:02:18.61Z",
+      "measurementId": "fdd0c9aa-f195-4160-b13a-ae01cb809361",
+      "overallBand": 0.19202185357482
+    },
+    {
+      "createdAt": "2018-01-14T00:01:39.71Z",
+      "measurementId": "bef43b6b-1721-41a8-a285-7c73e6d015a3",
+      "overallBand": 0.22137035477823508
+    },
+    {
+      "createdAt": "2018-01-13T00:00:30.61Z",
+      "measurementId": "8f92c075-e5b2-4fbb-bd82-36beb1d24f1d",
+      "overallBand": 0.18862196377689316
+    },
+    {
+      "createdAt": "2018-01-12T00:01:15.41Z",
+      "measurementId": "db799992-c170-4a9c-9b4b-98da7474a535",
+      "overallBand": 0.19917175973008794
+    },
+    {
+      "createdAt": "2018-01-11T00:01:11.63Z",
+      "measurementId": "cb6bafc1-ef1b-4bfc-890a-39cae208aeb6",
+      "overallBand": 0.20474171589274776
+    },
+    {
+      "createdAt": "2018-01-10T00:02:35.69Z",
+      "measurementId": "2cbc0c0b-7569-4841-9f34-741015dbb9ec",
+      "overallBand": 0.2001960137503099
+    },
+    {
+      "createdAt": "2018-01-09T00:02:29.29Z",
+      "measurementId": "6660b4a6-7ad2-40b1-ae5e-ca5c94267c69",
+      "overallBand": 0.18453868085180833
+    },
+    {
+      "createdAt": "2018-01-08T00:02:04.98Z",
+      "measurementId": "c9c04df4-c88f-45cf-b4d6-533c346714f0",
+      "overallBand": 0.1906396429343753
+    },
+    {
+      "createdAt": "2018-01-07T00:01:05.89Z",
+      "measurementId": "7704ac9f-8afe-4626-a41c-118154754e2f",
+      "overallBand": 0.1960766365878657
+    },
+    {
+      "createdAt": "2018-01-06T00:03:45.12Z",
+      "measurementId": "bdf7db80-343c-4733-b6ae-218b943964b5",
+      "overallBand": 0.19058519631261783
+    },
+    {
+      "createdAt": "2018-01-05T00:01:01.6Z",
+      "measurementId": "dbc7fa3f-9cff-416b-b714-acfbeaf01da8",
+      "overallBand": 0.20411765877130852
+    },
+    {
+      "createdAt": "2018-01-04T00:03:29.38Z",
+      "measurementId": "92a0d325-94b5-4575-992e-fd2d1eef0d50",
+      "overallBand": 0.20833701089735795
+    },
+    {
+      "createdAt": "2018-01-03T00:02:35.84Z",
+      "measurementId": "40365dab-5211-40b3-8da6-4fcb450c8fa4",
+      "overallBand": 0.0046870436083669784
+    },
+    {
+      "createdAt": "2018-01-02T00:01:19.61Z",
+      "measurementId": "07dcbb0a-b465-4d66-a243-1e3ac650a40e",
+      "overallBand": 0.20438505892255845
+    },
+    {
+      "createdAt": "2018-01-01T00:00:31.01Z",
+      "measurementId": "38d6a0f0-76c4-4762-b765-1daef2d2c671",
+      "overallBand": 0.1930951159484177
+    },
+    {
+      "createdAt": "2017-12-31T00:02:01.68Z",
+      "measurementId": "ae968149-d99a-4ff9-b1ac-7563aec22db5",
+      "overallBand": 0.20696617654673843
+    },
+    {
+      "createdAt": "2017-12-30T00:00:24.32Z",
+      "measurementId": "1ac64fec-5381-451e-8872-5ec8d2e66e2c",
+      "overallBand": 0.04718416238743978
+    },
+    {
+      "createdAt": "2017-12-29T00:03:52.15Z",
+      "measurementId": "927fd36c-4b16-4518-8285-4dffba123033",
+      "overallBand": 0.19922846842203665
+    },
+    {
+      "createdAt": "2017-12-28T00:03:40.66Z",
+      "measurementId": "893798e9-4d72-4fed-a159-757c011dd59b",
+      "overallBand": 0.19636761148299875
+    },
+    {
+      "createdAt": "2017-12-27T00:01:23.84Z",
+      "measurementId": "a4d57fbc-9fe0-4a28-84dd-efd97ebc2237",
+      "overallBand": 0.19199358756994483
+    },
+    {
+      "createdAt": "2017-12-26T00:00:43.66Z",
+      "measurementId": "144307b6-5c32-4d69-9713-2441ea8249e3",
+      "overallBand": 0.2006182041017076
+    },
+    {
+      "createdAt": "2017-12-25T00:03:51.97Z",
+      "measurementId": "34e74b59-fa2d-40cb-bd09-d31facd8c707",
+      "overallBand": 0.18974781394745355
+    },
+    {
+      "createdAt": "2017-12-24T00:02:35.29Z",
+      "measurementId": "abb36172-59d7-4de1-90d7-422b711f2eeb",
+      "overallBand": 0.18618182809438402
+    },
+    {
+      "createdAt": "2017-12-23T00:01:09.93Z",
+      "measurementId": "c78d812f-a548-463e-9731-54d2a5ea840a",
+      "overallBand": 0.20661742112845713
+    },
+    {
+      "createdAt": "2017-12-22T00:00:24.67Z",
+      "measurementId": "ac0fb8fb-b278-49e1-a42a-df595f81f1f7",
+      "overallBand": 0.19956780190067924
+    },
+    {
+      "createdAt": "2017-12-21T00:03:58.43Z",
+      "measurementId": "4ddc1b69-4141-4e63-8a2a-df5e9a1e95b6",
+      "overallBand": 0.19920361543487208
+    },
+    {
+      "createdAt": "2017-12-20T00:03:36.59Z",
+      "measurementId": "b03ccb6e-6b25-4907-831e-53512cb7497a",
+      "overallBand": 0.1905025338218642
+    },
+    {
+      "createdAt": "2017-12-19T00:03:19.03Z",
+      "measurementId": "0eb23f1c-b68c-4f99-87e3-b79aa26d77e6",
+      "overallBand": 0.21294205155715246
+    },
+    {
+      "createdAt": "2017-12-18T00:00:02.57Z",
+      "measurementId": "1a83af40-1ae2-47e1-b73a-389023a32102",
+      "overallBand": 0.19484224500991182
+    },
+    {
+      "createdAt": "2017-12-17T00:00:52.76Z",
+      "measurementId": "acfc45af-d31e-4eaf-861c-5fec56f46038",
+      "overallBand": 0.19112890914827105
+    },
+    {
+      "createdAt": "2017-12-16T00:03:17.12Z",
+      "measurementId": "eeb0f989-130e-4b83-8395-fbcd0bfb7df9",
+      "overallBand": 0.19354792130319082
+    },
+    {
+      "createdAt": "2017-12-15T00:01:53.2Z",
+      "measurementId": "4c40364c-a2ad-4f46-92e1-9bb237ae2145",
+      "overallBand": 0.19327925801848103
+    },
+    {
+      "createdAt": "2017-12-14T00:02:39.04Z",
+      "measurementId": "e6e8b079-b74c-4fb7-8ad2-2c03f052c830",
+      "overallBand": 0.19622847712965286
+    },
+    {
+      "createdAt": "2017-12-13T00:00:11.82Z",
+      "measurementId": "e5e9c34a-9ec7-4096-bf06-68551c513330",
+      "overallBand": 0.19306019067924635
+    },
+    {
+      "createdAt": "2017-12-12T00:02:07.01Z",
+      "measurementId": "ca46ab79-66a4-4eef-8b75-163b00f09d30",
+      "overallBand": 0.18680025137349598
+    },
+    {
+      "createdAt": "2017-12-11T00:00:13.85Z",
+      "measurementId": "7905fe26-ae0a-4b9a-b45a-c1ea0c193fbb",
+      "overallBand": 0.193984620547377
+    },
+    {
+      "createdAt": "2017-12-10T00:01:27.41Z",
+      "measurementId": "58ea1e3e-1134-4a7c-ad75-c936c011720a",
+      "overallBand": 0.21220997530532879
+    },
+    {
+      "createdAt": "2017-12-09T00:02:37.28Z",
+      "measurementId": "e97961c6-c723-4ef8-95c9-23c338930214",
+      "overallBand": 0.004269752039453076
+    },
+    {
+      "createdAt": "2017-12-08T00:04:05.33Z",
+      "measurementId": "4c4574a7-a47f-440c-88ee-6cd5a571f0b3",
+      "overallBand": 0.05650494399309356
+    },
+    {
+      "createdAt": "2017-12-07T00:01:59.47Z",
+      "measurementId": "debc7c01-4a35-4bbb-8f4a-1a917819b78d",
+      "overallBand": 0.19214058173044676
+    },
+    {
+      "createdAt": "2017-12-06T00:03:41.22Z",
+      "measurementId": "67a8f9df-f6fe-4235-a328-dcde41e4abda",
+      "overallBand": 0.2001055526176921
+    },
+    {
+      "createdAt": "2017-12-05T00:00:49.01Z",
+      "measurementId": "8b339b29-81ae-4497-95ec-99600dd626fb",
+      "overallBand": 0.19543878927615208
+    },
+    {
+      "createdAt": "2017-12-04T00:02:33.1Z",
+      "measurementId": "4e77c66b-51a5-4735-81a3-b48f11ad0275",
+      "overallBand": 0.20304840861683499
+    },
+    {
+      "createdAt": "2017-12-03T00:00:18.75Z",
+      "measurementId": "274b64ba-3111-4e65-a336-0e5bb775a305",
+      "overallBand": 0.20833295651917602
+    },
+    {
+      "createdAt": "2017-12-02T00:02:07.11Z",
+      "measurementId": "52af4ca5-2f3c-4b3b-9372-4039a55fe538",
+      "overallBand": 0.20152261139248856
+    },
+    {
+      "createdAt": "2017-12-01T00:00:10.68Z",
+      "measurementId": "90c91a69-13c4-492e-94dd-645e9e147fb6",
+      "overallBand": 0.18793759320050477
+    },
+    {
+      "createdAt": "2017-11-30T00:02:08.48Z",
+      "measurementId": "c1f4e657-583d-4368-ab84-9997f2d04cc2",
+      "overallBand": 0.23447021599278936
+    },
+    {
+      "createdAt": "2017-11-29T00:02:49.85Z",
+      "measurementId": "6486c5ae-9aac-4d14-bd16-5af487d301c3",
+      "overallBand": 0.07214629740988221
+    },
+    {
+      "createdAt": "2017-11-28T00:03:18.59Z",
+      "measurementId": "34764b38-01b5-44bb-90f1-c6ed48bf4574",
+      "overallBand": 0.007511126815831793
+    },
+    {
+      "createdAt": "2017-11-27T00:03:34.65Z",
+      "measurementId": "e4e61232-c1db-4a96-ad9d-139c919b1bf3",
+      "overallBand": 0.20196108242178984
+    },
+    {
+      "createdAt": "2017-11-26T00:03:55.37Z",
+      "measurementId": "5e65b86c-e6b0-4c75-89ac-62cef7efd843",
+      "overallBand": 0.2285176357426594
+    },
+    {
+      "createdAt": "2017-11-25T00:03:10.94Z",
+      "measurementId": "2ba13b03-759e-423e-a272-beef13e1cac1",
+      "overallBand": 0.21251070606891984
+    },
+    {
+      "createdAt": "2017-11-24T00:00:29.47Z",
+      "measurementId": "8d8be5ab-d657-4a12-8460-96811fbd0f19",
+      "overallBand": 0.21172673695861624
+    },
+    {
+      "createdAt": "2017-11-23T00:00:04.89Z",
+      "measurementId": "30fa8754-1064-44bb-9be8-f3b277fba246",
+      "overallBand": 0.004104284647192421
+    },
+    {
+      "createdAt": "2017-11-22T00:00:54.88Z",
+      "measurementId": "f400e8da-85e2-4756-935e-d287172b47b9",
+      "overallBand": 0.19342752005947944
+    },
+    {
+      "createdAt": "2017-11-21T00:02:18.4Z",
+      "measurementId": "d879e466-a08c-434f-aa6a-2e2fefe9f6ca",
+      "overallBand": 0.19919024473865926
+    },
+    {
+      "createdAt": "2017-11-20T00:02:53.56Z",
+      "measurementId": "03d23a36-2912-407b-be65-5b1157ef4a2d",
+      "overallBand": 0.18778970569235784
+    },
+    {
+      "createdAt": "2017-11-19T00:02:51.51Z",
+      "measurementId": "24e72d06-b970-4b90-bb47-ceeea97060f0",
+      "overallBand": 0.1968545698918999
+    },
+    {
+      "createdAt": "2017-11-18T00:03:30.8Z",
+      "measurementId": "53a9870f-5d1a-44f0-b420-372f9011a736",
+      "overallBand": 0.06414224575208051
+    },
+    {
+      "createdAt": "2017-11-17T00:00:13.45Z",
+      "measurementId": "10bc2e0a-5531-44fc-8e77-308d04a538de",
+      "overallBand": 0.22023737567812093
+    },
+    {
+      "createdAt": "2017-11-16T00:00:40.96Z",
+      "measurementId": "df7ad416-a486-4168-a33c-b6fd388dad27",
+      "overallBand": 0.20548564479668735
+    },
+    {
+      "createdAt": "2017-11-15T00:01:05.85Z",
+      "measurementId": "84cb9134-d3e4-4232-942f-3cec602a2ddc",
+      "overallBand": 0.0038268321139609137
+    },
+    {
+      "createdAt": "2017-11-14T00:01:56.61Z",
+      "measurementId": "59781de7-29b6-45ec-bfe6-71cd49bcd2d3",
+      "overallBand": 0.16971283247042937
+    },
+    {
+      "createdAt": "2017-11-13T00:01:58.35Z",
+      "measurementId": "dc789293-c913-4461-a8a1-2d64ad41b570",
+      "overallBand": 0.20928395262680333
+    },
+    {
+      "createdAt": "2017-11-12T00:03:29.67Z",
+      "measurementId": "17d24ab2-b1a3-44e7-b675-d2fb1e2c2bca",
+      "overallBand": 0.19304973781790574
+    },
+    {
+      "createdAt": "2017-11-11T00:04:06.85Z",
+      "measurementId": "eb486053-2bc0-49c2-9bac-cfddef96a569",
+      "overallBand": 0.1973163400135504
+    },
+    {
+      "createdAt": "2017-11-10T00:00:10.61Z",
+      "measurementId": "1d9895a0-9d2f-426b-8040-16c965fc5a82",
+      "overallBand": 0.1933777202388842
+    },
+    {
+      "createdAt": "2017-11-09T00:00:40.96Z",
+      "measurementId": "6a4af220-3c99-482d-a852-498efd5b0613",
+      "overallBand": 0.1980871151622118
+    },
+    {
+      "createdAt": "2017-11-08T00:01:11.99Z",
+      "measurementId": "959e6a1c-0eb5-4266-8604-64189fa2f10e",
+      "overallBand": 0.20940881890156873
+    },
+    {
+      "createdAt": "2017-11-07T00:01:33.29Z",
+      "measurementId": "33f55a8c-3dcc-4e85-bbbc-4fd42b10f63d",
+      "overallBand": 0.04692085094900768
+    },
+    {
+      "createdAt": "2017-11-06T00:01:41.83Z",
+      "measurementId": "2677f9ef-67e5-4ea5-a4d4-7bee9a20358d",
+      "overallBand": 0.18200995596292413
+    },
+    {
+      "createdAt": "2017-11-05T00:01:59.34Z",
+      "measurementId": "4c5e16d6-d83a-478a-8cef-21f5cf7e9f4a",
+      "overallBand": 0.24287928530902966
+    },
+    {
+      "createdAt": "2017-11-04T00:01:58.45Z",
+      "measurementId": "3be29a32-24cd-41d8-bf17-2cb6e06ef3e4",
+      "overallBand": 0.19574243387211027
+    },
+    {
+      "createdAt": "2017-11-03T00:03:19.5Z",
+      "measurementId": "ecce87b8-9ac0-4f36-863f-93c9da7adbb2",
+      "overallBand": 0.1865425409500322
+    },
+    {
+      "createdAt": "2017-11-02T00:01:11.08Z",
+      "measurementId": "84a70ede-ca1d-4dcd-81fd-8ba2ddf22f57",
+      "overallBand": 0.1885640419448116
+    },
+    {
+      "createdAt": "2017-11-01T00:02:42.49Z",
+      "measurementId": "bd877f71-01e8-43b7-9442-9e30c519ce43",
+      "overallBand": 0.17396047163008335
+    },
+    {
+      "createdAt": "2017-10-31T00:00:50.04Z",
+      "measurementId": "4101c395-fe4e-451d-b687-6dcee7f09576",
+      "overallBand": 0.1883278560501277
+    },
+    {
+      "createdAt": "2017-10-30T00:03:20.26Z",
+      "measurementId": "66e40303-75ce-4287-a75c-9ace5bcfa268",
+      "overallBand": 0.1896152172947691
+    },
+    {
+      "createdAt": "2017-10-29T00:01:32.08Z",
+      "measurementId": "77a0a261-6d25-4f03-a0f9-f591b3617c44",
+      "overallBand": 0.18700951617545492
+    },
+    {
+      "createdAt": "2017-10-28T00:03:47.67Z",
+      "measurementId": "9328a20d-d07c-4560-923f-36c9989de906",
+      "overallBand": 0.19046114747131832
+    },
+    {
+      "createdAt": "2017-10-27T00:00:17.29Z",
+      "measurementId": "22350dad-b074-4f34-9e2a-b3e59ceb6f51",
+      "overallBand": 0.19297421583154106
+    },
+    {
+      "createdAt": "2017-10-26T00:04:05.57Z",
+      "measurementId": "2d036ac2-fbcb-4953-a5cd-34ff13d97d00",
+      "overallBand": 0.0437296447208573
+    },
+    {
+      "createdAt": "2017-10-25T00:02:26.44Z",
+      "measurementId": "402c2e12-161e-4c0d-82eb-6603154a0ed2",
+      "overallBand": 0.2043666840045232
+    },
+    {
+      "createdAt": "2017-10-24T00:02:46.31Z",
+      "measurementId": "a7882c9b-f1ef-4995-9733-09e4a0075323",
+      "overallBand": 0.19310899685051708
+    },
+    {
+      "createdAt": "2017-10-23T00:01:31.65Z",
+      "measurementId": "538a506c-4f54-4c89-805f-f539662981f4",
+      "overallBand": 0.19988567852775008
+    },
+    {
+      "createdAt": "2017-10-22T00:04:06.34Z",
+      "measurementId": "c6946e30-f54e-4b2f-a46b-3afd04ae495e",
+      "overallBand": 0.1815436252738757
+    },
+    {
+      "createdAt": "2017-10-21T00:02:04.19Z",
+      "measurementId": "d52b7fcb-2a64-4d0a-9080-aae7cd111253",
+      "overallBand": 0.1960958161498682
+    },
+    {
+      "createdAt": "2017-10-20T00:03:22.07Z",
+      "measurementId": "ca3e2653-7c77-47a0-971b-162cd668807f",
+      "overallBand": 0.1788202236296709
+    },
+    {
+      "createdAt": "2017-10-19T00:02:27.54Z",
+      "measurementId": "34692764-9b29-4d01-9793-972d7a949d71",
+      "overallBand": 0.1901129789260069
+    },
+    {
+      "createdAt": "2017-10-18T00:02:11.13Z",
+      "measurementId": "0a707d00-976f-4566-8553-f9d6f197ebc0",
+      "overallBand": 0.18961187556537695
+    },
+    {
+      "createdAt": "2017-10-17T00:00:44.62Z",
+      "measurementId": "6b9b7c3a-97f7-473b-ac53-a4c8c6e40bbd",
+      "overallBand": 0.19968462679701313
+    },
+    {
+      "createdAt": "2017-10-16T00:04:07.08Z",
+      "measurementId": "1e8371b5-e921-4790-93c3-229527f933b7",
+      "overallBand": 0.17407180764012356
+    },
+    {
+      "createdAt": "2017-10-15T00:02:52.43Z",
+      "measurementId": "cef3950f-b86c-4c5d-af71-90b464ea14d0",
+      "overallBand": 0.18893216832525245
+    },
+    {
+      "createdAt": "2017-10-14T00:01:30.23Z",
+      "measurementId": "aca15a21-c95d-414b-8456-dfeca06ae5df",
+      "overallBand": 0.20006161414897677
+    },
+    {
+      "createdAt": "2017-10-13T00:01:49.25Z",
+      "measurementId": "ccd45115-b83e-4009-8ca5-56d0910cf24d",
+      "overallBand": 0.2025589808852999
+    },
+    {
+      "createdAt": "2017-10-12T00:02:00.07Z",
+      "measurementId": "3ae86cb0-4bf5-42f1-b2fe-0a2b183c9466",
+      "overallBand": 0.19256038868247982
+    },
+    {
+      "createdAt": "2017-10-11T00:02:58.88Z",
+      "measurementId": "e4a11e0b-0305-445c-a996-5fbbe6b5ad5c",
+      "overallBand": 0.19695626199277325
+    },
+    {
+      "createdAt": "2017-10-10T00:03:40.48Z",
+      "measurementId": "154a7203-7f2d-44ef-b01b-ccb28cdec964",
+      "overallBand": 0.21376774001991455
+    },
+    {
+      "createdAt": "2017-10-09T00:02:36.02Z",
+      "measurementId": "d8417ffb-8279-4f56-bf6b-0729ad4b923d",
+      "overallBand": 0.004343892173796405
+    },
+    {
+      "createdAt": "2017-10-08T00:01:50.87Z",
+      "measurementId": "7c83c204-82f8-44f5-bad1-c8be0d7cbb8f",
+      "overallBand": 0.18676254632220357
+    },
+    {
+      "createdAt": "2017-10-07T00:01:46.38Z",
+      "measurementId": "172a3252-2136-4e33-8a69-280d8fef2d1d",
+      "overallBand": 0.2198334002386746
+    }
+  ]
+}
