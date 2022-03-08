@@ -173,9 +173,9 @@ async function init() {
         };
         if (this.series.name == "vibration") {
           let xyPoint = getClosestPointBy(this.x, spectrumTrendRaw, []);
-          if (this.x == xyPoint.x) {
-            return ""; //We will also display the spectrum tooltip as below
-          }
+        //   if (this.x == xyPoint.x) {
+        //     return ""; //We will also display the spectrum tooltip as below
+        //   }
           return `<b>${new Date(this.x).toLocaleString(
             "sv-SE",
             dateFormatOptions
@@ -205,7 +205,7 @@ async function init() {
             []
           );
           if (
-            !(closestOverallPoint.x == this.x || closestSpectrumPoint == this.x)
+            true//!(closestOverallPoint.x == this.x || closestSpectrumPoint == this.x)
           ) {
             return `<b>${new Date(this.x).toLocaleString(
               "sv-SE",
@@ -223,7 +223,7 @@ async function init() {
         // console.log(labelWidth, labelHeight, point);
         return { x: point.plotX + 36, y: 20 };
       },
-      shared: true,
+      shared: false,
     },
     plotOptions: {
       line: {
