@@ -221,7 +221,7 @@ async function init() {
       },
       positioner: (labelWidth, labelHeight, point) => {
         // console.log(labelWidth, labelHeight, point);
-        return { x: point.plotX + 36, y: 40 };
+        return { x: point.plotX + 36, y: 20 };
       },
       shared: true,
     },
