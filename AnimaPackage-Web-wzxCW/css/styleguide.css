@@ -1,0 +1,72 @@
+:root { 
+  --alabaster: #fafafa;
+  --black: #000000;
+  --denim: #0f58d6;
+  --granite-gray: #666666;
+  --iron: #d5d8dc;
+  --mercury: #e2e4e7;
+  --spun-pearl: #aaafb8;
+  --tuna: #273342;
+  --white: #ffffff;
+ 
+  --font-size-l: 16px;
+  --font-size-m: 14px;
+  --font-size-s: 12px;
+  --font-size-xl: 18px;
+  --font-size-xs: 11px;
+  --font-size-xxl: 20px;
+ 
+  --font-family-arial-boldmt: "Arial-BoldMT", Helvetica;
+  --font-family-arialmt: "ArialMT", Helvetica;
+}
+.buttonprimarynormalleft {
+  font-family: var(--font-family-arial-boldmt);
+  font-size: var(--font-size-l);
+}
+
+.bodytext-blacksmallboldleft {
+  font-family: var(--font-family-arial-boldmt);
+  font-size: var(--font-size-m);
+}
+
+.bodyinvmediumregularright {
+  font-family: var(--font-family-arialmt);
+  font-size: var(--font-size-l);
+}
+
+.h3regularleft {
+  font-family: var(--font-family-arialmt);
+  font-size: var(--font-size-xxl);
+}
+
+.h4boldcenter {
+  font-family: var(--font-family-arial-boldmt);
+  font-size: var(--font-size-xl);
+}
+
+.font-sizes {
+  font-family: var(--font-family-arialmt);
+  font-size: var(--font-size-m);
+}
+
+.arialmt-normal-granite-gray-11px {
+  color: var(--granite-gray);
+  font-family: var(--font-family-arialmt);
+  font-size: var(--font-size-xs);
+}
+
+.arialmt-normal-black-12px {
+  color: var(--black);
+  font-family: var(--font-family-arialmt);
+  font-size: var(--font-size-s);
+}
+
+.arialmt-normal-tuna-11px {
+  color: var(--tuna);
+  font-family: var(--font-family-arialmt);
+  font-size: var(--font-size-xs);
+}
+
+.border-1px-spun-pearl {
+  border: 1px solid var(--spun-pearl);
+}

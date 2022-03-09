@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://code.highcharts.com/stock/highstock.js" defer></script>
+    <script src="https://code.highcharts.com/stock/modules/data.js" defer></script>
+    <script
+      src="https://code.highcharts.com/stock/modules/accessibility.js"
+      defer
+    ></script>
+    <script src="https://code.highcharts.com/stock/modules/draggable-points.js" defer></script>
+    <script src="../trend.js" defer type="module"></script>
+    <link rel="stylesheet" type="text/css" href="../trend.css">
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1440, maximum-scale=1.0" />
+    <link rel="shortcut icon" type="image/png" href="https://animaproject.s3.amazonaws.com/home/favicon.png" />
+    <meta name="og:type" content="website" />
+    <meta name="twitter:card" content="photo" />
+    <link rel="stylesheet" type="text/css" href="css/desktophdcopy38.css" />
+    <link rel="stylesheet" type="text/css" href="css/styleguide.css" />
+    <link rel="stylesheet" type="text/css" href="css/globals.css" />
+  </head>
+  <body style="margin: 0; background: #f8f8f8">
+    <input type="hidden" id="anPageName" name="page" value="desktophdcopy38" />
+    <div class="container-center-horizontal">
+      <div class="desktophdcopy38 screen">
+        <div class="navigation-top-nav-normal-A5jo6n">
+          <div class="bg-EXMptP"></div>
+          <div class="settings-EXMptP">
+            <div class="group-n3DApK">
+              <div class="icon-nlpyxK">
+                <img
+                  class="settings-qXgFKH"
+                  src="img/desktop-hd-copy-38-settings-8C88C091-5B2E-41A8-9623-73C927F9122B.svg"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="logo-EXMptP">
+            <div class="skf-corp-logo-white-r-R0eg6f">
+              <div class="group-EwaXxz">
+                <div class="group-yPDxjn">
+                  <img
+                    class="path-o6grhB"
+                    src="img/desktop-hd-copy-38-path-5391DA48-B384-462D-A5C3-9716B4A4FCB3@2x.png"
+                  />
+                  <img
+                    class="path-X8lK6g"
+                    src="img/desktop-hd-copy-38-path-FBD3EAE6-7604-42AE-A664-8C28788E191C@2x.png"
+                  />
+                  <img
+                    class="path-oERzDS"
+                    src="img/desktop-hd-copy-38-path-487C5E59-CCC7-43D7-89D5-87C8A61A7078@2x.png"
+                  />
+                </div>
+              </div>
+              <img class="path-EwaXxz" src="img/desktop-hd-copy-38-path-29536202-9EBD-4E5A-BE09-C85A0818B61A@2x.png" />
+              <img
+                class="shape-EwaXxz"
+                src="img/desktop-hd-copy-38-shape-05357EE6-CB77-41D5-8E41-BFE749621954@2x.png"
+              />
+            </div>
+          </div>
+          <div class="enlight-center-EXMptP">
+            <img
+              class="skf-enlight-centre-pdY1ok"
+              src="img/desktop-hd-copy-38-skfenlightcentre-4AB9A549-4DC9-4D15-8F05-41F091972C45@2x.png"
+            />
+          </div>
+          <div class="company-EXMptP">
+            <div class="rectangle-C6p0Vg"></div>
+            <div class="label-name-C6p0Vg bodyinvmediumregularright">Company name</div>
+            <div class="icon-C6p0Vg">
+              <img class="path-Pw2cgl" src="img/desktop-hd-copy-38-path-47A109F9-1587-46CD-8A99-13C3163A25CD@2x.png" />
+            </div>
+          </div>
+          <div class="navigation-EXMptP">
+            <div class="lubrication-kfjF3N">
+              <div class="rectangle-3zWlAE"></div>
+              <div class="devices-3zWlAE buttonprimarynormalleft">Devices</div>
+              <div class="icon-3zWlAE">
+                <img
+                  class="shape-ikYx4C"
+                  src="img/desktop-hd-copy-38-shape-24F610D4-A7BD-46D9-ADB0-856736719B10@2x.png"
+                />
+              </div>
+            </div>
+            <div class="insight-kfjF3N">
+              <div class="rectangle-ahqBp3"></div>
+              <div class="insights-ahqBp3 buttonprimarynormalleft">Insights</div>
+              <div class="icon-ahqBp3">
+                <img
+                  class="shape-UQLOGm"
+                  src="img/desktop-hd-copy-38-shape-55AAFC2C-CD03-48A8-B0C6-09D5481AB800@2x.png"
+                />
+              </div>
+            </div>
+            <div class="reports-kfjF3N">
+              <div class="rectangle-Xp9xoK"></div>
+              <div class="reports-Xp9xoK buttonprimarynormalleft">Reports</div>
+              <div class="icon-Xp9xoK">
+                <img
+                  class="combined-shape-Mhx9DU"
+                  src="img/desktop-hd-copy-38-combined-shape-7779123B-2D3D-4C57-B155-C70484D97C2A@2x.png"
+                />
+              </div>
+            </div>
+            <div class="analyze-kfjF3N">
+              <div class="rectangle-ZwufZL"></div>
+              <div class="analyse-ZwufZL buttonprimarynormalleft">Analyse</div>
+              <div class="icon-ZwufZL">
+                <img
+                  class="combined-shape-o5X5O2"
+                  src="img/desktop-hd-copy-38-combined-shape-C262F3C0-FC83-497F-A988-6978745234A0@2x.png"
+                />
+              </div>
+            </div>
+            <div class="routes-kfjF3N">
+              <div class="rectangle-sCg7xi"></div>
+              <div class="routes-sCg7xi buttonprimarynormalleft">Routes</div>
+              <div class="icon-sCg7xi">
+                <img
+                  class="combined-shape-WixQZ9"
+                  src="img/desktop-hd-copy-38-combined-shape-B2BEAE9D-69C3-4AAA-B36F-296BBB853D57@2x.png"
+                />
+              </div>
+            </div>
+            <div class="hierarchy-kfjF3N">
+              <div class="rectangle-3tlnFR"></div>
+              <div class="hierarchy-3tlnFR buttonprimarynormalleft">Hierarchy</div>
+              <div class="icon-3tlnFR">
+                <img
+                  class="combined-shape-txNIb7"
+                  src="img/desktop-hd-copy-38-combined-shape-05391BE1-9CEA-4442-8186-EA015E9609EE@2x.png"
+                />
+              </div>
+            </div>
+            <div class="user-admin-kfjF3N">
+              <div class="rectangle-YY4O72"></div>
+              <div class="user-admin-YY4O72 buttonprimarynormalleft">User Admin</div>
+              <div class="icon-YY4O72">
+                <img
+                  class="combined-shape-AxXD2A"
+                  src="img/desktop-hd-copy-38-combined-shape-578BB894-178F-4FB0-BE59-F7AF5836F290@2x.png"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="divider-EXMptP"></div>
+          <div class="divider-5X2t2E"></div>
+        </div>
+        <div class="header-A5jo6n">
+          <div class="content-box-xcPFMA">
+            <div class="rectangle-9bj64k"></div>
+          </div>
+          <div class="content-box-copy-xcPFMA">
+            <div class="rectangle-gGblPO"></div>
+          </div>
+          <img
+            class="sandboxenlightskfcom-xcPFMA"
+            src="img/desktop-hd-copy-38-sandboxenlightskfcomanalyzedetails52b20361-b493-490a-9424-81b89699b669baec00cd-05a4-4e8d-b09c-cbf110eaa222measurement920f81ed-1c2b-4859-9283-e8f89da7b4d4-1-copy-3-B358E8A9-8409-4A05-A5E1-A51F0AC5B41E.png"
+          />
+          <img
+            class="sandboxenlightskfcom-in8uhL"
+            src="img/desktop-hd-copy-38-sandboxenlightskfcomanalyzedetails52b20361-b493-490a-9424-81b89699b669baec00cd-05a4-4e8d-b09c-cbf110eaa222measurement920f81ed-1c2b-4859-9283-e8f89da7b4d4-1-copy-4-710E6586-4753-4A5C-810E-876019854372@2x.png"
+          />
+          <p class="chocolate-factory-xcPFMA font-sizes">
+            Chocolate factory / Gothenburg / Plant 1 / System 1 / Chocolate mixer
+          </p>
+          <div class="x06029-mtr-01-hv-nd-xcPFMA h3regularleft">06.029 MTR / 01HV NDE</div>
+          <div class="rectangle-xcPFMA"></div>
+          <div class="priority-1-xcPFMA bodytext-blacksmallboldleft">Priority: 1</div>
+          <div class="rectangle-copy-xcPFMA"></div>
+          <div class="priority-1-copy-xcPFMA bodytext-blacksmallboldleft">Priority: 1</div>
+        </div>
+        <div class="content-box-copy-2-A5jo6n">
+          <div class="rectangle-XCMrZh"></div>
+        </div>
+        <div class="content-box-copy-6-A5jo6n">
+          <div class="rectangle-0BBCyX"></div>
+        </div>
+        <div class="trend_container-A5jo6n">
+          <figure class="highcharts-figure">
+            <div id="trend-highcharts"></div>
+          </figure>
+        </div>
+        <div class="content-box-copy-8-A5jo6n">
+          <div class="rectangle-Iwz7Ib"></div>
+        </div>
+        <div class="orders-copy-2-A5jo6n">
+          <div class="group-MLH7IU">
+            <div class="rectangle-copy-Y106V9"></div>
+            <div class="icon-Y106V9">
+              <img class="cpm-PDPTiB" src="img/desktop-hd-copy-38-cpm-BF0A1DCC-9CB4-4266-8F9A-06732E6E8373@2x.png" />
+            </div>
+          </div>
+        </div>
+        <div class="ai-cursors-A5jo6n">
+          <div class="group-xEOaN1">
+            <div class="rectangle-xfis0T"></div>
+            <div class="icon-xfis0T">
+              <img class="hz-jO8iin" src="img/desktop-hd-copy-38-hz-96470739-87A5-4683-A6F8-5718D5F257ED@2x.png" />
+            </div>
+          </div>
+        </div>
+        <div class="group-4-A5jo6n">
+          <div class="content-box-copy-7-xaoTEH">
+            <div class="rectangle-6QuPGd"></div>
+          </div>
+          <div class="header-divider-xaoTEH"></div>
+          <div class="icon-set-left-xaoTEH">
+            <div class="sideband-cursor-copy-Xg1JcX">
+              <div class="group-Deh50q">
+                <div class="rectangle-copy-YFPRrE"></div>
+                <div class="icon-YFPRrE">
+                  <img
+                    class="shape-Y7xZAe"
+                    src="img/desktop-hd-copy-38-shape-4DEE9408-A9E6-414D-AB56-54CE16BB568A@2x.png"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="harmonic-cursor-copy-Xg1JcX">
+              <div class="group-JkMQGx">
+                <div class="rectangle-copy-BRDzCt"></div>
+                <div class="icon-BRDzCt">
+                  <img
+                    class="shape-E0xkNf"
+                    src="img/desktop-hd-copy-38-shape-BAFD538A-49FA-4687-8704-7192D3B79777@2x.png"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="band-cursor-copy-Xg1JcX">
+              <div class="group-c3sZCc">
+                <div class="rectangle-copy-1HwsPR"></div>
+                <div class="icon-1HwsPR">
+                  <img
+                    class="band-cursor-oz3kX6"
+                    src="img/desktop-hd-copy-38-bandcursor-F1645C4A-CDE3-48DD-BF0F-F1393FADADE7@2x.png"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="single-cursor-copy-Xg1JcX">
+              <div class="group-u0yZPi">
+                <div class="rectangle-copy-jFSrNd"></div>
+                <div class="icon-jFSrNd">
+                  <img
+                    class="single-cursor-e8HJom"
+                    src="img/desktop-hd-copy-38-singlecursor-00D1A5BA-5A9F-4707-A06B-E67BEC6C16F3@2x.png"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="divider-Xg1JcX"></div>
+            <div class="fault-frequencies-copy-Xg1JcX">
+              <div class="group-XB9NES">
+                <div class="rectangle-copy-evUzEV"></div>
+                <div class="icon-evUzEV">
+                  <img
+                    class="defect-frequencies-WlJvnl"
+                    src="img/desktop-hd-copy-38-defectfrequencies-0227F0C7-1BC3-41B6-8850-87EC747F02E8@2x.png"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="curson-icon-divider-xaoTEH"></div>
+          <div class="tabs-xaoTEH">
+            <div class="x_-tabs-expanded3-tabs-FNlowS">
+              <div class="bg-SIOV70"></div>
+              <div class="tabs-SIOV70">
+                <div class="tab-3-Ksx8xt">
+                  <div class="default-Ex4e2o">
+                    <div class="top-line-bU8f4B"></div>
+                    <div class="bottom-line-bU8f4B"></div>
+                    <div class="tab-name-bU8f4B bodyinvmediumregularright">Band alarms</div>
+                  </div>
+                </div>
+                <div class="tab-2-Ksx8xt">
+                  <div class="default-QykgvS">
+                    <div class="top-line-azfZWv"></div>
+                    <div class="bottom-line-azfZWv"></div>
+                    <div class="tab-name-azfZWv bodyinvmediumregularright">Fault frequencies</div>
+                  </div>
+                </div>
+                <div class="tab-1-Ksx8xt">
+                  <div class="default-2xfiaf">
+                    <div class="top-line-dG9AMz"></div>
+                    <div class="bottom-line-dG9AMz"></div>
+                    <div class="tab-name-dG9AMz bodyinvmediumregularright">Cursor details</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <img
+            class="sandboxenlightskfcom-xaoTEH"
+            src="img/desktop-hd-copy-38-sandboxenlightskfcomanalyzedetailsf9556df2-e7c9-40d9-ba92-03267001d147240877b2-42c9-4a46-a15e-872a6985eb23measurement1934e4ca-ca94-4cb0-8977-57d26ffe4dae-copy-6387CA3F-C199-4FCB-B785-8DE462A622C7.png"
+          />
+          <div class="spectrum-header-xaoTEH">
+            <div class="spectrum-Rse5Im bodyinvmediumregularright">Spectrum</div>
+            <div class="collected-on-Rse5Im bodytext-blacksmallboldleft">Collected on</div>
+            <div class="speed-rpm-Rse5Im bodytext-blacksmallboldleft">Speed - RPM</div>
+            <div class="x26-aug-2020-1444-Rse5Im font-sizes">17 Mar, 2022, 00:00:01</div>
+            <div class="x1509-Rse5Im font-sizes">1509</div>
+            <div class="icons-trendspectrum-Rse5Im">
+              <img
+                class="spectrum-7XMyvi"
+                src="img/desktop-hd-copy-38-spectrum-598C7C68-FD06-4016-A196-A43EF065D6F6@2x.png"
+              />
+            </div>
+            <div class="button-small-icon-only-disabled-Rse5Im">
+              <div class="group-WCo5vv">
+                <div class="rectangle-copy-qLZxfF"></div>
+                <div class="icon-qLZxfF">
+                  <img
+                    class="path-G3A0VT"
+                    src="img/desktop-hd-copy-38-path-4A5DFB56-2719-4983-BAD7-7E543F1BC030@2x.png"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="icon-set-top_right-Rse5Im">
+              <div class="full-screen-DbS6fH">
+                <img
+                  class="fullscreen-vkO7Ie"
+                  src="img/desktop-hd-copy-38-fullscreen-5D341B10-B169-4876-B9AE-A6B176B672D5@2x.png"
+                />
+              </div>
+              <div class="config-DbS6fH">
+                <img
+                  class="settings-bwBZVT"
+                  src="img/desktop-hd-copy-38-settings-2562C0B7-B4BE-465F-9E80-D511FB78E2E7.svg"
+                />
+              </div>
+              <div class="config-copy-DbS6fH">
+                <img
+                  class="shape-ujTFYc"
+                  src="img/desktop-hd-copy-38-shape-6A293851-1FE6-4483-9D08-703ED8C3B7AB@2x.png"
+                />
+              </div>
+              <div class="divider-DbS6fH"></div>
+              <div class="fixed-scale-DbS6fH">
+                <div class="icon_enlight-If6Kzk">
+                  <div class="group-ccJwhE">
+                    <div class="rectangle-copy-Q31dxo"></div>
+                  </div>
+                </div>
+                <div class="f-copy-If6Kzk h4boldcenter">F</div>
+              </div>
+              <div class="logarithmic-scale-DbS6fH">
+                <div class="icon_enlight-axRbuZ">
+                  <div class="group-74DLtC">
+                    <div class="rectangle-copy-rHUeNi"></div>
+                  </div>
+                </div>
+                <div class="title-axRbuZ valign-text-middle">log</div>
+              </div>
+              <div class="orders-DbS6fH">
+                <div class="group-a2jeH5">
+                  <div class="rectangle-copy-xFoSv8"></div>
+                  <div class="icon-xFoSv8">
+                    <img class="o-92hklE" src="img/desktop-hd-copy-38-o-CA6ADE72-70AD-4CE5-BC86-C1180D419325@2x.png" />
+                  </div>
+                </div>
+              </div>
+              <div class="show-alarms-DbS6fH">
+                <div class="group-S9vncE">
+                  <div class="rectangle-qZqx2S"></div>
+                  <div class="icon-qZqx2S">
+                    <img
+                      class="bands-nIolQu"
+                      src="img/desktop-hd-copy-38-bands-1661B251-4823-4F7D-8DEB-D2B3D366AF52@2x.png"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header-divider-copy-A5jo6n"></div>
+        <div class="content-box-copy-6-Ym0oJY">
+          <div class="rectangle-64gaci"></div>
+        </div>
+        <div class="input-normal-select-A5jo6n">
+          <div class="group-zQASCl">
+            <div class="background-vJ4Wz7 border-1px-spun-pearl"></div>
+            <div class="default-text-vJ4Wz7 font-sizes">6</div>
+          </div>
+          <div class="icon-zQASCl">
+            <img class="path-bi2HMm" src="img/desktop-hd-copy-38-path-45DD9C52-C535-40F7-AE1D-0D5C7C0FFC62@2x.png" />
+          </div>
+        </div>
+        <div class="spectrum-header-copy-2-A5jo6n">
+          <div class="waterfall-vedQLq bodyinvmediumregularright">Waterfall</div>
+          <div class="measurements-vedQLq bodytext-blacksmallboldleft">Measurements:</div>
+          <div class="input-normal-select-vedQLq">
+            <div class="group-bGNKx6">
+              <div class="background-1Di9CS border-1px-spun-pearl"></div>
+              <div class="default-text-1Di9CS font-sizes">6</div>
+            </div>
+            <div class="icon-bGNKx6">
+              <img class="path-5TbALO" src="img/desktop-hd-copy-38-path-45DD9C52-C535-40F7-AE1D-0D5C7C0FFC62@2x.png" />
+            </div>
+          </div>
+          <div class="measurements-Mxuz1O bodytext-blacksmallboldleft">Measurements:</div>
+          <div class="icons-trendspectrum-vedQLq">
+            <div class="group-tyVLff">
+              <img class="path-SHDVwL" src="img/desktop-hd-copy-38-path-974643BA-D4A3-459A-8D17-01BC41D9230C@2x.png" />
+            </div>
+          </div>
+          <div class="icon-set-top_right-vedQLq">
+            <div class="full-screen-xMcsIh">
+              <img
+                class="fullscreen-xu58sL"
+                src="img/desktop-hd-copy-38-fullscreen-5D341B10-B169-4876-B9AE-A6B176B672D5@2x.png"
+              />
+            </div>
+            <div class="config-xMcsIh">
+              <img
+                class="settings-7J5Sh2"
+                src="img/desktop-hd-copy-38-settings-2562C0B7-B4BE-465F-9E80-D511FB78E2E7.svg"
+              />
+            </div>
+            <div class="config-copy-xMcsIh">
+              <img
+                class="shape-1xaijg"
+                src="img/desktop-hd-copy-38-shape-6A293851-1FE6-4483-9D08-703ED8C3B7AB@2x.png"
+              />
+            </div>
+            <div class="divider-xMcsIh"></div>
+            <div class="fixed-scale-xMcsIh">
+              <div class="icon_enlight-GkHI46">
+                <div class="group-RhX8Wh">
+                  <div class="rectangle-copy-RxaEUy"></div>
+                </div>
+              </div>
+              <div class="f-copy-GkHI46 h4boldcenter">F</div>
+            </div>
+            <div class="logarithmic-scale-xMcsIh">
+              <div class="icon_enlight-L53Dxj">
+                <div class="group-xpFqMY">
+                  <div class="rectangle-copy-wj3jSz"></div>
+                </div>
+              </div>
+              <div class="title-L53Dxj valign-text-middle">log</div>
+            </div>
+            <div class="orders-xMcsIh">
+              <div class="group-9chZRZ">
+                <div class="rectangle-copy-bs9zqO"></div>
+                <div class="icon-bs9zqO">
+                  <img class="o-3Xz0Ie" src="img/desktop-hd-copy-38-o-CA6ADE72-70AD-4CE5-BC86-C1180D419325@2x.png" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header-divider-copy-2-A5jo6n"></div>
+        <div class="curson-icon-divider-copy-A5jo6n"></div>
+        <div class="icon-set-left-copy-A5jo6n">
+          <div class="single-cursor-copy-YjCSpY">
+            <div class="group-MxHKql">
+              <div class="rectangle-copy-ULY5DK"></div>
+              <div class="icon-ULY5DK">
+                <img
+                  class="single-cursor-F1bRQ2"
+                  src="img/desktop-hd-copy-38-singlecursor-00D1A5BA-5A9F-4707-A06B-E67BEC6C16F3@2x.png"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="waterfall6-2-A5jo6n">
+          <div class="waterfall6-2Y8Ggn">
+            <div class="rectangle-iNQxZU"></div>
+            <div class="group-iNQxZU">
+              <img class="path-zOxkOB" src="img/desktop-hd-copy-38-path-D2C1769C-1C58-4A3E-8722-D9146EC433A5.png" />
+              <img class="path-txisyi" src="img/desktop-hd-copy-38-path-256A2DB5-01A8-48CE-99E6-8226D5765468.png" />
+              <img class="path-Ly3UTE" src="img/desktop-hd-copy-38-path-4F787325-E9A0-430B-AA03-A810DD4D03B8@2x.png" />
+              <img class="path-Lx7ZFs" src="img/desktop-hd-copy-38-path-5DE3B141-BE40-460B-A009-8CE8398C833B@2x.png" />
+              <img class="path-8OQixs" src="img/desktop-hd-copy-38-path-B6AA8562-0AAE-4BF7-9612-338007C59D03.png" />
+              <img class="path-05f9RW" src="img/desktop-hd-copy-38-path-E17057FB-D376-4B77-BBB8-6761DF08DDE2.png" />
+            </div>
+            <div class="group-WYUsu5">
+              <img class="path-xtAW8q" src="img/desktop-hd-copy-38-path-4F787325-E9A0-430B-AA03-A810DD4D03B8@2x.png" />
+              <img class="path-dyjXED" src="img/desktop-hd-copy-38-path-A121C5FF-4FAC-45D7-A1B2-2B9ACA696024@2x.png" />
+              <img class="path-XzsFS4" src="img/desktop-hd-copy-38-path-64088CF3-E30F-4057-A3E5-B02780D6380A.png" />
+              <img class="path-bF6h22" src="img/desktop-hd-copy-38-path-DC0B059C-DF5D-4424-A415-39837336C551.png" />
+              <img class="path-CXyo2m" src="img/desktop-hd-copy-38-path-2D404468-997A-4485-95D2-15067051DC92@2x.png" />
+              <img class="path-J5pyal" src="img/desktop-hd-copy-38-path-40C8BD6A-C0C4-45DC-822C-9B355EC182E4@2x.png" />
+            </div>
+            <div class="group-JwN1Cx">
+              <img class="path-c0X340" src="img/desktop-hd-copy-38-path-E17057FB-D376-4B77-BBB8-6761DF08DDE2.png" />
+              <img class="path-rUjjW7" src="img/desktop-hd-copy-38-path-CA9A7F16-58E3-4338-876D-7432F04F6ADF.png" />
+              <img class="path-zZuEmJ" src="img/desktop-hd-copy-38-path-40C8BD6A-C0C4-45DC-822C-9B355EC182E4@2x.png" />
+              <img class="path-SLr6Iw" src="img/desktop-hd-copy-38-path-40C8BD6A-C0C4-45DC-822C-9B355EC182E4@2x.png" />
+              <img class="path-7ArtuP" src="img/desktop-hd-copy-38-path-A509AD8A-6A6E-493B-811B-A173A3B3DE1E.png" />
+              <img class="path-hYOzBI" src="img/desktop-hd-copy-38-path-66214E27-67AD-4A85-906C-6FBE524DB457.png" />
+            </div>
+            <div class="group-JDDIxx">
+              <div class="x0-wJxBL7 arialmt-normal-granite-gray-11px">0</div>
+              <div class="x100-wJxBL7 arialmt-normal-granite-gray-11px">100</div>
+              <div class="x200-wJxBL7 arialmt-normal-granite-gray-11px">200</div>
+              <div class="x300-wJxBL7 arialmt-normal-granite-gray-11px">300</div>
+              <div class="x400-wJxBL7 arialmt-normal-granite-gray-11px">400</div>
+              <div class="x500-wJxBL7 arialmt-normal-granite-gray-11px">500</div>
+              <div class="x600-wJxBL7 arialmt-normal-granite-gray-11px">600</div>
+              <div class="x700-wJxBL7 arialmt-normal-granite-gray-11px">700</div>
+              <div class="x800-wJxBL7 arialmt-normal-granite-gray-11px">800</div>
+              <div class="x900-wJxBL7 arialmt-normal-granite-gray-11px">900</div>
+              <div class="x1000-wJxBL7 arialmt-normal-granite-gray-11px">1000</div>
+              <div class="x1100-wJxBL7 arialmt-normal-granite-gray-11px">1100</div>
+            </div>
+            <div class="group-ws5Vb4">
+              <img class="shape-cXxylh" src="img/desktop-hd-copy-38-shape-BF27B83D-184F-42C4-9EE5-32DE827C29A6.png" />
+              <img class="shape-nZ93ZA" src="img/desktop-hd-copy-38-shape-7BABBCE9-F5FC-4421-9AF2-4871772A9D90.png" />
+              <img class="shape-wX0EZo" src="img/desktop-hd-copy-38-shape-A018654B-7462-4514-A927-82D953D03B0E.png" />
+              <img class="shape-txNSdF" src="img/desktop-hd-copy-38-shape-83541297-632A-406F-9127-30F630D92F7A.png" />
+              <img class="shape-D4jRWP" src="img/desktop-hd-copy-38-shape-C2D082FD-7B71-4221-AF2E-05D98A8AFC1A.png" />
+              <img class="shape-bHSR3X" src="img/desktop-hd-copy-38-shape-18BF56CA-07D7-4815-803C-911CF1DEA429.png" />
+              <img class="shape-9JknmC" src="img/desktop-hd-copy-38-shape-DBE469BF-2E59-4BF5-AEA4-69437F26C68E.png" />
+              <img class="shape-qkJkbd" src="img/desktop-hd-copy-38-shape-37644686-328E-4E1E-840D-35E5FC50D682.png" />
+              <img class="shape-QPxmnT" src="img/desktop-hd-copy-38-shape-6359717F-1152-4B1B-BECE-2735B05C82AC.png" />
+              <img class="shape-s4ie7f" src="img/desktop-hd-copy-38-shape-B7676AF6-8E8B-4B93-8386-C623B879FBEA.png" />
+              <img class="shape-TKknA5" src="img/desktop-hd-copy-38-shape-1CB27AD7-5B2C-42C1-B9A6-D60A0AF70EEE.png" />
+              <img class="shape-hQwS8v" src="img/desktop-hd-copy-38-shape-8487C30A-AD46-42DA-BF36-5DA7DA76EFD4.png" />
+            </div>
+            <div class="group-5tjXy8">
+              <img class="shape-Y3Z3EU" src="img/desktop-hd-copy-38-shape-BF27B83D-184F-42C4-9EE5-32DE827C29A6.png" />
+              <img class="shape-EBzOww" src="img/desktop-hd-copy-38-shape-7BABBCE9-F5FC-4421-9AF2-4871772A9D90.png" />
+              <img class="shape-OjzUxA" src="img/desktop-hd-copy-38-shape-A018654B-7462-4514-A927-82D953D03B0E.png" />
+              <img class="shape-UJ95iu" src="img/desktop-hd-copy-38-shape-83541297-632A-406F-9127-30F630D92F7A.png" />
+              <img class="shape-QBds4S" src="img/desktop-hd-copy-38-shape-C2D082FD-7B71-4221-AF2E-05D98A8AFC1A.png" />
+              <img class="shape-0yxlIx" src="img/desktop-hd-copy-38-shape-18BF56CA-07D7-4815-803C-911CF1DEA429.png" />
+              <img class="shape-XDxE9h" src="img/desktop-hd-copy-38-shape-DBE469BF-2E59-4BF5-AEA4-69437F26C68E.png" />
+              <img class="shape-eog4ir" src="img/desktop-hd-copy-38-shape-37644686-328E-4E1E-840D-35E5FC50D682.png" />
+              <img class="shape-37dqP9" src="img/desktop-hd-copy-38-shape-6359717F-1152-4B1B-BECE-2735B05C82AC.png" />
+              <img class="shape-r7VCUl" src="img/desktop-hd-copy-38-shape-B7676AF6-8E8B-4B93-8386-C623B879FBEA.png" />
+              <img class="shape-OuDeJd" src="img/desktop-hd-copy-38-shape-1CB27AD7-5B2C-42C1-B9A6-D60A0AF70EEE.png" />
+              <img class="shape-NsVDE0" src="img/desktop-hd-copy-38-shape-8487C30A-AD46-42DA-BF36-5DA7DA76EFD4.png" />
+            </div>
+            <div class="group-Gu9bGT">
+              <img class="shape-ZXI539" src="img/desktop-hd-copy-38-shape-98CA82E8-62F2-4313-A022-71416FC1C8D9.png" />
+              <img class="shape-KSPii6" src="img/desktop-hd-copy-38-shape-347322A5-7DA6-4CD4-B10E-89BAB1525FC6.png" />
+              <img class="shape-yv0Oc8" src="img/desktop-hd-copy-38-shape-51D8D5BD-9DAF-4727-AFA3-AA8C4B4DD304.png" />
+              <img class="shape-qjj6nf" src="img/desktop-hd-copy-38-shape-8771475C-3D6B-4B39-8D2C-0C67EACE80D7.png" />
+              <img class="shape-VVkB4O" src="img/desktop-hd-copy-38-shape-62F3A1E2-3909-4283-8CA4-A612E3915AC0.png" />
+              <img class="shape-Kt0LcR" src="img/desktop-hd-copy-38-shape-A79FC90D-F4D4-43AF-B2F5-6DAA553CCA7C.png" />
+            </div>
+            <div class="group-j2sYIU">
+              <img class="shape-RgeJ2D" src="img/desktop-hd-copy-38-shape-DE3BF8F1-F314-45F4-B386-6232DE7881E9.png" />
+              <img class="shape-RZHKCJ" src="img/desktop-hd-copy-38-shape-8830E532-B002-46CA-B6E9-9F3513B68EB5.png" />
+            </div>
+            <img class="shape-iNQxZU" src="img/desktop-hd-copy-38-shape-59A06678-D581-4A03-90F2-9A4BA97AFEE6.png" />
+            <div class="group-1jgqI8"><div class="hz-Yh30AI">Hz</div></div>
+            <div class="group-WTHv4t"><div class="mms-9GkXkf">mm/s</div></div>
+            <div class="group-WO48pX">
+              <div class="clipped-WmH3za">
+                <div class="group-6kDcAO">
+                  <img class="path-7NBuxA" src="img/desktop-hd-copy-38-path-2D326EA7-865D-4A81-A978-B35CA33E5B2D.png" />
+                  <img class="path-Sdh6w8" src="img/desktop-hd-copy-38-path-BE6659E4-6BF4-4B2F-BAF0-6F66F62166CD.png" />
+                </div>
+              </div>
+              <div class="clipped-aaDMg6">
+                <div class="group-Op6fTL">
+                  <img class="path-dGDtBL" src="img/desktop-hd-copy-38-path-D3453443-6643-4AFF-9342-09900F76E77F.png" />
+                  <img class="path-FUXZPp" src="img/desktop-hd-copy-38-path-270625BA-7CE9-4EDB-90DC-9081F66F5913.png" />
+                </div>
+              </div>
+              <div class="clipped-vUvWee">
+                <div class="group-am7DKi">
+                  <img class="path-GJrIfE" src="img/desktop-hd-copy-38-path-35166514-D925-4FE6-BB94-B9F50B6FF4AA.png" />
+                  <img class="path-KdeLxJ" src="img/desktop-hd-copy-38-path-C329E2BA-FA37-46AC-B7E1-C16E13D1C7F4.png" />
+                </div>
+              </div>
+              <div class="clipped-6FeX9p">
+                <div class="group-G1yiRc">
+                  <img class="path-bzhpU8" src="img/desktop-hd-copy-38-path-BD664DDC-86BD-4B1D-9685-B24E18A54629.png" />
+                  <img class="path-h3HwNv" src="img/desktop-hd-copy-38-path-0A4A6321-21D8-48E0-8AA6-45FF68207D14.png" />
+                </div>
+              </div>
+              <div class="clipped-gxpeNJ">
+                <div class="group-0iGHuR">
+                  <img class="path-vOxUd1" src="img/desktop-hd-copy-38-path-7F8EB00E-13A3-44D2-8BF2-31CB4BECF15C.png" />
+                  <img class="path-1KaA4f" src="img/desktop-hd-copy-38-path-6566D700-5910-48BD-97C8-7B3C41DB48F1.png" />
+                </div>
+              </div>
+              <div class="clipped-swvtGM">
+                <div class="group-tVTYTa">
+                  <img class="path-ijkAOT" src="img/desktop-hd-copy-38-path-53217855-CD6C-4690-AB80-B174B99353D4.png" />
+                  <img class="path-3fGpPG" src="img/desktop-hd-copy-38-path-03A8CAA9-C420-40BC-8FEB-8EF191543BE4.png" />
+                </div>
+              </div>
+              <div class="clipped-qxOlxy">
+                <div class="group-zxdUUZ">
+                  <div class="group-9X9b3M"></div>
+                  <div class="group-LrxUi5"></div>
+                </div>
+              </div>
+              <div class="group-WmH3za">
+                <img
+                  class="path-QV9BYC"
+                  src="img/desktop-hd-copy-38-path-D008515D-C2E6-4CBA-87E7-2C854EB98608@2x.png"
+                />
+              </div>
+              <div class="clipped-aKbw7F">
+                <div class="group-78PWIN">
+                  <div class="group-6vTQqV"></div>
+                  <div class="group-F66Xfe"></div>
+                </div>
+              </div>
+              <div class="group-aaDMg6">
+                <img
+                  class="path-e1Kf6y"
+                  src="img/desktop-hd-copy-38-path-D008515D-C2E6-4CBA-87E7-2C854EB98608@2x.png"
+                />
+              </div>
+            </div>
+            <div class="group-1dDWbr">
+              <div class="group-xxXAyR">
+                <div class="rectangle-MrS5MR"></div>
+                <div class="x0-MrS5MR">0</div>
+              </div>
+            </div>
+            <div class="group-CXwqqx">
+              <div class="group-rx7coD">
+                <div class="rectangle-RQIfsE"></div>
+                <div class="x1200-RQIfsE">1200</div>
+              </div>
+            </div>
+            <div class="group-pLWBJZ">
+              <div class="x0-kjWLvR arialmt-normal-granite-gray-11px">0</div>
+              <div class="x5-kjWLvR arialmt-normal-granite-gray-11px">5</div>
+            </div>
+            <div class="clipped-iNQxZU"></div>
+            <div class="group-QUAEzX">
+              <img class="path-eXVixv" src="img/desktop-hd-copy-38-path-0579349C-EB79-4775-B149-E94A2838DAA7.png" />
+              <img class="path-iWTZ7Z" src="img/desktop-hd-copy-38-path-9734858A-AABA-4D80-A21D-FD3B7D3B0338.png" />
+              <img class="path-zD43i1" src="img/desktop-hd-copy-38-path-A121C5FF-4FAC-45D7-A1B2-2B9ACA696024@2x.png" />
+              <img class="path-3suJt2" src="img/desktop-hd-copy-38-path-E224A019-1F34-4E87-BD6A-4BFF69FD5AE9@2x.png" />
+              <img class="path-YdlhxV" src="img/desktop-hd-copy-38-path-3DC3901A-8B01-4CE1-B444-136A60E5FE55.png" />
+              <img class="path-8msvpc" src="img/desktop-hd-copy-38-path-CA9A7F16-58E3-4338-876D-7432F04F6ADF.png" />
+            </div>
+            <div class="group-OHsbs1">
+              <img class="path-9X7A71" src="img/desktop-hd-copy-38-path-5DE3B141-BE40-460B-A009-8CE8398C833B@2x.png" />
+              <img class="path-rTJ4nD" src="img/desktop-hd-copy-38-path-E224A019-1F34-4E87-BD6A-4BFF69FD5AE9@2x.png" />
+              <img class="path-9wOdlp" src="img/desktop-hd-copy-38-path-82139868-B176-409D-9021-84D604992EB6.png" />
+              <img class="path-Tl0R1x" src="img/desktop-hd-copy-38-path-5287E911-3515-4422-9A2C-3CE9C47E453E.png" />
+              <img class="path-BXb5JH" src="img/desktop-hd-copy-38-path-2D404468-997A-4485-95D2-15067051DC92@2x.png" />
+              <img class="path-RJkwFX" src="img/desktop-hd-copy-38-path-40C8BD6A-C0C4-45DC-822C-9B355EC182E4@2x.png" />
+            </div>
+            <div class="group-fbDUli">
+              <img class="path-fhhqsr" src="img/desktop-hd-copy-38-path-B6AA8562-0AAE-4BF7-9612-338007C59D03.png" />
+              <img class="path-0xxy63" src="img/desktop-hd-copy-38-path-3DC3901A-8B01-4CE1-B444-136A60E5FE55.png" />
+              <img class="path-3b45w4" src="img/desktop-hd-copy-38-path-2D404468-997A-4485-95D2-15067051DC92@2x.png" />
+              <img class="path-SmSx5T" src="img/desktop-hd-copy-38-path-2D404468-997A-4485-95D2-15067051DC92@2x.png" />
+              <img class="path-tlsXr5" src="img/desktop-hd-copy-38-path-790E7368-66BD-42FE-88EF-872ED5457C29.png" />
+              <img class="path-qd9gLI" src="img/desktop-hd-copy-38-path-CA26D7B9-482B-4147-B29C-E9EC74719F03.png" />
+            </div>
+          </div>
+        </div>
+        <div class="rectangle-A5jo6n"></div>
+        <div class="x-A5jo6n">## ###, ####, ##:##:##</div>
+        <div class="x-Ym0oJY arialmt-normal-tuna-11px">## ###, ####, ##:##:##</div>
+        <div class="x-lcxPRI arialmt-normal-tuna-11px">## ###, ####, ##:##:##</div>
+        <div class="x-paisnI arialmt-normal-tuna-11px">## ###, ####, ##:##:##</div>
+        <div class="x-ZHGDvi arialmt-normal-tuna-11px">## ###, ####, ##:##:##</div>
+        <div class="x-SAhii2 arialmt-normal-tuna-11px">## ###, ####, ##:##:##</div>
+        <div class="header-divider-copy-Ym0oJY"></div>
+        <div class="spectrum-header-copy-A5jo6n">
+          <div class="trend-vejpMX bodyinvmediumregularright">Trend</div>
+          <div class="icons-trendspectrum-vejpMX">
+            <img class="trend-utmmmL" src="img/desktop-hd-copy-38-trend-AB501DC1-75FA-4BDF-96F9-71BFC2254290@2x.png" />
+          </div>
+          <div class="full-screen-vejpMX">
+            <img
+              class="fullscreen-t4Bzxs"
+              src="img/desktop-hd-copy-38-fullscreen-5D341B10-B169-4876-B9AE-A6B176B672D5@2x.png"
+            />
+          </div>
+          <div class="config-copy-vejpMX">
+            <img class="shape-eVKiB5" src="img/desktop-hd-copy-38-shape-6A293851-1FE6-4483-9D08-703ED8C3B7AB@2x.png" />
+          </div>
+          <div class="divider-vejpMX"></div>
+          <div class="divider-copy-vejpMX"></div>
+          <div class="orders-vejpMX">
+            <div class="group-rnrTl8">
+              <div class="rectangle-copy-rYzWpS"></div>
+              <div class="icon-rYzWpS">
+                <div class="group-6-copy-SyTVgM">
+                  <div class="notifications_black_48dp-v9sUUg">
+                    <img
+                      class="path-lht7LZ"
+                      src="img/desktop-hd-copy-38-path-AAE513DC-DF74-4147-ADE9-DB504C881541@2x.png"
+                    />
+                    <img
+                      class="combined-shape-lht7LZ"
+                      src="img/desktop-hd-copy-38-combined-shape-1265B243-36C8-41CC-A8F0-24298194B910@2x.png"
+                    />
+                  </div>
+                  <div class="group-5-v9sUUg">
+                    <div class="icons-actions-settings-CAMIip">
+                      <img
+                        class="settings-3XQ2Vq"
+                        src="img/desktop-hd-copy-38-settings-25E61012-A914-4125-AD1F-D7EDBE858E6C.svg"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="show-alarms-vejpMX">
+            <div class="group-ujB6xg">
+              <div class="rectangle-copy-Jo5JLV"></div>
+              <div class="icon-Jo5JLV">
+                <img
+                  class="shape-ueyQDk"
+                  src="img/desktop-hd-copy-38-shape-7622ECAC-AF84-4062-8478-00D9325E9F3D@2x.png"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content-box-copy-3-A5jo6n">
+          <div class="rectangle-BbjVLU"></div>
+        </div>
+        <div class="content-box-copy-4-A5jo6n">
+          <div class="rectangle-ZUAB6Q"></div>
+        </div>
+        <div class="button-normal-with-icon-link-A5jo6n">
+          <div class="group-2-wSlBy6">
+            <div class="group-IzW6ux">
+              <div class="label-name-owHcN1 buttonprimarynormalleft">Back to list view</div>
+              <div class="icon-owHcN1">
+                <img
+                  class="path-ms6Heh"
+                  src="img/desktop-hd-copy-38-path-C39827D3-977F-4B15-A341-602934D287C2@2x.png"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="button-normal-with-icon-link-copy-A5jo6n">
+          <div class="group-2-hbOJdD">
+            <div class="group-KGOOvd">
+              <div class="label-name-KXd7eF buttonprimarynormalleft">Next by priority</div>
+              <div class="icon-KXd7eF">
+                <img
+                  class="chevron-right-JmA32D"
+                  src="img/desktop-hd-copy-38-chevronright-386275A7-2289-4DE9-9B0B-32968BC49DE3@2x.png"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="menu-A5jo6n">
+          <div class="navigation-cCzdxz">
+            <div class="background-N2WzaU"></div>
+            <div class="title-N2WzaU font-sizes">01HV NDE</div>
+            <div class="value-N2WzaU arialmt-normal-black-12px">7.08 mm/s</div>
+            <p class="description-N2WzaU">@M1H MTR OB BRG - HORZ</p>
+            <div class="icon-alarm-alert-N2WzaU">
+              <img class="path-zXIxh9" src="img/desktop-hd-copy-38-path-E145C72C-D60D-4A1D-B2BE-F5D89634327D@2x.png" />
+              <img
+                class="shape-zXIxh9"
+                src="img/desktop-hd-copy-38-shape-1648E060-5E3C-4BB6-B14B-3B58DA4592A9@2x.png"
+              />
+            </div>
+          </div>
+          <div class="navigation-copy-3-cCzdxz">
+            <div class="background-re3hY3"></div>
+            <div class="velocity-re3hY3 font-sizes">01VV NDE</div>
+            <div class="icon-alarm-alert-re3hY3">
+              <img
+                class="shape-xLUD8L"
+                src="img/desktop-hd-copy-38-shape-4C5C588E-AA00-4A08-9968-FD3EA8DF9A6D@2x.png"
+              />
+              <img class="path-xLUD8L" src="img/desktop-hd-copy-38-path-7BD24F52-09F1-4354-8D42-1750A1F3C508@2x.png" />
+            </div>
+            <div class="value-re3hY3 arialmt-normal-black-12px">6.96 mm/s</div>
+          </div>
+          <div class="navigation-copy-4-cCzdxz">
+            <div class="background-iOX1O5"></div>
+            <div class="velocity-iOX1O5 font-sizes">02HV DE</div>
+            <div class="icon-alarm-alert-iOX1O5">
+              <img class="path-Lh5xaz" src="img/desktop-hd-copy-38-path-E145C72C-D60D-4A1D-B2BE-F5D89634327D@2x.png" />
+              <img
+                class="shape-Lh5xaz"
+                src="img/desktop-hd-copy-38-shape-1648E060-5E3C-4BB6-B14B-3B58DA4592A9@2x.png"
+              />
+            </div>
+            <div class="value-iOX1O5 arialmt-normal-black-12px">9.76 mm/s</div>
+          </div>
+          <div class="navigation-copy-5-cCzdxz">
+            <div class="background-7qDqVT"></div>
+            <div class="velocity-7qDqVT font-sizes">02HA DE</div>
+            <div class="icon-alarm-alert-7qDqVT">
+              <img
+                class="shape-Zfs2T5"
+                src="img/desktop-hd-copy-38-shape-4C5C588E-AA00-4A08-9968-FD3EA8DF9A6D@2x.png"
+              />
+              <img class="path-Zfs2T5" src="img/desktop-hd-copy-38-path-7BD24F52-09F1-4354-8D42-1750A1F3C508@2x.png" />
+            </div>
+            <div class="value-7qDqVT arialmt-normal-black-12px">1.1 g</div>
+          </div>
+          <div class="navigation-copy-6-cCzdxz">
+            <div class="background-pqdRaT"></div>
+            <div class="velocity-pqdRaT font-sizes">02HE3 DE</div>
+            <div class="icon-alarm-alert-pqdRaT">
+              <img
+                class="shape-GabLOM"
+                src="img/desktop-hd-copy-38-shape-4C5C588E-AA00-4A08-9968-FD3EA8DF9A6D@2x.png"
+              />
+              <img class="path-GabLOM" src="img/desktop-hd-copy-38-path-7BD24F52-09F1-4354-8D42-1750A1F3C508@2x.png" />
+            </div>
+            <div class="value-pqdRaT arialmt-normal-black-12px">4.4 gE</div>
+          </div>
+          <div class="navigation-copy-7-cCzdxz">
+            <div class="background-ThhxEB"></div>
+            <div class="velocity-ThhxEB font-sizes">02VV DE</div>
+            <div class="icon-alarm-alert-ThhxEB">
+              <img
+                class="shape-3tNAce"
+                src="img/desktop-hd-copy-38-shape-4C5C588E-AA00-4A08-9968-FD3EA8DF9A6D@2x.png"
+              />
+              <img class="path-3tNAce" src="img/desktop-hd-copy-38-path-7BD24F52-09F1-4354-8D42-1750A1F3C508@2x.png" />
+            </div>
+            <div class="value-ThhxEB arialmt-normal-black-12px">4.4 gE</div>
+          </div>
+          <div class="navigation-copy-cCzdxz">
+            <div class="background-uOOnyx"></div>
+            <div class="velocity-uOOnyx font-sizes">01HA NDE</div>
+            <div class="icon-alarm-alert-uOOnyx">
+              <img
+                class="shape-hWWQAc"
+                src="img/desktop-hd-copy-38-shape-4C5C588E-AA00-4A08-9968-FD3EA8DF9A6D@2x.png"
+              />
+              <img class="path-hWWQAc" src="img/desktop-hd-copy-38-path-7BD24F52-09F1-4354-8D42-1750A1F3C508@2x.png" />
+            </div>
+            <div class="value-uOOnyx arialmt-normal-black-12px">1.04 g</div>
+          </div>
+          <div class="navigation-copy-2-cCzdxz">
+            <div class="background-OCq9HF"></div>
+            <div class="velocity-OCq9HF font-sizes">01HE3 NDE</div>
+            <div class="icon-alarm-alert-OCq9HF">
+              <img
+                class="shape-9H7Sxy"
+                src="img/desktop-hd-copy-38-shape-4C5C588E-AA00-4A08-9968-FD3EA8DF9A6D@2x.png"
+              />
+              <img class="path-9H7Sxy" src="img/desktop-hd-copy-38-path-7BD24F52-09F1-4354-8D42-1750A1F3C508@2x.png" />
+            </div>
+            <div class="value-OCq9HF arialmt-normal-black-12px">3.72 gE</div>
+          </div>
+        </div>
+        <div class="x06029-mtr-A5jo6n h3regularleft">06.029 MTR</div>
+        <div class="icons-arrows-chevron-up-A5jo6n">
+          <img class="path-WNZPS3" src="img/desktop-hd-copy-38-path-BF4C5039-95DC-46B4-A30F-29C10F8CCCB7@2x.png" />
+        </div>
+        <div class="icons-alarm-alert-A5jo6n">
+          <img class="path-KEACIw" src="img/desktop-hd-copy-38-path-75818585-4290-46FD-86F5-2B8B5B2E411A@2x.png" />
+          <img class="shape-KEACIw" src="img/desktop-hd-copy-38-shape-9103A7C3-BEF3-4D8B-B358-A6B9B36AEBAD@2x.png" />
+        </div>
+        <div class="orders-A5jo6n">
+          <div class="group-x29Wxr">
+            <div class="rectangle-copy-PCxRaq"></div>
+            <div class="icon-PCxRaq">
+              <img
+                class="heatmap-GFseG6"
+                src="img/desktop-hd-copy-38-heatmap-26B1DE88-1BBD-43F4-8828-25DD0CE2FDC3@2x.png"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="orders-copy-A5jo6n">
+          <div class="group-grQm9K">
+            <div class="rectangle-copy-kQxA9d"></div>
+            <div class="icon-kQxA9d">
+              <img
+                class="timewave-n2Zx0x"
+                src="img/desktop-hd-copy-38-timewave-0053BC50-222B-48BD-9BBF-00E59F01815A@2x.png"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="orders-copy-2-Ym0oJY">
+          <div class="group-cOPGeE">
+            <div class="rectangle-7sSlKf"></div>
+            <div class="icon-7sSlKf">
+              <div class="group-CCCqJA">
+                <img
+                  class="path-FSYG4p"
+                  src="img/desktop-hd-copy-38-path-974643BA-D4A3-459A-8D17-01BC41D9230C@2x.png"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="show-alarms-A5jo6n">
+          <div class="group-UTxJ9x">
+            <div class="rectangle-iyxMmf"></div>
+            <div class="icon-iyxMmf">
+              <img
+                class="spectrum-ng21h6"
+                src="img/desktop-hd-copy-38-spectrum-3379AB68-C57C-4BDF-B3DB-3B8AEBCD3FEE@2x.png"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="ai-cursors-Ym0oJY">
+          <div class="group-CgEDNr">
+            <div class="rectangle-e9jjoJ"></div>
+            <div class="icon-e9jjoJ">
+              <img
+                class="trend-RKTsYP"
+                src="img/desktop-hd-copy-38-trend-22B7D110-5B26-42AC-9E2D-9D6915B5C830@2x.png"
+              />
+            </div>
+          </div>
+        </div>
+        <img
+          class="sandboxenlightskfcom-A5jo6n"
+          src="img/desktop-hd-copy-38-sandboxenlightskfcomanalyzedetails52b20361-b493-490a-9424-81b89699b669baec00cd-05a4-4e8d-b09c-cbf110eaa222measurement920f81ed-1c2b-4859-9283-e8f89da7b4d4-1-copy-5-D6B1933C-C4DA-4032-8888-AB5531F771CD@2x.png"
+        />
+        <img
+          class="sandboxenlightskfcom-Ym0oJY"
+          src="img/desktop-hd-copy-38-sandboxenlightskfcomanalyzedetails52b20361-b493-490a-9424-81b89699b669baec00cd-05a4-4e8d-b09c-cbf110eaa222measurement920f81ed-1c2b-4859-9283-e8f89da7b4d4-1-copy-6-7B1C29D3-B5F5-4BD7-B253-695FBB5D3D5C@2x.png"
+        />
+        <div class="input-normal-select-Ym0oJY">
+          <div class="group-MjxPk6">
+            <div class="background-uBaC6x border-1px-spun-pearl"></div>
+            <div class="default-text-uBaC6x font-sizes">Last 2 months</div>
+          </div>
+          <div class="icon-MjxPk6">
+            <img class="path-yxVTlb" src="img/desktop-hd-copy-38-path-45DD9C52-C535-40F7-AE1D-0D5C7C0FFC62@2x.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

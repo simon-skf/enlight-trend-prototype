@@ -1,5 +1,5 @@
 const colorBlue = "#0F58D6";
-const colorGrey = "#808895";
+const colorGrey = "#676F7C";
 
 let trendHighcharts = undefined;
 let overallTrendRaw = undefined;
@@ -12,31 +12,31 @@ let variant = {
 const dataSources = {
   //https://measurement-api.sandbox.iot.enlight.skf.com/nodes/7423d282-05cc-4d25-8e66-d91594b38d62/node-data/recent?content_type=DATA_POINT&limit=1000&offset=0&resurrectable=false
   0: [
-    `dataset_0/data_points_0.json`,
-    `dataset_0/data_points_1000.json`,
-    `dataset_0/data_points_2000.json`,
-    `dataset_0/data_points_3000.json`,
-    `dataset_0/data_points_4000.json`,
+    `/dataset_0/data_points_0.json`,
+    `/dataset_0/data_points_1000.json`,
+    `/dataset_0/data_points_2000.json`,
+    `/dataset_0/data_points_3000.json`,
+    `/dataset_0/data_points_4000.json`,
   ],
   //https://measurement-api.sandbox.iot.enlight.skf.com/nodes/f1f344bd-3d82-4eea-95bc-3c59d951a685/node-data/recent?offset=0&limit=1000&content_type=DATA_POINT&exclude_coordinates=false&resurrectable=false
   1: [
-    //   `dataset_1/data_points_0.json`,
-    `dataset_1/data_points_1000.json`,
-    `dataset_1/data_points_2000.json`,
-    `dataset_1/data_points_3000.json`,
-    `dataset_1/data_points_4000.json`,
+    //   `/dataset_1/data_points_0.json`,
+    `/dataset_1/data_points_1000.json`,
+    `/dataset_1/data_points_2000.json`,
+    `/dataset_1/data_points_3000.json`,
+    `/dataset_1/data_points_4000.json`,
   ],
   //https://measurement-api.sandbox.iot.enlight.skf.com/nodes/2739df90-3040-4cb3-a026-637e64e616e9/node-data/recent?content_type=DATA_POINT&limit=1000&offset=0&resurrectable=false
-  2: [`dataset_2/data_points_0.json`],
+  2: [`/dataset_2/data_points_0.json`],
 };
 
 const bandOverallsSource = {
   //https://measurement-api.sandbox.iot.enlight.skf.com/nodes/7423d282-05cc-4d25-8e66-d91594b38d62/band/overall?startFrequency=0&stopFrequency=1300&windowFunction=hanning&frequencyType=0
-  0: `dataset_0/band_overalls.json`,
+  0: `/dataset_0/band_overalls.json`,
   //https://measurement-api.sandbox.iot.enlight.skf.com/nodes/f1f344bd-3d82-4eea-95bc-3c59d951a685/band/overall?startFrequency=0&stopFrequency=30&windowFunction=hanning&frequencyType=0
-  1: `dataset_1/band_overalls.json`,
+  1: `/dataset_1/band_overalls.json`,
   //https://measurement-api.sandbox.iot.enlight.skf.com/nodes/2739df90-3040-4cb3-a026-637e64e616e9/band/overall?startFrequency=0&stopFrequency=1200&windowFunction=hanning&frequencyType=0
-  2: `dataset_2/band_overalls.json`,
+  2: `/dataset_2/band_overalls.json`,
 };
 
 const magicSpectrumOverallRatio = {
@@ -133,7 +133,7 @@ async function init() {
 
   spectrumTrendRaw = spectrumTrend.map((val) => [val.x, val.y]);
 
-  trendHighcharts = Highcharts.chart("container", {
+  trendHighcharts = Highcharts.chart("trend-highcharts", {
     title: {
       text: "",
     },
@@ -148,11 +148,12 @@ async function init() {
           }
         },
       },
-      animation: {
-        duration: 300,
-        // Uses Math.easeOutBounce
-        easing: "easeInOutQuad",
-      },
+    //   animation: {
+    //     duration: 300,
+    //     // Uses Math.easeOutBounce
+    //     // easing: "easeInOutQuad",
+    //   },
+      height: 292
     },
     xAxis: {
       type: "datetime",

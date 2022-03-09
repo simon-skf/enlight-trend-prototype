@@ -1,4 +1,4 @@
-.highcharts-figure,
+/* .highcharts-figure,
 .highcharts-data-table table {
     margin: 1em auto;
 }
@@ -37,4 +37,7 @@
 .highcharts-data-table tr:hover {
     background: #f1f7ff;
 }
-
+ */
+.highcharts-figure {
+    
+}
