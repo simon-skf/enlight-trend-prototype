@@ -1,0 +1,194 @@
+{
+  "trends": [
+    {
+      "createdAt": "2018-03-08T13:11:18Z",
+      "measurementId": "5a41afac-46c2-4f29-a2fc-26a81ff09d5a",
+      "overallBand": 0.3844678943874037
+    },
+    {
+      "createdAt": "2018-01-09T11:57:11Z",
+      "measurementId": "819e357d-8e4c-46bd-a874-241eb99bdea6",
+      "overallBand": 0.18181706303709513
+    },
+    {
+      "createdAt": "2017-12-05T13:47:39Z",
+      "measurementId": "6ec45bd4-b42f-4804-a502-d7cfb598c8f7",
+      "overallBand": 0.15165069321688943
+    },
+    {
+      "createdAt": "2017-11-03T10:13:51Z",
+      "measurementId": "1e150f82-45a5-4cc3-b107-4cc41c3e443e",
+      "overallBand": 0.16511407213314597
+    },
+    {
+      "createdAt": "2017-10-04T12:04:04Z",
+      "measurementId": "38d3f633-cbe8-4b45-854e-456caed9b5c7",
+      "overallBand": 0.17155745570195824
+    },
+    {
+      "createdAt": "2017-09-07T10:40:41Z",
+      "measurementId": "37b1b676-b52c-4465-b48d-6c59f3211f21",
+      "overallBand": 0.17441650299395017
+    },
+    {
+      "createdAt": "2017-08-08T13:03:08Z",
+      "measurementId": "9d673612-1548-4b02-98a6-b32972fc7b4c",
+      "overallBand": 0.15725174447891987
+    },
+    {
+      "createdAt": "2017-07-11T09:34:32Z",
+      "measurementId": "372b111d-eaee-4ff8-9b22-215f7d1d2e32",
+      "overallBand": 0.16303610938103844
+    },
+    {
+      "createdAt": "2017-06-08T09:47:33Z",
+      "measurementId": "c3d73583-12fe-4ab9-9fab-d1b983ef1aea",
+      "overallBand": 0.1237872662223738
+    },
+    {
+      "createdAt": "2017-05-11T13:55:19Z",
+      "measurementId": "8ccadfd9-0a0e-41c7-8d06-ed182812f5c0",
+      "overallBand": 0.17583754291558298
+    },
+    {
+      "createdAt": "2017-04-11T11:59:41Z",
+      "measurementId": "f4104baa-4921-493b-95c8-f6070ac24254",
+      "overallBand": 0.15679633285302205
+    },
+    {
+      "createdAt": "2017-03-06T10:54:13Z",
+      "measurementId": "ea9a0dad-c82a-4714-9317-e87b6d88ae85",
+      "overallBand": 0.18257306706449317
+    },
+    {
+      "createdAt": "2017-02-08T08:15:49Z",
+      "measurementId": "7b6e9a7b-5656-4b00-9183-7f8136377a5e",
+      "overallBand": 0.13406765252719768
+    },
+    {
+      "createdAt": "2017-01-05T14:07:19Z",
+      "measurementId": "50c74466-7d99-4105-9d11-7d384dd24966",
+      "overallBand": 0.20989745344565613
+    },
+    {
+      "createdAt": "2016-12-05T09:58:00Z",
+      "measurementId": "161fc469-7130-4af2-937f-e51bddcede94",
+      "overallBand": 0.12218234700083007
+    },
+    {
+      "createdAt": "2016-11-04T11:05:42Z",
+      "measurementId": "ee374343-fd54-4c3f-8ce1-31519210206e",
+      "overallBand": 0.1607290610630311
+    },
+    {
+      "createdAt": "2016-10-06T13:23:45Z",
+      "measurementId": "301115a8-5e87-4347-bed8-ce8bab7b2120",
+      "overallBand": 0.15129117579455856
+    },
+    {
+      "createdAt": "2016-09-09T09:56:38Z",
+      "measurementId": "8e697d9c-5d7e-472c-acc5-32a31b5e0ac5",
+      "overallBand": 0.1408471638171019
+    },
+    {
+      "createdAt": "2016-08-03T10:12:34Z",
+      "measurementId": "37d0da12-c7fe-4382-811b-62d930e51573",
+      "overallBand": 0.19085904164186474
+    },
+    {
+      "createdAt": "2016-07-12T12:53:49Z",
+      "measurementId": "87d0135d-233f-41ad-8f1e-025354b04448",
+      "overallBand": 0.14100710318218532
+    },
+    {
+      "createdAt": "2016-06-07T11:16:59Z",
+      "measurementId": "e75765ce-2618-4119-b3d5-ddefd476d9a6",
+      "overallBand": 0.1420550109183219
+    },
+    {
+      "createdAt": "2016-05-18T10:50:03Z",
+      "measurementId": "b9124b7f-7d94-43d0-a6ed-ca3f4affbb14",
+      "overallBand": 0.21398946858022194
+    },
+    {
+      "createdAt": "2016-04-14T08:32:09Z",
+      "measurementId": "43eb24c6-d150-4d7a-b79d-b63a7fe1d898",
+      "overallBand": 0.14331824821831346
+    },
+    {
+      "createdAt": "2016-03-07T11:46:06Z",
+      "measurementId": "37b6d2ec-2f28-4c28-9e21-074c15f2ab6b",
+      "overallBand": 0.16877891805332468
+    },
+    {
+      "createdAt": "2016-01-07T11:32:30Z",
+      "measurementId": "c6a6272e-2f71-4544-bab7-ae0614d35596",
+      "overallBand": 0.154115322176
+    },
+    {
+      "createdAt": "2015-12-07T13:52:53Z",
+      "measurementId": "e5757597-faf4-458a-b74c-0314a4eea985",
+      "overallBand": 0.17626114827795375
+    },
+    {
+      "createdAt": "2015-11-05T10:10:07Z",
+      "measurementId": "26e9662e-cb24-4b7f-b0b0-a14ab3e0b600",
+      "overallBand": 0.13535962456312334
+    },
+    {
+      "createdAt": "2015-10-15T10:09:02Z",
+      "measurementId": "375a938e-0145-4fef-86d9-2ed0c389a1c2",
+      "overallBand": 0.17417572034968645
+    },
+    {
+      "createdAt": "2015-09-09T12:59:05Z",
+      "measurementId": "c4ae700e-3d9e-4edd-b1f0-cc7ea040f64a",
+      "overallBand": 0.16146899504320578
+    },
+    {
+      "createdAt": "2015-08-11T09:24:20Z",
+      "measurementId": "eb1e0922-e5dd-4c08-8608-075ec55eab22",
+      "overallBand": 0.15967747342802113
+    },
+    {
+      "createdAt": "2015-07-15T19:56:09Z",
+      "measurementId": "0e9b4055-f5ea-43fb-891d-d5dca9584f08",
+      "overallBand": 0.18949816336017875
+    },
+    {
+      "createdAt": "2015-05-12T13:32:17Z",
+      "measurementId": "90d7a30a-5a3f-4437-b079-c54235b86690",
+      "overallBand": 0.20906974067580864
+    },
+    {
+      "createdAt": "2015-04-07T12:08:43Z",
+      "measurementId": "4b324458-8d29-4da6-bf78-4f3128f0a84c",
+      "overallBand": 0.16840341753945007
+    },
+    {
+      "createdAt": "2015-03-09T11:29:11Z",
+      "measurementId": "27de7cd2-4d5b-4f6a-b02a-d0b11ecfc669",
+      "overallBand": 0.1816951565984165
+    },
+    {
+      "createdAt": "2015-02-05T13:52:01Z",
+      "measurementId": "a32cacf7-423d-435d-b563-70ae64b60adc",
+      "overallBand": 0.19788373379022486
+    },
+    {
+      "createdAt": "2014-12-08T11:36:21Z",
+      "measurementId": "65c87d7a-3211-420f-8654-f6f8ce35ee1e",
+      "overallBand": 0.1698635761195582
+    },
+    {
+      "createdAt": "2014-11-10T09:21:44Z",
+      "measurementId": "89960b8a-5228-4193-8257-9b06522c48a3",
+      "overallBand": 0.16112533691891873
+    },
+    {
+      "createdAt": "2014-10-22T10:13:43Z",
+      "measurementId": "45597281-7941-47eb-b863-d574125e595d",
+      "overallBand": 0.15668620628778812
+    }
+  ]
+}

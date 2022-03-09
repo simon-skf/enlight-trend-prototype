@@ -1,0 +1,612 @@
+{
+  "pagination": {},
+  "data": [
+    {
+      "dataPoint": {
+        "xUnit": "ms",
+        "yUnit": "in/sec",
+        "coordinate": { "x": 1520514678000, "y": 0.3844112 }
+      },
+      "rateOfChange": 111.45579552974348,
+      "createdAt": "2018-03-08T13:11:18Z",
+      "contentType": "DATA_POINT",
+      "frequency": "",
+      "measurementId": "f2d6777d-6968-4399-8ec1-75c1ee621195",
+      "tags": "{}",
+      "assetId": "baec00cd-05a4-4e8d-b09c-cbf110eaa222",
+      "nodeId": "2739df90-3040-4cb3-a026-637e64e616e9",
+      "siteId": "55722522-0cc5-46a7-90ee-7ff9d72400a3"
+    },
+    {
+      "dataPoint": {
+        "xUnit": "ms",
+        "yUnit": "in/sec",
+        "coordinate": { "x": 1515499031000, "y": 0.1817927 }
+      },
+      "rateOfChange": 19.888903763858178,
+      "createdAt": "2018-01-09T11:57:11Z",
+      "contentType": "DATA_POINT",
+      "frequency": "",
+      "measurementId": "9486bd26-65cb-4854-8a3f-4cda3eec9c18",
+      "tags": "{}",
+      "assetId": "baec00cd-05a4-4e8d-b09c-cbf110eaa222",
+      "nodeId": "2739df90-3040-4cb3-a026-637e64e616e9",
+      "siteId": "55722522-0cc5-46a7-90ee-7ff9d72400a3"
+    },
+    {
+      "dataPoint": {
+        "xUnit": "ms",
+        "yUnit": "in/sec",
+        "coordinate": { "x": 1512481659000, "y": 0.1516343 }
+      },
+      "rateOfChange": -8.152137372352165,
+      "createdAt": "2017-12-05T13:47:39Z",
+      "contentType": "DATA_POINT",
+      "frequency": "",
+      "measurementId": "558a4a3e-f4d2-4042-827b-9c0c86ceed90",
+      "tags": "{}",
+      "assetId": "baec00cd-05a4-4e8d-b09c-cbf110eaa222",
+      "nodeId": "2739df90-3040-4cb3-a026-637e64e616e9",
+      "siteId": "55722522-0cc5-46a7-90ee-7ff9d72400a3"
+    },
+    {
+      "dataPoint": {
+        "xUnit": "ms",
+        "yUnit": "in/sec",
+        "coordinate": { "x": 1509704031000, "y": 0.1650929 }
+      },
+      "rateOfChange": -3.7574677156834975,
+      "createdAt": "2017-11-03T10:13:51Z",
+      "contentType": "DATA_POINT",
+      "frequency": "",
+      "measurementId": "cfd6b287-53d1-49ca-bb9b-1632907be243",
+      "tags": "{}",
+      "assetId": "baec00cd-05a4-4e8d-b09c-cbf110eaa222",
+      "nodeId": "2739df90-3040-4cb3-a026-637e64e616e9",
+      "siteId": "55722522-0cc5-46a7-90ee-7ff9d72400a3"
+    },
+    {
+      "dataPoint": {
+        "xUnit": "ms",
+        "yUnit": "in/sec",
+        "coordinate": { "x": 1507118644000, "y": 0.1715384 }
+      },
+      "rateOfChange": -1.6380056767682485,
+      "createdAt": "2017-10-04T12:04:04Z",
+      "contentType": "DATA_POINT",
+      "frequency": "",
+      "measurementId": "87267399-fb83-47f6-86bd-7890bc36f5a5",
+      "tags": "{}",
+      "assetId": "baec00cd-05a4-4e8d-b09c-cbf110eaa222",
+      "nodeId": "2739df90-3040-4cb3-a026-637e64e616e9",
+      "siteId": "55722522-0cc5-46a7-90ee-7ff9d72400a3"
+    },
+    {
+      "dataPoint": {
+        "xUnit": "ms",
+        "yUnit": "in/sec",
+        "coordinate": { "x": 1504780841000, "y": 0.174395 }
+      },
+      "rateOfChange": 10.91614016029877,
+      "createdAt": "2017-09-07T10:40:41Z",
+      "contentType": "DATA_POINT",
+      "frequency": "",
+      "measurementId": "e40ea0c0-5fd9-49c4-b8cd-25cfc01366ba",
+      "tags": "{}",
+      "assetId": "baec00cd-05a4-4e8d-b09c-cbf110eaa222",
+      "nodeId": "2739df90-3040-4cb3-a026-637e64e616e9",
+      "siteId": "55722522-0cc5-46a7-90ee-7ff9d72400a3"
+    },
+    {
+      "dataPoint": {
+        "xUnit": "ms",
+        "yUnit": "in/sec",
+        "coordinate": { "x": 1502197388000, "y": 0.1572314 }
+      },
+      "rateOfChange": -3.545882624304045,
+      "createdAt": "2017-08-08T13:03:08Z",
+      "contentType": "DATA_POINT",
+      "frequency": "",
+      "measurementId": "0d988a84-6baa-46ca-8ab8-27c11100a9f7",
+      "tags": "{}",
+      "assetId": "baec00cd-05a4-4e8d-b09c-cbf110eaa222",
+      "nodeId": "2739df90-3040-4cb3-a026-637e64e616e9",
+      "siteId": "55722522-0cc5-46a7-90ee-7ff9d72400a3"
+    },
+    {
+      "dataPoint": {
+        "xUnit": "ms",
+        "yUnit": "in/sec",
+        "coordinate": { "x": 1499765672000, "y": 0.1630116 }
+      },
+      "rateOfChange": 31.704302061308436,
+      "createdAt": "2017-07-11T09:34:32Z",
+      "contentType": "DATA_POINT",
+      "frequency": "",
+      "measurementId": "fd026b84-906b-48d5-8cea-b9d300ce4ef5",
+      "tags": "{}",
+      "assetId": "baec00cd-05a4-4e8d-b09c-cbf110eaa222",
+      "nodeId": "2739df90-3040-4cb3-a026-637e64e616e9",
+      "siteId": "55722522-0cc5-46a7-90ee-7ff9d72400a3"
+    },
+    {
+      "dataPoint": {
+        "xUnit": "ms",
+        "yUnit": "in/sec",
+        "coordinate": { "x": 1496915253000, "y": 0.1237709 }
+      },
+      "rateOfChange": -29.602467564304042,
+      "createdAt": "2017-06-08T09:47:33Z",
+      "contentType": "DATA_POINT",
+      "frequency": "",
+      "measurementId": "7dc36778-df52-4fcb-a27e-a4610e1c6f3d",
+      "tags": "{}",
+      "assetId": "baec00cd-05a4-4e8d-b09c-cbf110eaa222",
+      "nodeId": "2739df90-3040-4cb3-a026-637e64e616e9",
+      "siteId": "55722522-0cc5-46a7-90ee-7ff9d72400a3"
+    },
+    {
+      "dataPoint": {
+        "xUnit": "ms",
+        "yUnit": "in/sec",
+        "coordinate": { "x": 1494510919000, "y": 0.1758171 }
+      },
+      "rateOfChange": 12.142771034770451,
+      "createdAt": "2017-05-11T13:55:19Z",
+      "contentType": "DATA_POINT",
+      "frequency": "",
+      "measurementId": "334670d4-8220-41b3-9214-6d511657e58a",
+      "tags": "{}",
+      "assetId": "baec00cd-05a4-4e8d-b09c-cbf110eaa222",
+      "nodeId": "2739df90-3040-4cb3-a026-637e64e616e9",
+      "siteId": "55722522-0cc5-46a7-90ee-7ff9d72400a3"
+    },
+    {
+      "dataPoint": {
+        "xUnit": "ms",
+        "yUnit": "in/sec",
+        "coordinate": { "x": 1491911981000, "y": 0.1567797 }
+      },
+      "rateOfChange": -14.116609467569074,
+      "createdAt": "2017-04-11T11:59:41Z",
+      "contentType": "DATA_POINT",
+      "frequency": "",
+      "measurementId": "7279f455-c302-42de-815c-4ffb94dc5a5d",
+      "tags": "{}",
+      "assetId": "baec00cd-05a4-4e8d-b09c-cbf110eaa222",
+      "nodeId": "2739df90-3040-4cb3-a026-637e64e616e9",
+      "siteId": "55722522-0cc5-46a7-90ee-7ff9d72400a3"
+    },
+    {
+      "dataPoint": {
+        "xUnit": "ms",
+        "yUnit": "in/sec",
+        "coordinate": { "x": 1488797653000, "y": 0.1825495 }
+      },
+      "rateOfChange": 36.174467907345914,
+      "createdAt": "2017-03-06T10:54:13Z",
+      "contentType": "DATA_POINT",
+      "frequency": "",
+      "measurementId": "d2188185-d912-498c-bd4d-e318df35ac32",
+      "tags": "{}",
+      "assetId": "baec00cd-05a4-4e8d-b09c-cbf110eaa222",
+      "nodeId": "2739df90-3040-4cb3-a026-637e64e616e9",
+      "siteId": "55722522-0cc5-46a7-90ee-7ff9d72400a3"
+    },
+    {
+      "dataPoint": {
+        "xUnit": "ms",
+        "yUnit": "in/sec",
+        "coordinate": { "x": 1486541749000, "y": 0.1340556 }
+      },
+      "rateOfChange": -36.126223223449294,
+      "createdAt": "2017-02-08T08:15:49Z",
+      "contentType": "DATA_POINT",
+      "frequency": "",
+      "measurementId": "d564b5ac-a059-40ee-972c-ea5b9fa03274",
+      "tags": "{}",
+      "assetId": "baec00cd-05a4-4e8d-b09c-cbf110eaa222",
+      "nodeId": "2739df90-3040-4cb3-a026-637e64e616e9",
+      "siteId": "55722522-0cc5-46a7-90ee-7ff9d72400a3"
+    },
+    {
+      "dataPoint": {
+        "xUnit": "ms",
+        "yUnit": "in/sec",
+        "coordinate": { "x": 1483625239000, "y": 0.2098758 }
+      },
+      "rateOfChange": 71.79615210828581,
+      "createdAt": "2017-01-05T14:07:19Z",
+      "contentType": "DATA_POINT",
+      "frequency": "",
+      "measurementId": "c9c211a6-3935-44e8-9c10-14756e84d585",
+      "tags": "{}",
+      "assetId": "baec00cd-05a4-4e8d-b09c-cbf110eaa222",
+      "nodeId": "2739df90-3040-4cb3-a026-637e64e616e9",
+      "siteId": "55722522-0cc5-46a7-90ee-7ff9d72400a3"
+    },
+    {
+      "dataPoint": {
+        "xUnit": "ms",
+        "yUnit": "in/sec",
+        "coordinate": { "x": 1480931880000, "y": 0.1221656 }
+      },
+      "rateOfChange": -23.984058291150863,
+      "createdAt": "2016-12-05T09:58:00Z",
+      "contentType": "DATA_POINT",
+      "frequency": "",
+      "measurementId": "29ec7760-97cc-423b-ab81-c1e4343e61d8",
+      "tags": "{}",
+      "assetId": "baec00cd-05a4-4e8d-b09c-cbf110eaa222",
+      "nodeId": "2739df90-3040-4cb3-a026-637e64e616e9",
+      "siteId": "55722522-0cc5-46a7-90ee-7ff9d72400a3"
+    },
+    {
+      "dataPoint": {
+        "xUnit": "ms",
+        "yUnit": "in/sec",
+        "coordinate": { "x": 1478257542000, "y": 0.1607105 }
+      },
+      "rateOfChange": 6.2379482013114025,
+      "createdAt": "2016-11-04T11:05:42Z",
+      "contentType": "DATA_POINT",
+      "frequency": "",
+      "measurementId": "876bba75-b216-4ad6-bc39-8c128f340f19",
+      "tags": "{}",
+      "assetId": "baec00cd-05a4-4e8d-b09c-cbf110eaa222",
+      "nodeId": "2739df90-3040-4cb3-a026-637e64e616e9",
+      "siteId": "55722522-0cc5-46a7-90ee-7ff9d72400a3"
+    },
+    {
+      "dataPoint": {
+        "xUnit": "ms",
+        "yUnit": "in/sec",
+        "coordinate": { "x": 1475760225000, "y": 0.1512741 }
+      },
+      "rateOfChange": 7.4155706106694,
+      "createdAt": "2016-10-06T13:23:45Z",
+      "contentType": "DATA_POINT",
+      "frequency": "",
+      "measurementId": "646dc97d-916f-4d92-8603-e31bb9485e54",
+      "tags": "{}",
+      "assetId": "baec00cd-05a4-4e8d-b09c-cbf110eaa222",
+      "nodeId": "2739df90-3040-4cb3-a026-637e64e616e9",
+      "siteId": "55722522-0cc5-46a7-90ee-7ff9d72400a3"
+    },
+    {
+      "dataPoint": {
+        "xUnit": "ms",
+        "yUnit": "in/sec",
+        "coordinate": { "x": 1473414998000, "y": 0.1408307 }
+      },
+      "rateOfChange": -26.204173900102855,
+      "createdAt": "2016-09-09T09:56:38Z",
+      "contentType": "DATA_POINT",
+      "frequency": "",
+      "measurementId": "91ad18c5-2acf-4f40-9ff6-b8aaf79a9abb",
+      "tags": "{}",
+      "assetId": "baec00cd-05a4-4e8d-b09c-cbf110eaa222",
+      "nodeId": "2739df90-3040-4cb3-a026-637e64e616e9",
+      "siteId": "55722522-0cc5-46a7-90ee-7ff9d72400a3"
+    },
+    {
+      "dataPoint": {
+        "xUnit": "ms",
+        "yUnit": "in/sec",
+        "coordinate": { "x": 1470219154000, "y": 0.1908383 }
+      },
+      "rateOfChange": 35.35648779269931,
+      "createdAt": "2016-08-03T10:12:34Z",
+      "contentType": "DATA_POINT",
+      "frequency": "",
+      "measurementId": "8a3f4f09-a6c7-489b-a84c-66c65a2dee19",
+      "tags": "{}",
+      "assetId": "baec00cd-05a4-4e8d-b09c-cbf110eaa222",
+      "nodeId": "2739df90-3040-4cb3-a026-637e64e616e9",
+      "siteId": "55722522-0cc5-46a7-90ee-7ff9d72400a3"
+    },
+    {
+      "dataPoint": {
+        "xUnit": "ms",
+        "yUnit": "in/sec",
+        "coordinate": { "x": 1468328029000, "y": 0.1409894 }
+      },
+      "rateOfChange": -0.7348287124621011,
+      "createdAt": "2016-07-12T12:53:49Z",
+      "contentType": "DATA_POINT",
+      "frequency": "",
+      "measurementId": "77e925cf-9cac-4137-9079-aa1f5c81a85b",
+      "tags": "{}",
+      "assetId": "baec00cd-05a4-4e8d-b09c-cbf110eaa222",
+      "nodeId": "2739df90-3040-4cb3-a026-637e64e616e9",
+      "siteId": "55722522-0cc5-46a7-90ee-7ff9d72400a3"
+    },
+    {
+      "dataPoint": {
+        "xUnit": "ms",
+        "yUnit": "in/sec",
+        "coordinate": { "x": 1465298219000, "y": 0.1420331 }
+      },
+      "rateOfChange": -33.61388174807198,
+      "createdAt": "2016-06-07T11:16:59Z",
+      "contentType": "DATA_POINT",
+      "frequency": "",
+      "measurementId": "2bf2e2ae-cbff-48a9-96b0-ac37e0984a48",
+      "tags": "{}",
+      "assetId": "baec00cd-05a4-4e8d-b09c-cbf110eaa222",
+      "nodeId": "2739df90-3040-4cb3-a026-637e64e616e9",
+      "siteId": "55722522-0cc5-46a7-90ee-7ff9d72400a3"
+    },
+    {
+      "dataPoint": {
+        "xUnit": "ms",
+        "yUnit": "in/sec",
+        "coordinate": { "x": 1463568603000, "y": 0.21395 }
+      },
+      "rateOfChange": 49.29935025648505,
+      "createdAt": "2016-05-18T10:50:03Z",
+      "contentType": "DATA_POINT",
+      "frequency": "",
+      "measurementId": "6aecc215-a3a4-4b58-8134-f8af94caf8df",
+      "tags": "{}",
+      "assetId": "baec00cd-05a4-4e8d-b09c-cbf110eaa222",
+      "nodeId": "2739df90-3040-4cb3-a026-637e64e616e9",
+      "siteId": "55722522-0cc5-46a7-90ee-7ff9d72400a3"
+    },
+    {
+      "dataPoint": {
+        "xUnit": "ms",
+        "yUnit": "in/sec",
+        "coordinate": { "x": 1460622729000, "y": 0.1433027 }
+      },
+      "rateOfChange": -15.08556760347307,
+      "createdAt": "2016-04-14T08:32:09Z",
+      "contentType": "DATA_POINT",
+      "frequency": "",
+      "measurementId": "565a209e-57ee-4044-812d-a99d63dcb4ee",
+      "tags": "{}",
+      "assetId": "baec00cd-05a4-4e8d-b09c-cbf110eaa222",
+      "nodeId": "2739df90-3040-4cb3-a026-637e64e616e9",
+      "siteId": "55722522-0cc5-46a7-90ee-7ff9d72400a3"
+    },
+    {
+      "dataPoint": {
+        "xUnit": "ms",
+        "yUnit": "in/sec",
+        "coordinate": { "x": 1457351166000, "y": 0.1687613 }
+      },
+      "rateOfChange": 9.518339767713359,
+      "createdAt": "2016-03-07T11:46:06Z",
+      "contentType": "DATA_POINT",
+      "frequency": "",
+      "measurementId": "693ee11b-875f-423e-87c6-f9323b05dab5",
+      "tags": "{}",
+      "assetId": "baec00cd-05a4-4e8d-b09c-cbf110eaa222",
+      "nodeId": "2739df90-3040-4cb3-a026-637e64e616e9",
+      "siteId": "55722522-0cc5-46a7-90ee-7ff9d72400a3"
+    },
+    {
+      "dataPoint": {
+        "xUnit": "ms",
+        "yUnit": "in/sec",
+        "coordinate": { "x": 1452166350000, "y": 0.1540941 }
+      },
+      "rateOfChange": -12.56794542124458,
+      "createdAt": "2016-01-07T11:32:30Z",
+      "contentType": "DATA_POINT",
+      "frequency": "",
+      "measurementId": "8f65dd33-f865-44d2-8b26-4848c8d71511",
+      "tags": "{}",
+      "assetId": "baec00cd-05a4-4e8d-b09c-cbf110eaa222",
+      "nodeId": "2739df90-3040-4cb3-a026-637e64e616e9",
+      "siteId": "55722522-0cc5-46a7-90ee-7ff9d72400a3"
+    },
+    {
+      "dataPoint": {
+        "xUnit": "ms",
+        "yUnit": "in/sec",
+        "coordinate": { "x": 1449496373000, "y": 0.1762444 }
+      },
+      "rateOfChange": 30.220069674568773,
+      "createdAt": "2015-12-07T13:52:53Z",
+      "contentType": "DATA_POINT",
+      "frequency": "",
+      "measurementId": "4129f793-6229-4a9d-bd41-c240c39e6f14",
+      "tags": "{}",
+      "assetId": "baec00cd-05a4-4e8d-b09c-cbf110eaa222",
+      "nodeId": "2739df90-3040-4cb3-a026-637e64e616e9",
+      "siteId": "55722522-0cc5-46a7-90ee-7ff9d72400a3"
+    },
+    {
+      "dataPoint": {
+        "xUnit": "ms",
+        "yUnit": "in/sec",
+        "coordinate": { "x": 1446718207000, "y": 0.1353435 }
+      },
+      "rateOfChange": -22.286455489274324,
+      "createdAt": "2015-11-05T10:10:07Z",
+      "contentType": "DATA_POINT",
+      "frequency": "",
+      "measurementId": "14b3d9f8-adf1-45d8-82c5-f988cfd6f89f",
+      "tags": "{}",
+      "assetId": "baec00cd-05a4-4e8d-b09c-cbf110eaa222",
+      "nodeId": "2739df90-3040-4cb3-a026-637e64e616e9",
+      "siteId": "55722522-0cc5-46a7-90ee-7ff9d72400a3"
+    },
+    {
+      "dataPoint": {
+        "xUnit": "ms",
+        "yUnit": "in/sec",
+        "coordinate": { "x": 1444903742000, "y": 0.1741569 }
+      },
+      "rateOfChange": 7.871154358342259,
+      "createdAt": "2015-10-15T10:09:02Z",
+      "contentType": "DATA_POINT",
+      "frequency": "",
+      "measurementId": "468976b9-2a9c-4b4e-b68e-91782a7ae301",
+      "tags": "{}",
+      "assetId": "baec00cd-05a4-4e8d-b09c-cbf110eaa222",
+      "nodeId": "2739df90-3040-4cb3-a026-637e64e616e9",
+      "siteId": "55722522-0cc5-46a7-90ee-7ff9d72400a3"
+    },
+    {
+      "dataPoint": {
+        "xUnit": "ms",
+        "yUnit": "in/sec",
+        "coordinate": { "x": 1441803545000, "y": 0.161449 }
+      },
+      "rateOfChange": 1.120126067420513,
+      "createdAt": "2015-09-09T12:59:05Z",
+      "contentType": "DATA_POINT",
+      "frequency": "",
+      "measurementId": "ad83ee98-017e-4c59-934d-a3895bff789d",
+      "tags": "{}",
+      "assetId": "baec00cd-05a4-4e8d-b09c-cbf110eaa222",
+      "nodeId": "2739df90-3040-4cb3-a026-637e64e616e9",
+      "siteId": "55722522-0cc5-46a7-90ee-7ff9d72400a3"
+    },
+    {
+      "dataPoint": {
+        "xUnit": "ms",
+        "yUnit": "in/sec",
+        "coordinate": { "x": 1439285060000, "y": 0.1596606 }
+      },
+      "rateOfChange": -15.736246894085408,
+      "createdAt": "2015-08-11T09:24:20Z",
+      "contentType": "DATA_POINT",
+      "frequency": "",
+      "measurementId": "9e4ab3c3-d4f3-4325-b6c5-3bd46670c374",
+      "tags": "{}",
+      "assetId": "baec00cd-05a4-4e8d-b09c-cbf110eaa222",
+      "nodeId": "2739df90-3040-4cb3-a026-637e64e616e9",
+      "siteId": "55722522-0cc5-46a7-90ee-7ff9d72400a3"
+    },
+    {
+      "dataPoint": {
+        "xUnit": "ms",
+        "yUnit": "in/sec",
+        "coordinate": { "x": 1436990169000, "y": 0.1894772 }
+      },
+      "rateOfChange": -9.350291094735312,
+      "createdAt": "2015-07-15T19:56:09Z",
+      "contentType": "DATA_POINT",
+      "frequency": "",
+      "measurementId": "ddadd53d-f6c9-4a06-8e33-9e7852e78665",
+      "tags": "{}",
+      "assetId": "baec00cd-05a4-4e8d-b09c-cbf110eaa222",
+      "nodeId": "2739df90-3040-4cb3-a026-637e64e616e9",
+      "siteId": "55722522-0cc5-46a7-90ee-7ff9d72400a3"
+    },
+    {
+      "dataPoint": {
+        "xUnit": "ms",
+        "yUnit": "in/sec",
+        "coordinate": { "x": 1431437537000, "y": 0.2090213 }
+      },
+      "rateOfChange": 24.143585637872636,
+      "createdAt": "2015-05-12T13:32:17Z",
+      "contentType": "DATA_POINT",
+      "frequency": "",
+      "measurementId": "13891379-4ad7-4284-85ca-68ad48d0d6af",
+      "tags": "{}",
+      "assetId": "baec00cd-05a4-4e8d-b09c-cbf110eaa222",
+      "nodeId": "2739df90-3040-4cb3-a026-637e64e616e9",
+      "siteId": "55722522-0cc5-46a7-90ee-7ff9d72400a3"
+    },
+    {
+      "dataPoint": {
+        "xUnit": "ms",
+        "yUnit": "in/sec",
+        "coordinate": { "x": 1428408523000, "y": 0.1683706 }
+      },
+      "rateOfChange": -7.314718174331595,
+      "createdAt": "2015-04-07T12:08:43Z",
+      "contentType": "DATA_POINT",
+      "frequency": "",
+      "measurementId": "99722681-9aca-40d2-bc45-541016a555ba",
+      "tags": "{}",
+      "assetId": "baec00cd-05a4-4e8d-b09c-cbf110eaa222",
+      "nodeId": "2739df90-3040-4cb3-a026-637e64e616e9",
+      "siteId": "55722522-0cc5-46a7-90ee-7ff9d72400a3"
+    },
+    {
+      "dataPoint": {
+        "xUnit": "ms",
+        "yUnit": "in/sec",
+        "coordinate": { "x": 1425900551000, "y": 0.1816584 }
+      },
+      "rateOfChange": -8.181640816516333,
+      "createdAt": "2015-03-09T11:29:11Z",
+      "contentType": "DATA_POINT",
+      "frequency": "",
+      "measurementId": "e7a54602-94dd-4d26-8ab1-c5b13c4901f4",
+      "tags": "{}",
+      "assetId": "baec00cd-05a4-4e8d-b09c-cbf110eaa222",
+      "nodeId": "2739df90-3040-4cb3-a026-637e64e616e9",
+      "siteId": "55722522-0cc5-46a7-90ee-7ff9d72400a3"
+    },
+    {
+      "dataPoint": {
+        "xUnit": "ms",
+        "yUnit": "in/sec",
+        "coordinate": { "x": 1423144321000, "y": 0.1978454 }
+      },
+      "rateOfChange": 16.496554777912433,
+      "createdAt": "2015-02-05T13:52:01Z",
+      "contentType": "DATA_POINT",
+      "frequency": "",
+      "measurementId": "71ca559c-959e-4f5a-bd6b-ce84cd9f6519",
+      "tags": "{}",
+      "assetId": "baec00cd-05a4-4e8d-b09c-cbf110eaa222",
+      "nodeId": "2739df90-3040-4cb3-a026-637e64e616e9",
+      "siteId": "55722522-0cc5-46a7-90ee-7ff9d72400a3"
+    },
+    {
+      "dataPoint": {
+        "xUnit": "ms",
+        "yUnit": "in/sec",
+        "coordinate": { "x": 1418038581000, "y": 0.1698294 }
+      },
+      "rateOfChange": 5.421893913529287,
+      "createdAt": "2014-12-08T11:36:21Z",
+      "contentType": "DATA_POINT",
+      "frequency": "",
+      "measurementId": "972f838a-cb09-400c-a637-050435a88daa",
+      "tags": "{}",
+      "assetId": "baec00cd-05a4-4e8d-b09c-cbf110eaa222",
+      "nodeId": "2739df90-3040-4cb3-a026-637e64e616e9",
+      "siteId": "55722522-0cc5-46a7-90ee-7ff9d72400a3"
+    },
+    {
+      "dataPoint": {
+        "xUnit": "ms",
+        "yUnit": "in/sec",
+        "coordinate": { "x": 1415611304000, "y": 0.161095 }
+      },
+      "rateOfChange": 2.8325469048421397,
+      "createdAt": "2014-11-10T09:21:44Z",
+      "contentType": "DATA_POINT",
+      "frequency": "",
+      "measurementId": "38bba953-5bec-49be-9a1f-54c0d642c504",
+      "tags": "{}",
+      "assetId": "baec00cd-05a4-4e8d-b09c-cbf110eaa222",
+      "nodeId": "2739df90-3040-4cb3-a026-637e64e616e9",
+      "siteId": "55722522-0cc5-46a7-90ee-7ff9d72400a3"
+    },
+    {
+      "dataPoint": {
+        "xUnit": "ms",
+        "yUnit": "in/sec",
+        "coordinate": { "x": 1413972823000, "y": 0.1566576 }
+      },
+      "createdAt": "2014-10-22T10:13:43Z",
+      "contentType": "DATA_POINT",
+      "frequency": "",
+      "measurementId": "a452ea80-e3b0-427a-b623-01d86c6fcf74",
+      "tags": "{}",
+      "assetId": "baec00cd-05a4-4e8d-b09c-cbf110eaa222",
+      "nodeId": "2739df90-3040-4cb3-a026-637e64e616e9",
+      "siteId": "55722522-0cc5-46a7-90ee-7ff9d72400a3"
+    }
+  ]
+}
