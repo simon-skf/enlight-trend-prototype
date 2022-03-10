@@ -1,5 +1,5 @@
 const colorBlue = "#0F58D6";
-const colorGrey = "#676F7C";
+const colorGrey = "#808895";
 const colorBlack = "#273342";
 
 let trendHighcharts = undefined;
@@ -8,7 +8,7 @@ let spectrumTrendRaw = undefined;
 
 let variant = {
   dataset: 0,
-  spectrumsOnTrend: true, //true = from bands, false = on 0, "matching-overall" = if there is an exact match on X from the trend, it will show up there.
+  spectrumsOnTrend: false, //true = from bands, false = on 0, "matching-overall" = if there is an exact match on X from the trend, it will show up there.
 };
 const dataSources = {
   //https://measurement-api.sandbox.iot.enlight.skf.com/nodes/7423d282-05cc-4d25-8e66-d91594b38d62/node-data/recent?content_type=DATA_POINT&limit=1000&offset=0&resurrectable=false
