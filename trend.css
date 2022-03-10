@@ -39,5 +39,27 @@
 }
  */
 .highcharts-figure {
-    
+}
+
+:root {
+  --skf-blue: #0f58d6;
+}
+
+.rectangle-copy-Jo5JLV,
+.rectangle-copy-rYzWpS,
+.rectangle-copy-PCxRaq,
+.rectangle-copy-kQxA9d,
+.rectangle-copy-ULY5DK,
+.rectangle-copy-wj3jSz,
+.rectangle-copy-bs9zqO,
+.rectangle-copy-RxaEUy,
+.rectangle-copy-evUzEV,
+.rectangle-copy-jFSrNd,
+.rectangle-copy-1HwsPR,
+.rectangle-copy-BRDzCt,
+.rectangle-copy-YFPRrE,
+.rectangle-copy-rHUeNi,
+.rectangle-copy-xFoSv8,
+.rectangle-copy-Q31dxo {
+  border: 1px solid var(--skf-blue);
 }

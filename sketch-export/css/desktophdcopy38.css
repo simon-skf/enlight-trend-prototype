@@ -782,7 +782,7 @@
   width: 1136px;
 }
 
-.desktophdcopy38 .trend_container-A5jo6n {
+.desktophdcopy38 .trend-container-A5jo6n {
   background-color: var(--white);
   height: 292px;
   left: 293px;
@@ -1394,15 +1394,6 @@
   width: calc(100.00% - 12px);
 }
 
-.desktophdcopy38 .sandboxenlightskfcom-xaoTEH {
-  background-color: transparent;
-  height: 339px;
-  left: 93px;
-  position: absolute;
-  top: 79px;
-  width: 1020px;
-}
-
 .desktophdcopy38 .spectrum-header-xaoTEH {
   background-color: transparent;
   height: 33px;
@@ -1719,7 +1710,7 @@
   background-color: transparent;
   color: var(--denim);
   font-family: var(--font-family-arial-boldmt);
-  font-size: var(--font-size-xs);
+  font-size: var(--font-size-m);
   font-weight: 700;
   height: 16px;
   left: 1px;
@@ -1957,7 +1948,7 @@
 .desktophdcopy38 .input-normal-select-vedQLq {
   background-color: transparent;
   height: 30px;
-  left: 424px;
+  left: 382px;
   position: absolute;
   top: 3px;
   width: 67px;
@@ -2015,7 +2006,7 @@
   width: 12px;
 }
 
-.desktophdcopy38 .measurements-Mxuz1O {
+.desktophdcopy38 .spacing-vedQLq {
   background-color: transparent;
   color: var(--tuna);
   font-weight: 700;
@@ -2224,7 +2215,7 @@
   background-color: transparent;
   color: var(--denim);
   font-family: var(--font-family-arial-boldmt);
-  font-size: var(--font-size-xs);
+  font-size: var(--font-size-m);
   font-weight: 700;
   height: 16px;
   left: 1px;
@@ -2370,11 +2361,11 @@
 
 .desktophdcopy38 .waterfall6-2Y8Ggn {
   background-color: transparent;
-  height: 549px;
+  height: 432px;
   left: -1px;
   position: relative;
   top: 33px;
-  width: 1182px;
+  width: 1061px;
 }
 
 .desktophdcopy38 .rectangle-iNQxZU {
@@ -2586,6 +2577,9 @@
 
 .desktophdcopy38 .x0-wJxBL7 {
   background-color: transparent;
+  color: #666666;
+  font-family: var(--font-family-arialmt);
+  font-size: var(--font-size-m);
   font-weight: 400;
   height: auto;
   left: 0px;
@@ -3096,9 +3090,6 @@
 
 .desktophdcopy38 .hz-Yh30AI {
   background-color: transparent;
-  color: var(--granite-gray);
-  font-family: var(--font-family-arialmt);
-  font-size: var(--font-size-s);
   font-weight: 400;
   height: 15px;
   left: 0px;
@@ -3122,9 +3113,6 @@
 
 .desktophdcopy38 .mms-9GkXkf {
   background-color: transparent;
-  color: var(--granite-gray);
-  font-family: var(--font-family-arialmt);
-  font-size: var(--font-size-s);
   font-weight: 400;
   height: 15px;
   left: -8px;
@@ -3140,271 +3128,11 @@
 
 .desktophdcopy38 .group-WO48pX {
   background-color: transparent;
-  height: 432px;
+  height: 53px;
   left: 19px;
   position: absolute;
-  top: 117px;
-  width: 1163px;
-}
-
-.desktophdcopy38 .clipped-WmH3za {
-  background-color: transparent;
-  height: 42px;
-  left: 190px;
-  position: absolute;
-  top: 6px;
-  width: 754px;
-}
-
-.desktophdcopy38 .group-6kDcAO {
-  background-color: transparent;
-  height: 42px;
-  left: 0px;
-  opacity: 0.8;
-  position: relative;
-  top: 0px;
-  width: 754px;
-}
-
-.desktophdcopy38 .path-7NBuxA {
-  background-color: transparent;
-  height: 42px;
-  left: 0px;
-  position: absolute;
-  top: 0px;
-  width: 754px;
-}
-
-.desktophdcopy38 .path-Sdh6w8 {
-  background-color: transparent;
-  height: 44px;
-  left: -2px;
-  position: absolute;
-  top: -0px;
-  width: 756px;
-}
-
-.desktophdcopy38 .clipped-aaDMg6 {
-  background-color: transparent;
-  height: 34px;
-  left: 158px;
-  position: absolute;
-  top: 57px;
-  width: 760px;
-}
-
-.desktophdcopy38 .group-Op6fTL {
-  background-color: transparent;
-  height: 34px;
-  left: 0px;
-  opacity: 0.8;
-  position: relative;
-  top: 0px;
-  width: 760px;
-}
-
-.desktophdcopy38 .path-dGDtBL {
-  background-color: transparent;
-  height: 34px;
-  left: 0px;
-  position: absolute;
-  top: 0px;
-  width: 760px;
-}
-
-.desktophdcopy38 .path-FUXZPp {
-  background-color: transparent;
-  height: 36px;
-  left: -0px;
-  position: absolute;
-  top: -0px;
-  width: 761px;
-}
-
-.desktophdcopy38 .clipped-vUvWee {
-  background-color: transparent;
-  height: 34px;
-  left: 126px;
-  position: absolute;
-  top: 102px;
-  width: 765px;
-}
-
-.desktophdcopy38 .group-am7DKi {
-  background-color: transparent;
-  height: 34px;
-  left: 0px;
-  opacity: 0.8;
-  position: relative;
-  top: 0px;
-  width: 765px;
-}
-
-.desktophdcopy38 .path-GJrIfE {
-  background-color: transparent;
-  height: 34px;
-  left: 0px;
-  position: absolute;
-  top: 0px;
-  width: 765px;
-}
-
-.desktophdcopy38 .path-KdeLxJ {
-  background-color: transparent;
-  height: 37px;
-  left: -0px;
-  position: absolute;
-  top: -2px;
-  width: 767px;
-}
-
-.desktophdcopy38 .clipped-6FeX9p {
-  background-color: transparent;
-  height: 30px;
-  left: 94px;
-  position: absolute;
-  top: 151px;
-  width: 771px;
-}
-
-.desktophdcopy38 .group-G1yiRc {
-  background-color: transparent;
-  height: 30px;
-  left: 0px;
-  opacity: 0.8;
-  position: relative;
-  top: 0px;
-  width: 771px;
-}
-
-.desktophdcopy38 .path-bzhpU8 {
-  background-color: transparent;
-  height: 30px;
-  left: 0px;
-  position: absolute;
-  top: 0px;
-  width: 771px;
-}
-
-.desktophdcopy38 .path-h3HwNv {
-  background-color: transparent;
-  height: 33px;
-  left: -2px;
-  position: absolute;
-  top: -2px;
-  width: 774px;
-}
-
-.desktophdcopy38 .clipped-gxpeNJ {
-  background-color: transparent;
-  height: 40px;
-  left: 60px;
-  position: absolute;
-  top: 187px;
-  width: 778px;
-}
-
-.desktophdcopy38 .group-0iGHuR {
-  background-color: transparent;
-  height: 40px;
-  left: 0px;
-  opacity: 0.8;
-  position: relative;
-  top: 0px;
-  width: 778px;
-}
-
-.desktophdcopy38 .path-vOxUd1 {
-  background-color: transparent;
-  height: 40px;
-  left: 0px;
-  position: absolute;
-  top: 0px;
-  width: 778px;
-}
-
-.desktophdcopy38 .path-1KaA4f {
-  background-color: transparent;
-  height: 41px;
-  left: -0px;
-  position: absolute;
-  top: -0px;
-  width: 779px;
-}
-
-.desktophdcopy38 .clipped-swvtGM {
-  background-color: transparent;
-  height: 153px;
-  left: 27px;
-  position: absolute;
-  top: 120px;
-  width: 784px;
-}
-
-.desktophdcopy38 .group-tVTYTa {
-  background-color: transparent;
-  height: 153px;
-  left: 0px;
-  opacity: 0.8;
-  position: relative;
-  top: 0px;
-  width: 784px;
-}
-
-.desktophdcopy38 .path-ijkAOT {
-  background-color: transparent;
-  height: 153px;
-  left: 0px;
-  position: absolute;
-  top: 0px;
-  width: 784px;
-}
-
-.desktophdcopy38 .path-3fGpPG {
-  background-color: transparent;
-  height: 155px;
-  left: -2px;
-  position: absolute;
-  top: -0px;
-  width: 786px;
-}
-
-.desktophdcopy38 .clipped-qxOlxy {
-  background-color: transparent;
-  height: 432px;
-  left: 102px;
-  position: absolute;
-  top: 0px;
-  width: 1061px;
-}
-
-.desktophdcopy38 .group-zxdUUZ {
-  background-color: transparent;
-  height: 432px;
-  left: 0px;
-  position: relative;
-  top: 0px;
-  width: 1061px;
-}
-
-.desktophdcopy38 .group-9X9b3M {
-  background-color: transparent;
-  border: 2px solid #434348;
-  height: 434px;
-  left: -1px;
-  position: absolute;
-  top: -1px;
-  width: 1063px;
-}
-
-.desktophdcopy38 .group-LrxUi5 {
-  background-color: transparent;
-  border: 22px solid #c0c0c000;
-  height: 454px;
-  left: -11px;
-  position: absolute;
-  top: -11px;
-  width: 1083px;
+  top: 363px;
+  width: 836px;
 }
 
 .desktophdcopy38 .group-WmH3za {
@@ -3412,7 +3140,7 @@
   height: 52px;
   left: 0px;
   position: absolute;
-  top: 246px;
+  top: 0px;
   width: 52px;
 }
 
@@ -3425,50 +3153,12 @@
   width: 52px;
 }
 
-.desktophdcopy38 .clipped-aKbw7F {
-  background-color: transparent;
-  height: 432px;
-  left: 102px;
-  position: absolute;
-  top: 0px;
-  width: 1061px;
-}
-
-.desktophdcopy38 .group-78PWIN {
-  background-color: transparent;
-  height: 432px;
-  left: 0px;
-  position: relative;
-  top: 0px;
-  width: 1061px;
-}
-
-.desktophdcopy38 .group-6vTQqV {
-  background-color: transparent;
-  border: 2px solid #90ed7d;
-  height: 434px;
-  left: -1px;
-  position: absolute;
-  top: -1px;
-  width: 1063px;
-}
-
-.desktophdcopy38 .group-F66Xfe {
-  background-color: transparent;
-  border: 22px solid #c0c0c000;
-  height: 454px;
-  left: -11px;
-  position: absolute;
-  top: -11px;
-  width: 1083px;
-}
-
 .desktophdcopy38 .group-aaDMg6 {
   background-color: transparent;
   height: 52px;
   left: 784px;
   position: absolute;
-  top: 247px;
+  top: 1px;
   width: 52px;
 }
 
@@ -3501,7 +3191,7 @@
 
 .desktophdcopy38 .rectangle-MrS5MR {
   background-color: var(--white);
-  border: 1px solid #1f6695;
+  border: 1px solid var(--denim);
   border-radius: 2px;
   height: 21px;
   left: -0px;
@@ -3514,7 +3204,7 @@
   background-color: transparent;
   color: var(--black);
   font-family: var(--font-family-arial-boldmt);
-  font-size: var(--font-size-xs);
+  font-size: var(--font-size-m);
   font-weight: 700;
   height: auto;
   left: 4px;
@@ -3547,7 +3237,7 @@
 
 .desktophdcopy38 .rectangle-RQIfsE {
   background-color: var(--white);
-  border: 1px solid #1f6695;
+  border: 1px solid var(--denim);
   border-radius: 2px;
   height: 21px;
   left: -0px;
@@ -3560,7 +3250,7 @@
   background-color: transparent;
   color: var(--black);
   font-family: var(--font-family-arial-boldmt);
-  font-size: var(--font-size-xs);
+  font-size: var(--font-size-m);
   font-weight: 700;
   height: 12px;
   left: 3px;
@@ -3809,6 +3499,69 @@
   width: 785px;
 }
 
+.desktophdcopy38 .waterfall-charts-iNQxZU {
+  background-color: transparent;
+  height: 267px;
+  left: 46px;
+  position: absolute;
+  top: 123px;
+  width: 917px;
+}
+
+.desktophdcopy38 .path-aTMB9x {
+  background-color: transparent;
+  height: 44px;
+  left: 162px;
+  position: absolute;
+  top: -0px;
+  width: 756px;
+}
+
+.desktophdcopy38 .path-72DOTu {
+  background-color: transparent;
+  height: 36px;
+  left: 130px;
+  position: absolute;
+  top: 50px;
+  width: 761px;
+}
+
+.desktophdcopy38 .path-v0HKNM {
+  background-color: transparent;
+  height: 37px;
+  left: 98px;
+  position: absolute;
+  top: 94px;
+  width: 767px;
+}
+
+.desktophdcopy38 .path-JcMoIw {
+  background-color: transparent;
+  height: 33px;
+  left: 66px;
+  position: absolute;
+  top: 144px;
+  width: 774px;
+}
+
+.desktophdcopy38 .path-AVoDsT {
+  background-color: transparent;
+  height: 41px;
+  left: 32px;
+  position: absolute;
+  top: 180px;
+  width: 779px;
+}
+
+.desktophdcopy38 .path-qNEOGI {
+  background-color: transparent;
+  height: 155px;
+  left: -2px;
+  position: absolute;
+  top: 114px;
+  width: 786px;
+}
+
 .desktophdcopy38 .rectangle-A5jo6n {
   background-color: var(--denim);
   border-radius: 3px;
@@ -3823,7 +3576,7 @@
   background-color: transparent;
   color: var(--white);
   font-family: var(--font-family-arial-boldmt);
-  font-size: var(--font-size-xs);
+  font-size: var(--font-size-m);
   font-weight: 700;
   height: 12px;
   left: 1203px;
@@ -4380,7 +4133,7 @@
   background-color: transparent;
   color: #676f7c;
   font-family: var(--font-family-arialmt);
-  font-size: var(--font-size-s);
+  font-size: var(--font-size-l);
   font-weight: 400;
   height: 14px;
   left: 40px;
@@ -5316,4 +5069,852 @@
   position: absolute;
   top: 0px;
   width: 12px;
+}
+
+.desktophdcopy38 .spectrumm-A5jo6n {
+  background-color: transparent;
+  height: 367px;
+  left: 362px;
+  position: absolute;
+  top: 1344px;
+  width: 1033px;
+}
+
+.desktophdcopy38 .rectangle-ZMUj4k {
+  background-color: var(--white);
+  height: 367px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 1033px;
+}
+
+.desktophdcopy38 .group-ZMUj4k {
+  background-color: transparent;
+  height: 267px;
+  left: 46px;
+  position: absolute;
+  top: 41px;
+  width: 898px;
+}
+
+.desktophdcopy38 .path-L8xxFh {
+  background-color: transparent;
+  height: 267px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 1px;
+}
+
+.desktophdcopy38 .path-CbqSX9 {
+  background-color: transparent;
+  height: 267px;
+  left: 81px;
+  position: absolute;
+  top: 0px;
+  width: 1px;
+}
+
+.desktophdcopy38 .path-VgjW8y {
+  background-color: transparent;
+  height: 267px;
+  left: 163px;
+  position: absolute;
+  top: 0px;
+  width: 1px;
+}
+
+.desktophdcopy38 .path-1ODm18 {
+  background-color: transparent;
+  height: 267px;
+  left: 244px;
+  position: absolute;
+  top: 0px;
+  width: 1px;
+}
+
+.desktophdcopy38 .path-RYH26e {
+  background-color: transparent;
+  height: 267px;
+  left: 326px;
+  position: absolute;
+  top: 0px;
+  width: 1px;
+}
+
+.desktophdcopy38 .path-WtVLTn {
+  background-color: transparent;
+  height: 267px;
+  left: 407px;
+  position: absolute;
+  top: 0px;
+  width: 1px;
+}
+
+.desktophdcopy38 .path-cfDZzJ {
+  background-color: transparent;
+  height: 267px;
+  left: 489px;
+  position: absolute;
+  top: 0px;
+  width: 1px;
+}
+
+.desktophdcopy38 .path-CSIQ8A {
+  background-color: transparent;
+  height: 267px;
+  left: 570px;
+  position: absolute;
+  top: 0px;
+  width: 1px;
+}
+
+.desktophdcopy38 .path-iGO5mH {
+  background-color: transparent;
+  height: 267px;
+  left: 653px;
+  position: absolute;
+  top: 0px;
+  width: 1px;
+}
+
+.desktophdcopy38 .path-GPROop {
+  background-color: transparent;
+  height: 267px;
+  left: 734px;
+  position: absolute;
+  top: 0px;
+  width: 1px;
+}
+
+.desktophdcopy38 .path-bLlLaR {
+  background-color: transparent;
+  height: 267px;
+  left: 816px;
+  position: absolute;
+  top: 0px;
+  width: 1px;
+}
+
+.desktophdcopy38 .path-CahG51 {
+  background-color: transparent;
+  height: 267px;
+  left: 897px;
+  position: absolute;
+  top: 0px;
+  width: 1px;
+}
+
+.desktophdcopy38 .group-5vAVml {
+  background-color: transparent;
+  height: 267px;
+  left: 46px;
+  position: absolute;
+  top: 41px;
+  width: 898px;
+}
+
+.desktophdcopy38 .path-zU3WNk {
+  background-color: transparent;
+  height: 267px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 1px;
+}
+
+.desktophdcopy38 .path-DKFd87 {
+  background-color: transparent;
+  height: 267px;
+  left: 81px;
+  position: absolute;
+  top: 0px;
+  width: 1px;
+}
+
+.desktophdcopy38 .path-QrSE5i {
+  background-color: transparent;
+  height: 267px;
+  left: 163px;
+  position: absolute;
+  top: 0px;
+  width: 1px;
+}
+
+.desktophdcopy38 .path-NVvYeH {
+  background-color: transparent;
+  height: 267px;
+  left: 244px;
+  position: absolute;
+  top: 0px;
+  width: 1px;
+}
+
+.desktophdcopy38 .path-AWc2dg {
+  background-color: transparent;
+  height: 267px;
+  left: 326px;
+  position: absolute;
+  top: 0px;
+  width: 1px;
+}
+
+.desktophdcopy38 .path-o15HMm {
+  background-color: transparent;
+  height: 267px;
+  left: 407px;
+  position: absolute;
+  top: 0px;
+  width: 1px;
+}
+
+.desktophdcopy38 .path-NeyLM9 {
+  background-color: transparent;
+  height: 267px;
+  left: 489px;
+  position: absolute;
+  top: 0px;
+  width: 1px;
+}
+
+.desktophdcopy38 .path-WEb94R {
+  background-color: transparent;
+  height: 267px;
+  left: 570px;
+  position: absolute;
+  top: 0px;
+  width: 1px;
+}
+
+.desktophdcopy38 .path-JFGJIx {
+  background-color: transparent;
+  height: 267px;
+  left: 653px;
+  position: absolute;
+  top: 0px;
+  width: 1px;
+}
+
+.desktophdcopy38 .path-lAYskT {
+  background-color: transparent;
+  height: 267px;
+  left: 734px;
+  position: absolute;
+  top: 0px;
+  width: 1px;
+}
+
+.desktophdcopy38 .path-0Ww2r1 {
+  background-color: transparent;
+  height: 267px;
+  left: 816px;
+  position: absolute;
+  top: 0px;
+  width: 1px;
+}
+
+.desktophdcopy38 .path-xnOd2G {
+  background-color: transparent;
+  height: 267px;
+  left: 897px;
+  position: absolute;
+  top: 0px;
+  width: 1px;
+}
+
+.desktophdcopy38 .group-T8uxmj {
+  background-color: transparent;
+  height: 269px;
+  left: 47px;
+  position: absolute;
+  top: 40px;
+  width: 978px;
+}
+
+.desktophdcopy38 .path-EygMxf {
+  background-color: transparent;
+  height: 3px;
+  left: -0px;
+  position: absolute;
+  top: 268px;
+  width: 979px;
+}
+
+.desktophdcopy38 .path-mBoHAQ {
+  background-color: transparent;
+  height: 3px;
+  left: -0px;
+  position: absolute;
+  top: 214px;
+  width: 979px;
+}
+
+.desktophdcopy38 .path-dSVWkX {
+  background-color: transparent;
+  height: 3px;
+  left: -0px;
+  position: absolute;
+  top: 160px;
+  width: 979px;
+}
+
+.desktophdcopy38 .path-IdDWzV {
+  background-color: transparent;
+  height: 3px;
+  left: -0px;
+  position: absolute;
+  top: 106px;
+  width: 979px;
+}
+
+.desktophdcopy38 .path-jyx8GW {
+  background-color: transparent;
+  height: 3px;
+  left: -0px;
+  position: absolute;
+  top: 54px;
+  width: 979px;
+}
+
+.desktophdcopy38 .path-gkjBMv {
+  background-color: transparent;
+  height: 3px;
+  left: -0px;
+  position: absolute;
+  top: -2px;
+  width: 979px;
+}
+
+.desktophdcopy38 .group-WkL3U7 {
+  background-color: transparent;
+  height: 269px;
+  left: 47px;
+  position: absolute;
+  top: 40px;
+  width: 978px;
+}
+
+.desktophdcopy38 .path-qJQdg5 {
+  background-color: transparent;
+  height: 3px;
+  left: -0px;
+  position: absolute;
+  top: 268px;
+  width: 979px;
+}
+
+.desktophdcopy38 .path-TX0hnt {
+  background-color: transparent;
+  height: 3px;
+  left: -0px;
+  position: absolute;
+  top: 214px;
+  width: 979px;
+}
+
+.desktophdcopy38 .path-gPKtx3 {
+  background-color: transparent;
+  height: 3px;
+  left: -0px;
+  position: absolute;
+  top: 160px;
+  width: 979px;
+}
+
+.desktophdcopy38 .path-AiasJJ {
+  background-color: transparent;
+  height: 3px;
+  left: -0px;
+  position: absolute;
+  top: 106px;
+  width: 979px;
+}
+
+.desktophdcopy38 .path-5isVUe {
+  background-color: transparent;
+  height: 3px;
+  left: -0px;
+  position: absolute;
+  top: 54px;
+  width: 979px;
+}
+
+.desktophdcopy38 .path-TWttlz {
+  background-color: transparent;
+  height: 3px;
+  left: -0px;
+  position: absolute;
+  top: -2px;
+  width: 979px;
+}
+
+.desktophdcopy38 .group-e89cxI {
+  background-color: transparent;
+  height: 39px;
+  left: 46px;
+  position: absolute;
+  top: 308px;
+  width: 979px;
+}
+
+.desktophdcopy38 .path-8EsTgz {
+  background-color: transparent;
+  height: 11px;
+  left: -2px;
+  position: absolute;
+  top: -0px;
+  width: 3px;
+}
+
+.desktophdcopy38 .path-x3LRoI {
+  background-color: transparent;
+  height: 11px;
+  left: 80px;
+  position: absolute;
+  top: -0px;
+  width: 3px;
+}
+
+.desktophdcopy38 .path-YkHNPl {
+  background-color: transparent;
+  height: 11px;
+  left: 162px;
+  position: absolute;
+  top: -0px;
+  width: 3px;
+}
+
+.desktophdcopy38 .path-88ZhFf {
+  background-color: transparent;
+  height: 11px;
+  left: 244px;
+  position: absolute;
+  top: -0px;
+  width: 3px;
+}
+
+.desktophdcopy38 .path-n3y9Jb {
+  background-color: transparent;
+  height: 11px;
+  left: 324px;
+  position: absolute;
+  top: -0px;
+  width: 3px;
+}
+
+.desktophdcopy38 .path-2fMfVv {
+  background-color: transparent;
+  height: 11px;
+  left: 406px;
+  position: absolute;
+  top: -0px;
+  width: 3px;
+}
+
+.desktophdcopy38 .path-rw4OSD {
+  background-color: transparent;
+  height: 11px;
+  left: 488px;
+  position: absolute;
+  top: -0px;
+  width: 2px;
+}
+
+.desktophdcopy38 .path-UyePPs {
+  background-color: transparent;
+  height: 11px;
+  left: 570px;
+  position: absolute;
+  top: -0px;
+  width: 3px;
+}
+
+.desktophdcopy38 .path-2STawT {
+  background-color: transparent;
+  height: 11px;
+  left: 652px;
+  position: absolute;
+  top: -0px;
+  width: 3px;
+}
+
+.desktophdcopy38 .path-u9JyQy {
+  background-color: transparent;
+  height: 11px;
+  left: 734px;
+  position: absolute;
+  top: -0px;
+  width: 3px;
+}
+
+.desktophdcopy38 .path-mmuFwl {
+  background-color: transparent;
+  height: 11px;
+  left: 814px;
+  position: absolute;
+  top: -0px;
+  width: 3px;
+}
+
+.desktophdcopy38 .path-QEtumi {
+  background-color: transparent;
+  height: 11px;
+  left: 896px;
+  position: absolute;
+  top: -0px;
+  width: 3px;
+}
+
+.desktophdcopy38 .hz-8EsTgz {
+  background-color: transparent;
+  font-weight: 400;
+  height: 15px;
+  left: 480px;
+  letter-spacing: 0.00px;
+  line-height: 14px;
+  position: absolute;
+  text-align: center;
+  top: 24px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.desktophdcopy38 .path-30xSrx {
+  background-color: transparent;
+  height: 3px;
+  left: -0px;
+  position: absolute;
+  top: -2px;
+  width: 979px;
+}
+
+.desktophdcopy38 .group-xRxOAG {
+  background-color: transparent;
+  height: 267px;
+  left: 8px;
+  position: absolute;
+  top: 41px;
+  width: 39px;
+}
+
+.desktophdcopy38 .mms-Vbl5EH {
+  background-color: transparent;
+  font-weight: 400;
+  height: 15px;
+  left: -7px;
+  letter-spacing: 0.00px;
+  line-height: 14px;
+  position: absolute;
+  text-align: left;
+  top: 123px;
+  transform: rotate(-90deg);
+  white-space: nowrap;
+  width: auto;
+}
+
+.desktophdcopy38 .path-Vbl5EH {
+  background-color: transparent;
+  height: 267px;
+  left: 38px;
+  position: absolute;
+  top: 0px;
+  width: 1px;
+}
+
+.desktophdcopy38 .path-ZMUj4k {
+  background-color: transparent;
+  height: 267px;
+  left: 7px;
+  position: absolute;
+  top: 41px;
+  width: 1px;
+}
+
+.desktophdcopy38 .group-J9QQ8A {
+  background-color: transparent;
+  height: 244px;
+  left: 47px;
+  position: absolute;
+  top: 64px;
+  width: 978px;
+}
+
+.desktophdcopy38 .path-vzHedD {
+  background-color: transparent;
+  height: 247px;
+  left: -0px;
+  position: absolute;
+  top: -2px;
+  width: 980px;
+}
+
+.desktophdcopy38 .group-Hx2ngx {
+  background-color: transparent;
+  height: 13px;
+  left: 45px;
+  position: absolute;
+  top: 316px;
+  width: 912px;
+}
+
+.desktophdcopy38 .x0-6nGPhj {
+  background-color: transparent;
+  font-weight: 400;
+  height: auto;
+  left: 0px;
+  letter-spacing: 0.00px;
+  line-height: 12px;
+  position: absolute;
+  text-align: left;
+  top: 0px;
+  white-space: nowrap;
+  width: 5px;
+}
+
+.desktophdcopy38 .x100-6nGPhj {
+  background-color: transparent;
+  font-weight: 400;
+  height: 13px;
+  left: 73px;
+  letter-spacing: 0.00px;
+  line-height: 12px;
+  position: absolute;
+  text-align: center;
+  top: 0px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.desktophdcopy38 .x200-6nGPhj {
+  background-color: transparent;
+  font-weight: 400;
+  height: 13px;
+  left: 154px;
+  letter-spacing: 0.00px;
+  line-height: 12px;
+  position: absolute;
+  text-align: center;
+  top: 0px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.desktophdcopy38 .x300-6nGPhj {
+  background-color: transparent;
+  font-weight: 400;
+  height: 13px;
+  left: 236px;
+  letter-spacing: 0.00px;
+  line-height: 12px;
+  position: absolute;
+  text-align: center;
+  top: 0px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.desktophdcopy38 .x400-6nGPhj {
+  background-color: transparent;
+  font-weight: 400;
+  height: 13px;
+  left: 318px;
+  letter-spacing: 0.00px;
+  line-height: 12px;
+  position: absolute;
+  text-align: center;
+  top: 0px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.desktophdcopy38 .x500-6nGPhj {
+  background-color: transparent;
+  font-weight: 400;
+  height: 13px;
+  left: 399px;
+  letter-spacing: 0.00px;
+  line-height: 12px;
+  position: absolute;
+  text-align: center;
+  top: 0px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.desktophdcopy38 .x600-6nGPhj {
+  background-color: transparent;
+  font-weight: 400;
+  height: 13px;
+  left: 481px;
+  letter-spacing: 0.00px;
+  line-height: 12px;
+  position: absolute;
+  text-align: center;
+  top: 0px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.desktophdcopy38 .x700-6nGPhj {
+  background-color: transparent;
+  font-weight: 400;
+  height: 13px;
+  left: 563px;
+  letter-spacing: 0.00px;
+  line-height: 12px;
+  position: absolute;
+  text-align: center;
+  top: 0px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.desktophdcopy38 .x800-6nGPhj {
+  background-color: transparent;
+  font-weight: 400;
+  height: 13px;
+  left: 644px;
+  letter-spacing: 0.00px;
+  line-height: 12px;
+  position: absolute;
+  text-align: center;
+  top: 0px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.desktophdcopy38 .x900-6nGPhj {
+  background-color: transparent;
+  font-weight: 400;
+  height: 13px;
+  left: 726px;
+  letter-spacing: 0.00px;
+  line-height: 12px;
+  position: absolute;
+  text-align: center;
+  top: 0px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.desktophdcopy38 .x1000-6nGPhj {
+  background-color: transparent;
+  font-weight: 400;
+  height: 13px;
+  left: 805px;
+  letter-spacing: 0.00px;
+  line-height: 12px;
+  position: absolute;
+  text-align: center;
+  top: 0px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.desktophdcopy38 .x1100-6nGPhj {
+  background-color: transparent;
+  font-weight: 400;
+  height: 13px;
+  left: 887px;
+  letter-spacing: 0.00px;
+  line-height: 12px;
+  position: absolute;
+  text-align: center;
+  top: 0px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.desktophdcopy38 .group-ZG0iDw {
+  background-color: transparent;
+  height: 278px;
+  left: 26px;
+  position: absolute;
+  top: 37px;
+  width: 13px;
+}
+
+.desktophdcopy38 .x0-PNENxL {
+  background-color: transparent;
+  font-weight: 400;
+  height: auto;
+  left: 5px;
+  letter-spacing: 0.00px;
+  line-height: 12px;
+  position: absolute;
+  text-align: left;
+  top: 267px;
+  white-space: nowrap;
+  width: 5px;
+}
+
+.desktophdcopy38 .x2-PNENxL {
+  background-color: transparent;
+  font-weight: 400;
+  height: auto;
+  left: 5px;
+  letter-spacing: 0.00px;
+  line-height: 12px;
+  position: absolute;
+  text-align: left;
+  top: 214px;
+  white-space: nowrap;
+  width: 5px;
+}
+
+.desktophdcopy38 .x4-PNENxL {
+  background-color: transparent;
+  font-weight: 400;
+  height: auto;
+  left: 5px;
+  letter-spacing: 0.00px;
+  line-height: 12px;
+  position: absolute;
+  text-align: left;
+  top: 160px;
+  white-space: nowrap;
+  width: 5px;
+}
+
+.desktophdcopy38 .x6-PNENxL {
+  background-color: transparent;
+  font-weight: 400;
+  height: auto;
+  left: 5px;
+  letter-spacing: 0.00px;
+  line-height: 12px;
+  position: absolute;
+  text-align: left;
+  top: 106px;
+  white-space: nowrap;
+  width: 5px;
+}
+
+.desktophdcopy38 .x8-PNENxL {
+  background-color: transparent;
+  font-weight: 400;
+  height: auto;
+  left: 5px;
+  letter-spacing: 0.00px;
+  line-height: 12px;
+  position: absolute;
+  text-align: left;
+  top: 53px;
+  white-space: nowrap;
+  width: 5px;
+}
+
+.desktophdcopy38 .x10-PNENxL {
+  background-color: transparent;
+  font-weight: 400;
+  height: 13px;
+  left: 0px;
+  letter-spacing: 0.00px;
+  line-height: 12px;
+  position: absolute;
+  text-align: left;
+  top: 0px;
+  white-space: nowrap;
+  width: auto;
 }

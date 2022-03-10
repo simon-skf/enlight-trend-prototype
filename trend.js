@@ -1,12 +1,13 @@
 const colorBlue = "#0F58D6";
 const colorGrey = "#676F7C";
+const colorBlack = "#273342";
 
 let trendHighcharts = undefined;
 let overallTrendRaw = undefined;
 let spectrumTrendRaw = undefined;
 
 let variant = {
-  dataset: 2,
+  dataset: 0,
   spectrumsOnTrend: false, //true = from bands, false = on 0, "matching-overall" = if there is an exact match on X from the trend, it will show up there.
 };
 const dataSources = {
@@ -60,6 +61,29 @@ const dataMaxValues = {
 const waterfallSpectrumCount = 6;
 
 const spectrumSeriesIndex = 1;
+
+const defaultSpectrumMarker = {
+  fillColor: colorGrey,
+  radius: 3,
+};
+
+const selectedSpectrumMarker = {
+  fillColor: colorBlue,
+  lineColor: colorBlue,
+  enabled: true,
+  radius: 5,
+};
+const selectedWaterfallMarker = {
+  lineWidth: 1,
+  fillColor: "#fff",
+  lineColor: colorBlue,
+  enabled: true,
+  radius: 5,
+};
+
+document.querySelector(".group-bGNKx6").addEventListener('click', () => {
+    document.querySelector(".default-text-1Di9CS").innerHTML = "1";
+}, false);
 
 async function init() {
   let dataPointsSources = dataSources[variant.dataset];
@@ -121,8 +145,7 @@ async function init() {
 
   spectrumTrend.sort((a, b) => a.x - b.x);
 
-  spectrumTrend[spectrumTrend.length - 1].marker.enabled = true;
-  spectrumTrend[spectrumTrend.length - 1].marker.radius = 6;
+  spectrumTrend[spectrumTrend.length - 1].marker = selectedSpectrumMarker;
   for (var i = 1; i < waterfallSpectrumCount; i++) {
     spectrumTrend[spectrumTrend.length - 1 - i].marker.enabled = true;
     spectrumTrend[spectrumTrend.length - 1 - i].marker.radius = 6;
@@ -133,7 +156,7 @@ async function init() {
 
   spectrumTrendRaw = spectrumTrend.map((val) => [val.x, val.y]);
 
-  trendHighcharts = Highcharts.chart("trend-highcharts", {
+  trendHighcharts = Highcharts.chart(document.querySelector("[class^='trend-container']"), {
     title: {
       text: "",
     },
@@ -148,18 +171,24 @@ async function init() {
           }
         },
       },
-    //   animation: {
-    //     duration: 300,
-    //     // Uses Math.easeOutBounce
-    //     // easing: "easeInOutQuad",
-    //   },
-      height: 292
+      //   animation: {
+      //     duration: 300,
+      //     // Uses Math.easeOutBounce
+      //     // easing: "easeInOutQuad",
+      //   },
+      height: 292,
     },
     xAxis: {
       type: "datetime",
       crosshair: {
-        color: "gray",
+        color: colorGrey,
       },
+      labels: {
+        style: {
+          color: colorBlack,
+        },
+      },
+      width: "95%",
     },
     yAxis: [
       {
@@ -170,6 +199,12 @@ async function init() {
         height: "85%",
         min: 0,
         max: dataMaxValues[variant.dataset].y,
+
+        labels: {
+          style: {
+            color: colorBlack,
+          },
+        },
       },
     ],
     legend: {
@@ -311,7 +346,7 @@ async function init() {
         data: overallTrend,
         enableMouseTracking: !variant.spectrumsOnTrend,
         marker: {
-          radius: 3,
+          radius: 2,
         },
       },
       {
@@ -326,10 +361,7 @@ async function init() {
             lineWidth: 0,
           },
         },
-        marker: {
-          fillColor: colorBlue,
-          radius: 3,
-        },
+        marker: defaultSpectrumMarker,
         zIndex: 10,
       },
       createSingleCursorSerie(
@@ -415,13 +447,7 @@ const selectSpectrumCloseTo = (xVal) => {
     if (isWaterfallSelected) {
       selectedPoint.update(
         {
-          marker: {
-            lineWidth: 1,
-            fillColor: "#fff",
-            lineColor: colorBlue,
-            enabled: true,
-            radius: 5,
-          },
+          marker: selectedWaterfallMarker,
         },
         false,
         true
@@ -445,11 +471,8 @@ const selectSpectrumCloseTo = (xVal) => {
   newSelectedPoint.update(
     {
       marker: {
-        fillColor: undefined,
         lineWidth: newSelectedPoint.marker.lineWidth,
-        lineColor: colorBlue,
-        enabled: true,
-        radius: 5,
+        ...selectedSpectrumMarker,
       },
     },
     false,
@@ -513,13 +536,7 @@ const createSingleCursorSerie = (
               if (isWaterfallSelected) {
                 selectedPoint.update(
                   {
-                    marker: {
-                      lineWidth: 1,
-                      fillColor: "#fff",
-                      lineColor: colorBlue,
-                      enabled: true,
-                      radius: 5,
-                    },
+                    marker: selectedWaterfallMarker,
                   },
                   false,
                   true
@@ -545,11 +562,8 @@ const createSingleCursorSerie = (
             newSelectedPoint.update(
               {
                 marker: {
-                  fillColor: undefined,
                   lineWidth: newSelectedPoint.marker.lineWidth,
-                  lineColor: colorBlue,
-                  enabled: true,
-                  radius: 5,
+                  ...selectedSpectrumMarker,
                 },
               },
               false,
@@ -591,11 +605,8 @@ const createSingleCursorSerie = (
                 point.update(
                   {
                     marker: {
-                      fillColor: undefined,
                       lineWidth: point.marker.lineWidth,
-                      lineColor: colorBlue,
-                      enabled: true,
-                      radius: 5,
+                      ...selectedSpectrumMarker,
                     },
                   },
                   false,
@@ -604,13 +615,7 @@ const createSingleCursorSerie = (
               } else {
                 point.update(
                   {
-                    marker: {
-                      lineWidth: 1,
-                      fillColor: "#fff",
-                      lineColor: colorBlue,
-                      enabled: true,
-                      radius: 5,
-                    },
+                    marker: selectedWaterfallMarker,
                   },
                   false,
                   true
