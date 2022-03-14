@@ -1,5 +1,5 @@
 let variant = {
-  dataset: 1,
+  dataset: 0,
   spectrumsOnTrend: false, //true = from bands, false = on 0, "matching-overall" = if there is an exact match on X from the trend, it will show up there.
   highlightMatchingOverall: true,
 };
@@ -94,25 +94,31 @@ const selectedWaterfallMarker = {
 
 let spacingDropdown = document.querySelector(".input-normal-select-vedQLq");
 if (spacingDropdown) {
-  
   spacingDropdown.outerHTML = `
     <select class="input-normal-select-vedQLq">
-      <option value="0">All consecutive measurements</option>
+      <option value="0">Consecutive measurements</option>
       <option value="1">Every other measurement</option>
-      <option value="day">One per day</option>
-      <option value="week">One per week</option>
+      <option value="3">First every day</option>
+      <option value="10">First every week</option>
     </select>
   `;
   spacingDropdown = document.querySelector(".input-normal-select-vedQLq");
   spacingDropdown.style.width = "210px";
   spacingDropdown.addEventListener("change", (event) => {
     console.log("spacing: " + event.target.value);
+    waterfallSpacing = event.target.value*1;
+    highlightWaterfallPointsCloseTo(waterfallCursorPosition);
+    highlightedWaterfallPoints[0].update({},true,false); // Force refresh chart
   });
 }
 
 let highlightedSpectrumPoint = undefined;
 let highlightedTrendPoint = undefined;
+let highlightedWaterfallTrendPoints = [];
 let highlightedWaterfallPoints = [];
+
+let waterfallCursorPosition = 0;
+let waterfallSpacing = 0;
 
 async function init() {
   let dataPointsSources = dataSources[variant.dataset];
@@ -282,9 +288,13 @@ async function init() {
               return `<b>${new Date(this.x).toLocaleString(
                 "sv-SE",
                 dateFormatOptions
-              )}</b><br/>${xyPoint.y.toPrecision(5)} g<br/>(${new Date(
-                xyPoint.x
-              ).toLocaleString("sv-SE", dateFormatOptions)})<br/>`;
+              )}</b><br/>Spectrum reading<br/>`;
+              // return `<b>${new Date(this.x).toLocaleString(
+              //   "sv-SE",
+              //   dateFormatOptions
+              // )}</b><br/>${xyPoint.y.toPrecision(5)} g<br/>(${new Date(
+              //   xyPoint.x
+              // ).toLocaleString("sv-SE", dateFormatOptions)})<br/>`;
             }
           }
           if (this.series.name == "Single cursors") {
@@ -316,16 +326,25 @@ async function init() {
                 "sv-SE",
                 dateFormatOptions
               )}</b><br/>${closestOverallPoint.y.toPrecision(5)} g<br/>`;
+            } else if(this.x == closestSpectrumPoint.x) {
+              return `<b>${new Date(this.x).toLocaleString(
+                "sv-SE",
+                dateFormatOptions
+              )}</b><br/>Spectrum reading<br/>`;
             } else {
               return `<b>${new Date(this.x).toLocaleString(
                 "sv-SE",
                 dateFormatOptions
-              )}</b><br/>${closestOverallPoint.y.toPrecision(
-                5
-              )} g<br/>(${new Date(closestOverallPoint.x).toLocaleString(
-                "sv-SE",
-                dateFormatOptions
-              )})<br/>`;
+              )}</b>`;
+              // return `<b>${new Date(this.x).toLocaleString(
+              //   "sv-SE",
+              //   dateFormatOptions
+              // )}</b><br/>${closestOverallPoint.y.toPrecision(
+              //   5
+              // )} g<br/>(${new Date(closestOverallPoint.x).toLocaleString(
+              //   "sv-SE",
+              //   dateFormatOptions
+              // )})<br/>`;
             }
           }
         },
@@ -457,30 +476,34 @@ async function init() {
       ],
     }
   );
-
-
+  waterfallCursorPosition = spectrumTrend[spectrumTrend.length - 1].x;
   let lastSpectrumX = spectrumTrend[spectrumTrend.length - 1].x;
   //Spectrum initial highlight
   selectSpectrumCloseTo(lastSpectrumX);
 
-  //Waterfall initial highligt (todo: move to function)
+  //Waterfall initial highlight
+  highlightWaterfallPointsCloseTo(lastSpectrumX);
+}
+
+init();
+
+const highlightWaterfallPointsCloseTo = (xValue) => {
+  const closestSpectrumPoint = getClosestPointBy(xValue, spectrumTrendRaw, []);
   let indexOfClosestPoint = trendHighcharts.series[
     spectrumSeriesIndex
-  ].data.findIndex((point) => point.x == lastSpectrumX);
+  ].data.findIndex((point) => point.x == closestSpectrumPoint.x);
 
   let spectrumPointsToHighlight = [];
   for (var i = 0; i < waterfallSpectrumCount; i++) {
+    let offset = i * (waterfallSpacing + 1);
     spectrumPointsToHighlight.push(
       trendHighcharts.series[spectrumSeriesIndex].data[
-        indexOfClosestPoint - i
+        indexOfClosestPoint - offset
       ].x
     );
   }
   highlightPointsOn(spectrumPointsToHighlight, "waterfall-cursor");
-  
-}
-
-init();
+};
 
 const highlightPointsOn = (xValues = [], type = "spectrum-cursor") => {
   if (type == "spectrum-cursor") {
@@ -492,6 +515,7 @@ const highlightPointsOn = (xValues = [], type = "spectrum-cursor") => {
         false,
         false
       );
+      highlightedTrendPoint = undefined;
     }
     if (highlightedSpectrumPoint) {
       let highlightAsWaterfall = highlightedWaterfallPoints.find((point) => {
@@ -656,20 +680,8 @@ const createSingleCursorSerie = (
           if (cursorType == "spectrum") {
             highlightPointsOn([closestSpectrumPoint.x], "spectrum-cursor");
           } else if (cursorType == "waterfall") {
-            let indexOfClosestPoint = trendHighcharts.series[
-              spectrumSeriesIndex
-            ].data.findIndex((point) => point.x == closestSpectrumPoint.x);
-
-            let spectrumPointsToHighlight = [];
-            for (var i = 0; i < waterfallSpectrumCount; i++) {
-              spectrumPointsToHighlight.push(
-                trendHighcharts.series[spectrumSeriesIndex].data[
-                  indexOfClosestPoint - i
-                ].x
-              );
-            }
-
-            highlightPointsOn(spectrumPointsToHighlight, "waterfall-cursor");
+            waterfallCursorPosition = currentX;
+            highlightWaterfallPointsCloseTo(closestSpectrumPoint.x);
           }
         },
         drop: (e) => {
@@ -679,6 +691,7 @@ const createSingleCursorSerie = (
             selectSpectrumCloseTo(currentX);
           }
           if (cursorType == "waterfall") {
+            waterfallCursorPosition = currentX;
             let waterfallContainer =
               document.querySelector(".waterfall6-2Y8Ggn");
             if (waterfallContainer) {
