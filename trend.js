@@ -1,7 +1,7 @@
 let variant = {
-  dataset: 0,
+  dataset: 1,
   spectrumsOnTrend: false, //true = from bands, false = on 0, "matching-overall" = if there is an exact match on X from the trend, it will show up there.
-  highlightMatchingOverall: true,
+  highlightMatchingOverall: false,
 };
 
 const colorBlue = "#0F58D6";
@@ -78,6 +78,13 @@ const selectedTrendMarker = {
   enabled: true,
   radius: 4,
 };
+const selectedWaterfallTrendMarker = {
+  lineWidth: 1,
+  fillColor: "#fff",
+  lineColor: colorBlue,
+  enabled: true,
+  radius: 3,
+};
 const selectedSpectrumMarker = {
   fillColor: colorBlue,
   lineColor: colorBlue,
@@ -89,7 +96,7 @@ const selectedWaterfallMarker = {
   fillColor: "#fff",
   lineColor: colorBlue,
   enabled: true,
-  radius: 5,
+  radius: 4,
 };
 
 let spacingDropdown = document.querySelector(".input-normal-select-vedQLq");
@@ -106,9 +113,9 @@ if (spacingDropdown) {
   spacingDropdown.style.width = "210px";
   spacingDropdown.addEventListener("change", (event) => {
     console.log("spacing: " + event.target.value);
-    waterfallSpacing = event.target.value*1;
+    waterfallSpacing = event.target.value * 1;
     highlightWaterfallPointsCloseTo(waterfallCursorPosition);
-    highlightedWaterfallPoints[0].update({},true,false); // Force refresh chart
+    highlightedWaterfallPoints[0].update({}, true, false); // Force refresh chart
   });
 }
 
@@ -326,7 +333,7 @@ async function init() {
                 "sv-SE",
                 dateFormatOptions
               )}</b><br/>${closestOverallPoint.y.toPrecision(5)} g<br/>`;
-            } else if(this.x == closestSpectrumPoint.x) {
+            } else if (this.x == closestSpectrumPoint.x) {
               return `<b>${new Date(this.x).toLocaleString(
                 "sv-SE",
                 dateFormatOptions
@@ -507,16 +514,33 @@ const highlightWaterfallPointsCloseTo = (xValue) => {
 
 const highlightPointsOn = (xValues = [], type = "spectrum-cursor") => {
   if (type == "spectrum-cursor") {
+    //Un-highlight trend point
     if (variant.highlightMatchingOverall && highlightedTrendPoint) {
-      highlightedTrendPoint.update(
-        {
-          marker: undefined,
-        },
-        false,
-        false
+      let highlightAsWaterfall = highlightedWaterfallTrendPoints.find(
+        (point) => {
+          return point.x == highlightedTrendPoint.x;
+        }
       );
+      if (highlightAsWaterfall) {
+        highlightedTrendPoint.update(
+          {
+            marker: selectedWaterfallTrendMarker,
+          },
+          false,
+          false
+        );
+      } else {
+        highlightedTrendPoint.update(
+          {
+            marker: undefined,
+          },
+          false,
+          false
+        );
+      }
       highlightedTrendPoint = undefined;
     }
+    //Un-highlight spectrum point
     if (highlightedSpectrumPoint) {
       let highlightAsWaterfall = highlightedWaterfallPoints.find((point) => {
         return point.x == highlightedSpectrumPoint.x;
@@ -541,10 +565,28 @@ const highlightPointsOn = (xValues = [], type = "spectrum-cursor") => {
     }
   }
   if (type == "waterfall-cursor") {
+    //Un-highlight trend point
+    if (variant.highlightMatchingOverall) {
+      highlightedWaterfallTrendPoints.forEach((point) => {
+        if (highlightedTrendPoint && highlightedTrendPoint.x == point.x) {
+          //Spectrum cursor highlight overrides
+        } else {
+          point.update(
+            {
+              marker: undefined,
+            },
+            false,
+            false
+          );
+        }
+      });
+      highlightedWaterfallTrendPoints = [];
+    }
+    //Un-highlight spectrum point
     highlightedWaterfallPoints.forEach((point) => {
       let isSpectrumHighlighted = highlightedSpectrumPoint.x == point.x;
       if (isSpectrumHighlighted) {
-        //Keep it
+        //Spectrum cursor highlight overrides
       } else {
         point.update(
           {
@@ -559,6 +601,7 @@ const highlightPointsOn = (xValues = [], type = "spectrum-cursor") => {
   }
   xValues.forEach((xVal) => {
     if (type == "spectrum-cursor") {
+      //Highlight trend point
       if (variant.highlightMatchingOverall) {
         let matchingOverallPoint = trendHighcharts.series[
           overallSeriesIndex
@@ -574,6 +617,7 @@ const highlightPointsOn = (xValues = [], type = "spectrum-cursor") => {
           highlightedTrendPoint = matchingOverallPoint;
         }
       }
+      //Highlight spectrum point
       let matchingSpectrumPoint = trendHighcharts.series[
         spectrumSeriesIndex
       ].data.find((point) => point.x == xVal);
@@ -587,13 +631,37 @@ const highlightPointsOn = (xValues = [], type = "spectrum-cursor") => {
       highlightedSpectrumPoint = matchingSpectrumPoint;
     }
     if (type == "waterfall-cursor") {
-      let matchingPoint = trendHighcharts.series[spectrumSeriesIndex].data.find(
+      //Highlight trend point
+      if (variant.highlightMatchingOverall) {
+        let matchingOverallPoint = trendHighcharts.series[
+          overallSeriesIndex
+        ].data.find((point) => point.x == xVal);
+        if (
+          matchingOverallPoint &&
+          !(
+            highlightedTrendPoint &&
+            highlightedTrendPoint.x == matchingOverallPoint.x
+          )
+        ) {
+          matchingOverallPoint.update(
+            {
+              marker: selectedWaterfallTrendMarker,
+            },
+            false,
+            false
+          );
+          highlightedWaterfallTrendPoints.push(matchingOverallPoint);
+        }
+      }
+
+      //Highlight spectrum point
+      let matchingSpectrumPoint = trendHighcharts.series[spectrumSeriesIndex].data.find(
         (point) => point.x == xVal
       );
-      let isSpectrumHighlighted = matchingPoint.x == highlightedSpectrumPoint.x;
-      if (matchingPoint) {
+      let isSpectrumHighlighted = matchingSpectrumPoint.x == highlightedSpectrumPoint.x;
+      if (matchingSpectrumPoint) {
         if (!isSpectrumHighlighted) {
-          matchingPoint.update(
+          matchingSpectrumPoint.update(
             {
               marker: selectedWaterfallMarker,
             },
@@ -601,7 +669,7 @@ const highlightPointsOn = (xValues = [], type = "spectrum-cursor") => {
             false
           );
         }
-        highlightedWaterfallPoints.push(matchingPoint);
+        highlightedWaterfallPoints.push(matchingSpectrumPoint);
       }
     }
   });
