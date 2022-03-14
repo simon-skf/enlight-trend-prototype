@@ -1,15 +1,16 @@
+let variant = {
+  dataset: 0,
+  spectrumsOnTrend: false, //true = from bands, false = on 0, "matching-overall" = if there is an exact match on X from the trend, it will show up there.
+};
+
 const colorBlue = "#0F58D6";
-const colorGrey = "#808895";
+const colorGrey = variant.spectrumsOnTrend ? "#808895" : "#808895";
 const colorBlack = "#273342";
 
 let trendHighcharts = undefined;
 let overallTrendRaw = undefined;
 let spectrumTrendRaw = undefined;
 
-let variant = {
-  dataset: 0,
-  spectrumsOnTrend: false, //true = from bands, false = on 0, "matching-overall" = if there is an exact match on X from the trend, it will show up there.
-};
 const dataSources = {
   //https://measurement-api.sandbox.iot.enlight.skf.com/nodes/7423d282-05cc-4d25-8e66-d91594b38d62/node-data/recent?content_type=DATA_POINT&limit=1000&offset=0&resurrectable=false
   0: [
@@ -83,13 +84,17 @@ const selectedWaterfallMarker = {
 
 let spacingDropdown = document.querySelector(".input-normal-select-vedQLq");
 if (spacingDropdown) {
+  
   spacingDropdown.outerHTML = `
     <select class="input-normal-select-vedQLq">
-      <option value="0">0</option>
-      <option value="1">1</option>
+      <option value="0">All consecutive measurements</option>
+      <option value="1">Every other measurement</option>
+      <option value="day">One per day</option>
+      <option value="week">One per week</option>
     </select>
   `;
   spacingDropdown = document.querySelector(".input-normal-select-vedQLq");
+  spacingDropdown.style.width = "210px";
   spacingDropdown.addEventListener("change", (event) => {
     console.log("spacing: "+event.target.value);
   });
@@ -157,11 +162,7 @@ async function init() {
 
   spectrumTrend[spectrumTrend.length - 1].marker = selectedSpectrumMarker;
   for (var i = 1; i < waterfallSpectrumCount; i++) {
-    spectrumTrend[spectrumTrend.length - 1 - i].marker.enabled = true;
-    spectrumTrend[spectrumTrend.length - 1 - i].marker.radius = 6;
-    spectrumTrend[spectrumTrend.length - 1 - i].marker.lineWidth = 1;
-    spectrumTrend[spectrumTrend.length - 1 - i].marker.fillColor = "#fff";
-    spectrumTrend[spectrumTrend.length - 1 - i].marker.lineColor = colorBlue;
+    spectrumTrend[spectrumTrend.length - 1 - i].marker = selectedWaterfallMarker;
   }
 
   spectrumTrendRaw = spectrumTrend.map((val) => [val.x, val.y]);
