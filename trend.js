@@ -9,6 +9,7 @@ let spectrumTrendRaw = undefined;
 let variant = {
   dataset: 0,
   spectrumsOnTrend: false, //true = from bands, false = on 0, "matching-overall" = if there is an exact match on X from the trend, it will show up there.
+  highlightMatchingOverall: true,
 };
 const dataSources = {
   //https://measurement-api.sandbox.iot.enlight.skf.com/nodes/7423d282-05cc-4d25-8e66-d91594b38d62/node-data/recent?content_type=DATA_POINT&limit=1000&offset=0&resurrectable=false
@@ -61,6 +62,7 @@ const dataMaxValues = {
 const waterfallSpectrumCount = 6;
 
 const spectrumSeriesIndex = 1;
+const overallSeriesIndex = 0;
 
 const spectrumCursorSeriesIndex = 3;
 
@@ -69,6 +71,12 @@ const defaultSpectrumMarker = {
   radius: 3,
 };
 
+const selectedTrendMarker = {
+  fillColor: colorBlue,
+  lineColor: colorBlue,
+  enabled: true,
+  radius: 4,
+};
 const selectedSpectrumMarker = {
   fillColor: colorBlue,
   lineColor: colorBlue,
@@ -116,7 +124,7 @@ async function init() {
   }
   overallTrend.sort((a, b) => a[0] - b[0]);
 
-  overallTrendRaw = overallTrend;
+  overallTrendRaw = [...overallTrend];
 
   let bandOverallsResponse = await fetch(bandOverallsSource[variant.dataset]);
   let bandOveralls = await bandOverallsResponse.json();
@@ -161,7 +169,7 @@ async function init() {
 
   spectrumTrend.sort((a, b) => a.x - b.x);
 
-  // highlightSpectrumPointsOn(
+  // highlightPointsOn(
   //   [spectrumTrend[spectrumTrend.length - 1].x],
   //   "spectrum-cursor"
   // );
@@ -267,7 +275,7 @@ async function init() {
             )}</b><br/>${this.y.toPrecision(5)} g<br/>`;
           }
           if (this.series.name == "spectrum") {
-            let xyPoint = getClosestPointBy(this.x, overallTrend, []);
+            let xyPoint = getClosestPointBy(this.x, overallTrendRaw, []);
             if (this.x == xyPoint.x) {
               return `<b>${new Date(this.x).toLocaleString(
                 "sv-SE",
@@ -285,7 +293,7 @@ async function init() {
           if (this.series.name == "Single cursors") {
             let closestOverallPoint = getClosestPointBy(
               this.x,
-              overallTrend,
+              overallTrendRaw,
               []
             );
             let closestSpectrumPoint = getClosestPointBy(
@@ -456,8 +464,17 @@ async function init() {
 
 init();
 
-const highlightSpectrumPointsOn = (xValues = [], type = "spectrum-cursor") => {
+const highlightPointsOn = (xValues = [], type = "spectrum-cursor") => {
   if (type == "spectrum-cursor") {
+    if (variant.highlightMatchingOverall && highlightedTrendPoint) {
+      highlightedTrendPoint.update(
+        {
+          marker: undefined,
+        },
+        false,
+        false
+      );
+    }
     if (highlightedSpectrumPoint) {
       let highlightAsWaterfall = highlightedWaterfallPoints.find((point) => {
         return point.x == highlightedSpectrumPoint.x;
@@ -473,10 +490,7 @@ const highlightSpectrumPointsOn = (xValues = [], type = "spectrum-cursor") => {
       } else {
         highlightedSpectrumPoint.update(
           {
-            marker: {
-              enabled: undefined,
-              radius: undefined,
-            },
+            marker: undefined,
           },
           false,
           false
@@ -492,10 +506,7 @@ const highlightSpectrumPointsOn = (xValues = [], type = "spectrum-cursor") => {
       } else {
         point.update(
           {
-            marker: {
-              enabled: undefined,
-              radius: undefined,
-            },
+            marker: undefined,
           },
           false,
           false
@@ -506,17 +517,32 @@ const highlightSpectrumPointsOn = (xValues = [], type = "spectrum-cursor") => {
   }
   xValues.forEach((xVal) => {
     if (type == "spectrum-cursor") {
-      let matchingPoint = trendHighcharts.series[spectrumSeriesIndex].data.find(
-        (point) => point.x == xVal
-      );
-      matchingPoint.update(
+      if (variant.highlightMatchingOverall) {
+        let matchingOverallPoint = trendHighcharts.series[
+          overallSeriesIndex
+        ].data.find((point) => point.x == xVal);
+        if (matchingOverallPoint) {
+          matchingOverallPoint.update(
+            {
+              marker: selectedTrendMarker,
+            },
+            false,
+            false
+          );
+          highlightedTrendPoint = matchingOverallPoint;
+        }
+      }
+      let matchingSpectrumPoint = trendHighcharts.series[
+        spectrumSeriesIndex
+      ].data.find((point) => point.x == xVal);
+      matchingSpectrumPoint.update(
         {
           marker: selectedSpectrumMarker,
         },
         false,
         false
       );
-      highlightedSpectrumPoint = matchingPoint;
+      highlightedSpectrumPoint = matchingSpectrumPoint;
     }
     if (type == "waterfall-cursor") {
       let matchingPoint = trendHighcharts.series[spectrumSeriesIndex].data.find(
@@ -553,36 +579,8 @@ const selectSpectrumCloseTo = (xVal) => {
       false
     );
   }, 1);
-  let selectedPoints = trendHighcharts.series[spectrumSeriesIndex].data.filter(
-    (point) => {
-      let isSelected = point.marker.enabled;
-      return isSelected;
-    }
-  );
-  selectedPoints.forEach((selectedPoint) => {
-    let isWaterfallSelected = selectedPoint.marker.lineWidth == 1;
-    if (isWaterfallSelected) {
-      selectedPoint.update(
-        {
-          marker: selectedWaterfallMarker,
-        },
-        false,
-        true
-      );
-    } else {
-      selectedPoint.update(
-        {
-          marker: {
-            enabled: undefined,
-            radius: undefined,
-          },
-        },
-        false,
-        true
-      );
-    }
-  });
-  highlightSpectrumPointsOn([closestSpectrumPoint.x], "spectrum-cursor");
+
+  highlightPointsOn([closestSpectrumPoint.x], "spectrum-cursor");
 
   let spectrumContainer = document.querySelector(".spectrumm-A5jo6n");
   if (spectrumContainer) {
@@ -638,10 +636,7 @@ const createSingleCursorSerie = (
           );
 
           if (cursorType == "spectrum") {
-            highlightSpectrumPointsOn(
-              [closestSpectrumPoint.x],
-              "spectrum-cursor"
-            );
+            highlightPointsOn([closestSpectrumPoint.x], "spectrum-cursor");
           } else if (cursorType == "waterfall") {
             let indexOfClosestPoint = trendHighcharts.series[
               spectrumSeriesIndex
@@ -656,10 +651,7 @@ const createSingleCursorSerie = (
               );
             }
 
-            highlightSpectrumPointsOn(
-              spectrumPointsToHighlight,
-              "waterfall-cursor"
-            );
+            highlightPointsOn(spectrumPointsToHighlight, "waterfall-cursor");
           }
         },
         drop: (e) => {
