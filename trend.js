@@ -66,6 +66,7 @@ const spectrumSeriesIndex = 1;
 const overallSeriesIndex = 0;
 
 const spectrumCursorSeriesIndex = 3;
+const waterfallCursorSeriesIndex = 2;
 
 const defaultSpectrumMarker = {
   fillColor: variant.spectrumsOnTrend ? colorBlue : colorGrey,
@@ -655,10 +656,11 @@ const highlightPointsOn = (xValues = [], type = "spectrum-cursor") => {
       }
 
       //Highlight spectrum point
-      let matchingSpectrumPoint = trendHighcharts.series[spectrumSeriesIndex].data.find(
-        (point) => point.x == xVal
-      );
-      let isSpectrumHighlighted = matchingSpectrumPoint.x == highlightedSpectrumPoint.x;
+      let matchingSpectrumPoint = trendHighcharts.series[
+        spectrumSeriesIndex
+      ].data.find((point) => point.x == xVal);
+      let isSpectrumHighlighted =
+        matchingSpectrumPoint.x == highlightedSpectrumPoint.x;
       if (matchingSpectrumPoint) {
         if (!isSpectrumHighlighted) {
           matchingSpectrumPoint.update(
@@ -699,6 +701,33 @@ const selectSpectrumCloseTo = (xVal) => {
     setTimeout(() => {
       spectrumContainer.style.transition = ".5s opacity";
       spectrumContainer.style.opacity = "100%";
+    }, 1000);
+  }
+};
+
+const selectWaterfallCloseTo = (xVal) => {
+  const closestSpectrumPoint = getClosestPointBy(xVal, spectrumTrendRaw, []);
+  setTimeout(() => {
+    trendHighcharts.series[waterfallCursorSeriesIndex].data[0].update(
+      { x: closestSpectrumPoint.x },
+      true,
+      false
+    );
+    trendHighcharts.series[waterfallCursorSeriesIndex].data[1].update(
+      { x: closestSpectrumPoint.x },
+      true,
+      false
+    );
+  }, 1);
+  highlightWaterfallPointsCloseTo(closestSpectrumPoint.x);
+  waterfallCursorPosition = closestSpectrumPoint.x;
+  let waterfallContainer = document.querySelector(".waterfall6-2Y8Ggn");
+  if (waterfallContainer) {
+    waterfallContainer.style.opacity = "10%";
+    waterfallContainer.style.transition = ".2s opacity";
+    setTimeout(() => {
+      waterfallContainer.style.transition = ".5s opacity";
+      waterfallContainer.style.opacity = "100%";
     }, 1000);
   }
 };
@@ -759,17 +788,7 @@ const createSingleCursorSerie = (
             selectSpectrumCloseTo(currentX);
           }
           if (cursorType == "waterfall") {
-            waterfallCursorPosition = currentX;
-            let waterfallContainer =
-              document.querySelector(".waterfall6-2Y8Ggn");
-            if (waterfallContainer) {
-              waterfallContainer.style.opacity = "10%";
-              waterfallContainer.style.transition = ".2s opacity";
-              setTimeout(() => {
-                waterfallContainer.style.transition = ".5s opacity";
-                waterfallContainer.style.opacity = "100%";
-              }, 1000);
-            }
+            selectWaterfallCloseTo(currentX);
           }
         },
       },
