@@ -1,5 +1,5 @@
 let variant = {
-  dataset: 0,
+  dataset: 1,
   spectrumsOnTrend: false, //true = from bands, false = on 0, "matching-overall" = if there is an exact match on X from the trend, it will show up there.
   highlightMatchingOverall: true,
 };
@@ -457,6 +457,27 @@ async function init() {
       ],
     }
   );
+
+
+  let lastSpectrumX = spectrumTrend[spectrumTrend.length - 1].x;
+  //Spectrum initial highlight
+  selectSpectrumCloseTo(lastSpectrumX);
+
+  //Waterfall initial highligt (todo: move to function)
+  let indexOfClosestPoint = trendHighcharts.series[
+    spectrumSeriesIndex
+  ].data.findIndex((point) => point.x == lastSpectrumX);
+
+  let spectrumPointsToHighlight = [];
+  for (var i = 0; i < waterfallSpectrumCount; i++) {
+    spectrumPointsToHighlight.push(
+      trendHighcharts.series[spectrumSeriesIndex].data[
+        indexOfClosestPoint - i
+      ].x
+    );
+  }
+  highlightPointsOn(spectrumPointsToHighlight, "waterfall-cursor");
+  
 }
 
 init();
