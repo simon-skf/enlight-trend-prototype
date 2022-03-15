@@ -1,5 +1,5 @@
 let variant = {
-  dataset: 1,
+  dataset: 3,
   spectrumsOnTrend: false, //true = from bands, false = on 0, "matching-overall" = if there is an exact match on X from the trend, it will show up there.
   highlightMatchingOverall: false,
 };
@@ -31,6 +31,8 @@ const dataSources = {
   ],
   //https://measurement-api.sandbox.iot.enlight.skf.com/nodes/2739df90-3040-4cb3-a026-637e64e616e9/node-data/recent?content_type=DATA_POINT&limit=1000&offset=0&resurrectable=false
   2: [`../dataset_2/data_points_0.json`],
+  //https://measurement-api.iot.enlight.skf.com/nodes/50d89aed-e4ba-48e4-9a05-d551175ca4ff/node-data/recent?content_type=DATA_POINT&limit=1000&offset=1000&resurrectable=false
+  3: [`../dataset_3/data_points_0.json`],
 };
 
 const bandOverallsSource = {
@@ -40,12 +42,15 @@ const bandOverallsSource = {
   1: `../dataset_1/band_overalls.json`,
   //https://measurement-api.sandbox.iot.enlight.skf.com/nodes/2739df90-3040-4cb3-a026-637e64e616e9/band/overall?startFrequency=0&stopFrequency=1200&windowFunction=hanning&frequencyType=0
   2: `../dataset_2/band_overalls.json`,
+  //https://measurement-api.iot.enlight.skf.com/nodes/50d89aed-e4ba-48e4-9a05-d551175ca4ff/band/overall?startFrequency=0&stopFrequency=77000&windowFunction=hanning&frequencyType=0
+  3: `../dataset_3/band_overalls.json`,
 };
 
 const magicSpectrumOverallRatio = {
   0: 1 / 10,
   1: 1 / 5,
   2: 1,
+  3: 1,
 };
 
 const dataMaxValues = {
@@ -58,9 +63,12 @@ const dataMaxValues = {
   2: {
     y: 0.5,
   },
+  3: {
+    y: 8,
+  },
 };
 
-const waterfallSpectrumCount = 6;
+const waterfallSpectrumCount = 24;
 
 const spectrumSeriesIndex = 1;
 const overallSeriesIndex = 0;
@@ -91,6 +99,7 @@ const selectedSpectrumMarker = {
   lineColor: colorBlue,
   enabled: true,
   radius: 5,
+  zIndex: 100,
 };
 const selectedWaterfallMarker = {
   lineWidth: 1,
