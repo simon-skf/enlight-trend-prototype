@@ -68,12 +68,13 @@ const dataMaxValues = {
   },
 };
 
-const waterfallSpectrumCount = 24;
+const waterfallSpectrumCount = 6;
 
 const spectrumSeriesIndex = 1;
 const overallSeriesIndex = 0;
 
 const spectrumCursorSeriesIndex = 3;
+const compareCursorSeriesIndex = 4;
 const waterfallCursorSeriesIndex = 2;
 
 const defaultSpectrumMarker = {
@@ -109,17 +110,17 @@ const selectedWaterfallMarker = {
   radius: 4,
 };
 
-let spacingDropdown = document.querySelector(".input-normal-select-vedQLq");
+let spacingDropdown = document.querySelector(".input-normal-select-jU0EgA");
 if (spacingDropdown) {
   spacingDropdown.outerHTML = `
-    <select class="input-normal-select-vedQLq">
+    <select class="input-normal-select-jU0EgA">
       <option value="0">Consecutive measurements</option>
       <option value="1">Every other measurement</option>
       <option value="3">First every day</option>
       <option value="10">First every week</option>
     </select>
   `;
-  spacingDropdown = document.querySelector(".input-normal-select-vedQLq");
+  spacingDropdown = document.querySelector(".input-normal-select-jU0EgA");
   spacingDropdown.style.width = "210px";
   spacingDropdown.addEventListener("change", (event) => {
     console.log("spacing: " + event.target.value);
@@ -130,6 +131,7 @@ if (spacingDropdown) {
 }
 
 let highlightedSpectrumPoint = undefined;
+let highlightedComparePoint = undefined;
 let highlightedTrendPoint = undefined;
 let highlightedWaterfallTrendPoints = [];
 let highlightedWaterfallPoints = [];
@@ -470,26 +472,26 @@ async function init() {
             `<svg width="23" height="17" xmlns="http://www.w3.org/2000/svg"><path d="m10.28 16.2 1.944-5.082 1.549 2.177 2.167-5.361 1.435 3.928L20 7.811l-1.375-.758-.842 1.3-1.767-4.836-2.64 6.529-1.587-2.232-1.386 3.626-3.14-9.64L4 10.777l1.519.47 1.66-4.57 3.102 9.523Z" fill="#0F58D6" fill-rule="evenodd"/></svg>`,
           "spectrum"
         ),
-        //   createSingleCursorSerie(
-        //     spectrumTrendRaw,
-        //     [],
-        //     {
-        //       id: 1,
-        //       color: colorBlue,
-        //       x: spectrumTrend[100].x,
-        //       y: spectrumTrend[100].y,
-        //     },
-        //     {
-        //       xMin: overallTrend[0][0],
-        //       xMax: overallTrend[overallTrend.length - 1][0],
-        //       yMin: 0,
-        //       yMax: dataMaxValues[variant.dataset].y,
-        //     },
-        //     { min: 0, max: dataMaxValues[variant.dataset].y * 0.9 },
-        //     () =>
-        //       `<svg width="23" height="17" xmlns="http://www.w3.org/2000/svg"><path d="m10.28 16.2 1.944-5.082 1.549 2.177 2.167-5.361 1.435 3.928L20 7.811l-1.375-.758-.842 1.3-1.767-4.836-2.64 6.529-1.587-2.232-1.386 3.626-3.14-9.64L4 10.777l1.519.47 1.66-4.57 3.102 9.523Z" fill="#0F58D6" fill-rule="evenodd"/></svg>`,
-        //     "compare"
-        //   ),
+        createSingleCursorSerie(
+          spectrumTrendRaw,
+          [],
+          {
+            id: 1,
+            color: colorBlue,
+            x: spectrumTrend[100].x,
+            y: spectrumTrend[100].y,
+          },
+          {
+            xMin: overallTrend[0][0],
+            xMax: overallTrend[overallTrend.length - 1][0],
+            yMin: 0,
+            yMax: dataMaxValues[variant.dataset].y,
+          },
+          { min: 0, max: dataMaxValues[variant.dataset].y * 0.9 },
+          () =>
+            `<svg width="23" height="17" xmlns="http://www.w3.org/2000/svg"><path d="M13.442 1.8c-.66.66-.603 1.857.016 3.062L8.824 7.95C7.056 6.76 5.468 6.32 4.8 6.99l4.032 4.03L4.8 16.2l5.18-4.032 4.032 4.032c.668-.668.22-2.256-.97-4.024l3.096-4.634c1.197.62 2.394.684 3.062.016L13.442 1.8Z" fill="#0F58D6" fill-rule="evenodd"/></svg>`,
+          "compare"
+        ),
       ],
     }
   );
@@ -500,9 +502,80 @@ async function init() {
 
   //Waterfall initial highlight
   highlightWaterfallPointsCloseTo(lastSpectrumX);
+  disableWaterfall();
+  disableCompare();
 }
 
 init();
+
+const disableWaterfall = () => {
+  trendHighcharts.series[waterfallCursorSeriesIndex].update({ visible: false });
+  highlightPointsOn([], "waterfall-cursor");
+
+  let waterfallPlot = document.querySelector(".group-3-A5jo6n");
+  let spectrumPlot = document.querySelector(".group-4-A5jo6n");
+  let waterfallButton = document.querySelector(".rectangle-7sSlKf");
+  let waterfallButtonIcon = document.querySelector(".path-FSYG4p");
+  if (waterfallPlot) {
+    waterfallPlot.style.display = "none";
+    spectrumPlot.style.top = "649px"; //1274px
+    waterfallButton.style.backgroundColor = "white";
+    waterfallButton.style.border = "1px solid #0f58d6";
+    waterfallButtonIcon.style.filter =
+      " invert(72%) sepia(37%) saturate(5016%) hue-rotate(211deg) brightness(85%) contrast(97%)";
+  }
+};
+
+let waterfallButton = document.querySelector(".orders-copy-2-Ym0oJY");
+if (waterfallButton) {
+  waterfallButton.addEventListener("click", () => {
+    console.log("click");
+    enableWaterfall();
+  });
+}
+
+const enableWaterfall = () => {
+  highlightWaterfallPointsCloseTo(
+    spectrumTrendRaw[spectrumTrendRaw.length - 1][0]
+  );
+  trendHighcharts.series[waterfallCursorSeriesIndex].update(
+    { visible: true },
+    true
+  );
+  let waterfallPlot = document.querySelector(".group-3-A5jo6n");
+  let spectrumPlot = document.querySelector(".group-4-A5jo6n");
+  let waterfallButton = document.querySelector(".rectangle-7sSlKf");
+  let waterfallButtonIcon = document.querySelector(".path-FSYG4p");
+  if (waterfallPlot) {
+    waterfallPlot.style = undefined;
+    spectrumPlot.style = undefined;
+    waterfallButton.style = undefined;
+    waterfallButtonIcon.style = undefined;
+  }
+};
+
+let compareButton = document.querySelector(".button-small-icon-only-disabled-Rse5Im");
+if (compareButton) {
+  compareButton.addEventListener("click", () => {
+    console.log("click");
+    enableCompare();
+  });
+}
+
+const disableCompare = () => {
+  trendHighcharts.series[compareCursorSeriesIndex].update({ visible: false });
+};
+const enableCompare = () => {
+  trendHighcharts.series[compareCursorSeriesIndex].update({ visible: true },false);
+  trendHighcharts.series[spectrumCursorSeriesIndex].update({ visible: false },false);
+  selectCompareCloseTo(highlightedSpectrumPoint.x)
+  let compareButton = document.querySelector(".rectangle-copy-qLZxfF");
+  let compareButtonIcon = document.querySelector(".path-G3A0VT");
+  if (compareButton) {
+    compareButton.style.backgroundColor = "var(--skf-blue)";
+    compareButtonIcon.style.filter = "saturate(0%) brightness(0%) invert(100%)";
+  }
+};
 
 const highlightWaterfallPointsCloseTo = (xValue) => {
   const closestSpectrumPoint = getClosestPointBy(xValue, spectrumTrendRaw, []);
@@ -565,6 +638,31 @@ const highlightPointsOn = (xValues = [], type = "spectrum-cursor") => {
         );
       } else {
         highlightedSpectrumPoint.update(
+          {
+            marker: undefined,
+          },
+          false,
+          false
+        );
+      }
+    }
+  }
+  if (type == "compare-cursor") {
+    //Un-highlight spectrum point
+    if (highlightedComparePoint) {
+      let highlightAsWaterfall = highlightedWaterfallPoints.find((point) => {
+        return point.x == highlightedComparePoint.x;
+      });
+      if (highlightAsWaterfall) {
+        highlightedComparePoint.update(
+          {
+            marker: selectedWaterfallMarker,
+          },
+          false,
+          false
+        );
+      } else {
+        highlightedComparePoint.update(
           {
             marker: undefined,
           },
@@ -640,6 +738,20 @@ const highlightPointsOn = (xValues = [], type = "spectrum-cursor") => {
       );
       highlightedSpectrumPoint = matchingSpectrumPoint;
     }
+    if (type == "compare-cursor") {
+      //Highlight spectrum point
+      let matchingSpectrumPoint = trendHighcharts.series[
+        spectrumSeriesIndex
+      ].data.find((point) => point.x == xVal);
+      matchingSpectrumPoint.update(
+        {
+          marker: selectedSpectrumMarker,
+        },
+        false,
+        false
+      );
+      highlightedComparePoint = matchingSpectrumPoint;
+    }
     if (type == "waterfall-cursor") {
       //Highlight trend point
       if (variant.highlightMatchingOverall) {
@@ -687,6 +799,7 @@ const highlightPointsOn = (xValues = [], type = "spectrum-cursor") => {
 };
 
 const selectSpectrumCloseTo = (xVal) => {
+  trendHighcharts.series[spectrumCursorSeriesIndex].update({ visible: true });
   const closestSpectrumPoint = getClosestPointBy(xVal, spectrumTrendRaw, []);
   setTimeout(() => {
     trendHighcharts.series[spectrumCursorSeriesIndex].data[0].update(
@@ -703,7 +816,35 @@ const selectSpectrumCloseTo = (xVal) => {
 
   highlightPointsOn([closestSpectrumPoint.x], "spectrum-cursor");
 
-  let spectrumContainer = document.querySelector(".spectrumm-A5jo6n");
+  let spectrumContainer = document.querySelector(".group-vOeFwp");
+  if (spectrumContainer) {
+    spectrumContainer.style.opacity = "10%";
+    spectrumContainer.style.transition = ".2s opacity";
+    setTimeout(() => {
+      spectrumContainer.style.transition = ".5s opacity";
+      spectrumContainer.style.opacity = "100%";
+    }, 1000);
+  }
+};
+
+const selectCompareCloseTo = (xVal) => {
+  const closestSpectrumPoint = getClosestPointBy(xVal, spectrumTrendRaw, []);
+  setTimeout(() => {
+    trendHighcharts.series[compareCursorSeriesIndex].data[0].update(
+      { x: closestSpectrumPoint.x },
+      true,
+      false
+    );
+    trendHighcharts.series[compareCursorSeriesIndex].data[1].update(
+      { x: closestSpectrumPoint.x },
+      true,
+      false
+    );
+  }, 1);
+
+  highlightPointsOn([closestSpectrumPoint.x], "compare-cursor");
+
+  let spectrumContainer = document.querySelector(".group-vOeFwp");
   if (spectrumContainer) {
     spectrumContainer.style.opacity = "10%";
     spectrumContainer.style.transition = ".2s opacity";
@@ -788,6 +929,8 @@ const createSingleCursorSerie = (
           } else if (cursorType == "waterfall") {
             waterfallCursorPosition = currentX;
             highlightWaterfallPointsCloseTo(closestSpectrumPoint.x);
+          } else if (cursorType == "compare") {
+            highlightPointsOn([closestSpectrumPoint.x], "compare-cursor");
           }
         },
         drop: (e) => {
@@ -798,6 +941,9 @@ const createSingleCursorSerie = (
           }
           if (cursorType == "waterfall") {
             selectWaterfallCloseTo(currentX);
+          }
+          if (cursorType == "compare") {
+            selectCompareCloseTo(currentX);
           }
         },
       },

@@ -33,14 +33,14 @@
   font-size: var(--font-size-xxl);
 }
 
-.h3regularleft {
-  font-family: var(--font-family-arialmt);
-  font-size: var(--font-size-xxxxl);
-}
-
 .h4boldcenter {
   font-family: var(--font-family-arial-boldmt);
   font-size: var(--font-size-xxxl);
+}
+
+.font-sizexl {
+  font-family: var(--font-family-arialmt);
+  font-size: var(--font-size-xxxxl);
 }
 
 .font-sizes {
