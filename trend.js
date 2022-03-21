@@ -270,7 +270,7 @@ async function init() {
       yAxis: [
         {
           title: {
-            text: "g",
+            text: "mm/s",
           },
           top: "15%",
           height: "85%",
