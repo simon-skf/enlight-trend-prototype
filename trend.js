@@ -334,7 +334,7 @@ async function init() {
             return `<b>${new Date(this.x).toLocaleString(
               "sv-SE",
               dateFormatOptions
-            )}</b><br/>${this.y.toPrecision(5)} g<br/>`;
+            )}</b><br/>${this.y.toPrecision(5)} mm/s<br/>`;
           }
           if (this.series.name == "spectrum") {
             let xyPoint = getClosestPointBy(this.x, overallTrendRaw, []);
@@ -342,7 +342,7 @@ async function init() {
               return `<b>${new Date(this.x).toLocaleString(
                 "sv-SE",
                 dateFormatOptions
-              )}</b><br/>${xyPoint.y.toPrecision(5)} g<br/>`;
+              )}</b><br/>${xyPoint.y.toPrecision(5)} mm/s<br/>`;
             } else {
               return `<b>${new Date(this.x).toLocaleString(
                 "sv-SE",
@@ -384,7 +384,7 @@ async function init() {
               return `<b>${new Date(this.x).toLocaleString(
                 "sv-SE",
                 dateFormatOptions
-              )}</b><br/>${closestOverallPoint.y.toPrecision(5)} g<br/>`;
+              )}</b><br/>${closestOverallPoint.y.toPrecision(5)} mm/s<br/>`;
             } else if (this.x == closestSpectrumPoint.x) {
               return `<b>${new Date(this.x).toLocaleString(
                 "sv-SE",
