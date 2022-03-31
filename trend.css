@@ -69,3 +69,7 @@
 .rectangle-copy-lzmXfx {
   border: 1px solid var(--skf-blue);
 }
+
+b {
+    font-weight: bold;
+}
